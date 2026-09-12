@@ -243,6 +243,11 @@
 - [x] Verify keyword and semantic signals both affect final ranking
 - [x] Verify eligibility and fit logic disagree correctly in edge cases
 
+## Optional Bonus Features
+- [x] Flag potentially biased or overly narrow JD phrasing
+- [x] Provide recruiter-style "why candidate X ranks above candidate Y" answers
+- [x] Handle inconsistent resume formats with normalization, section detection, and OCR fallback
+
 ---
 
 # Final Demo Readiness

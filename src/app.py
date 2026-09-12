@@ -8,6 +8,8 @@ import pandas as pd
 import streamlit as st
 
 from src.explanations.explanation import explain_top_candidates
+from src.explanations.recruiter_chat import answer_why_ranked_above
+from src.evaluation.jd_bias import flag_jd_bias
 from src.parsing.jd_loader import extract_jd_text, extract_requirements
 from src.parsing.resume_loader import load_resume
 from src.matching.semantic_engine import SentenceTransformerEmbedder, SemanticEngine
@@ -44,18 +46,20 @@ def rank_uploaded_inputs(jd_upload, resume_uploads, semantic_engine=None, fusion
         root = Path(directory)
         jd_path = root / jd_upload.name
         jd_path.write_bytes(jd_upload.getvalue())
-        requirements = extract_requirements(extract_jd_text(jd_path))["requirements"]
+        jd_text = extract_jd_text(jd_path)
+        requirements = extract_requirements(jd_text)["requirements"]
         candidates = []
         for upload in resume_uploads:
             path = root / upload.name
             path.write_bytes(upload.getvalue())
             candidates.append(load_resume(path))
-        return rank_documents(
+        rankings = rank_documents(
             candidates,
             requirements,
             semantic_engine=semantic_engine,
             fusion_config=fusion_config,
         )
+        return rankings, flag_jd_bias(jd_text)
 
 
 def main() -> None:
@@ -70,10 +74,15 @@ def main() -> None:
         "Resume files", type=["pdf", "docx", "txt", "xml"], accept_multiple_files=True
     )
     if jd_upload and resume_uploads:
-        rankings = rank_uploaded_inputs(jd_upload, resume_uploads, semantic_engine, fusion_config)
+        rankings, bias_findings = rank_uploaded_inputs(jd_upload, resume_uploads, semantic_engine, fusion_config)
     else:
         rankings = run_pipeline(DATA_DIR, semantic_engine=semantic_engine, fusion_config=fusion_config)
+        bias_findings = []
         st.info("Showing the synthetic development dataset. Upload a JD and resumes to rank runtime inputs.")
+    if bias_findings:
+        with st.expander("Potential JD phrasing concerns"):
+            st.warning("Review these flags with a human recruiter; they are prompts for review, not automatic rejection.")
+            st.dataframe(pd.DataFrame(bias_findings), use_container_width=True, hide_index=True)
     explanations = explain_top_candidates(rankings)
     st.metric("Candidates", len(rankings))
     st.metric("Eligible candidates", sum(item["eligible"] for item in rankings))
@@ -133,6 +142,7 @@ def main() -> None:
                 }
             )
         st.dataframe(pd.DataFrame(comparison_rows), use_container_width=True, hide_index=True)
+        st.write(answer_why_ranked_above(left, right))
 
     st.subheader("Top 3 explanations")
     for explanation in explanations:

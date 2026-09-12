@@ -24,9 +24,10 @@ def test_uploaded_jd_and_multiple_resumes_are_ranked() -> None:
     )
     resumes = [UploadedFile(path.name, path.read_bytes()) for path in resume_paths]
 
-    rankings = rank_uploaded_inputs(jd, resumes)
+    rankings, bias_findings = rank_uploaded_inputs(jd, resumes)
 
     assert len(rankings) == 2
     assert [item["rank"] for item in rankings] == [1, 2]
     assert all(item["candidate_id"] for item in rankings)
     assert all(item["requirement_results"] for item in rankings)
+    assert bias_findings == []
