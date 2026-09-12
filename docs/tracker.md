@@ -21,7 +21,7 @@
 - [ ] Create initial human reference ranking
 - [x] Lock shared data schema
 - [~] Define scoring configuration and thresholds (initial baseline only)
-- [~] Validate PDF extraction quality
+- [x] Validate PDF extraction quality
 - [~] Define golden test cases for matching edge cases
 - [x] Add keyword-stuffing adversarial case definition
 - [x] Add semantic-without-exact-terminology case definition
@@ -31,13 +31,13 @@
 - [ ] Define ranking metrics for evaluation
 
 ## Person 1 — Data / Parsing
-- [~] Implement PyMuPDF extraction
-- [~] Implement DOCX extraction
+- [x] Implement PyMuPDF extraction
+- [x] Implement DOCX extraction
 - [ ] Add OCR fallback for poor-quality PDFs
-- [~] Preserve page numbers and section boundaries (PDF page lookup implemented; runtime validation pending)
+- [x] Preserve page numbers and section boundaries
 - [x] Normalize extracted text
 - [x] Detect resume sections for XML and flattened text inputs
-- [~] Create candidate evidence store
+- [x] Create candidate evidence store
 - [x] Build mixed-format resume manifest
 
 ## Person 2 — Matching / Ranking
