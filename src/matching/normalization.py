@@ -69,6 +69,8 @@ ALIASES = {
     "github": "GitHub",
     "gitlab": "GitLab",
     "docker": "Docker",
+    "jest": "Jest",
+    "mocha": "Mocha",
     "kubernetes": "Kubernetes",
     "k8s": "Kubernetes",
     "aws": "AWS",

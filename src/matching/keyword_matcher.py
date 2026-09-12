@@ -7,7 +7,7 @@ from typing import Any
 
 from rapidfuzz.fuzz import ratio
 
-from src.matching.normalization import extract_skill_mentions, normalize_skill
+from src.matching.normalization import ALIASES, extract_skill_mentions, normalize_skill
 
 
 EVIDENCE_STRENGTH_SCORES = {
@@ -42,13 +42,26 @@ EVIDENCE_SOURCE_REASON_CODES = {
 def match_requirement(requirement: dict[str, Any], evidence_items: list[dict[str, Any]]) -> dict[str, Any]:
     canonical_name = requirement["canonical_name"]
     canonical_skill = normalize_skill(canonical_name) or canonical_name
+    acceptable_skills = {
+        normalize_skill(skill) or skill for skill in requirement.get("acceptable_skills", [])
+    }
+    acceptable_skills.add(canonical_skill)
+    text_patterns = requirement.get("text_patterns", [])
     related_skills = {
         normalize_skill(skill) or skill for skill in requirement.get("related_skills", [])
     }
     best_match: dict[str, Any] | None = None
+    previous_text = ""
+    previous_section = ""
 
     for evidence in evidence_items:
-        match_type = classify_match(canonical_skill, related_skills, evidence)
+        section = evidence.get("section", "")
+        context_evidence = evidence
+        if section and section == previous_section:
+            context_evidence = {**evidence, "text": f"{previous_text} {evidence.get('text', '')}"}
+        match_type = classify_match(canonical_skill, related_skills, context_evidence, acceptable_skills, text_patterns)
+        previous_text = evidence.get("text", "")
+        previous_section = section
         if match_type == "none":
             continue
         score = MATCH_SCORES[match_type]
@@ -88,11 +101,24 @@ def match_requirement(requirement: dict[str, Any], evidence_items: list[dict[str
     )
 
 
-def classify_match(canonical_skill: str, related_skills: set[str], evidence: dict[str, Any]) -> str:
+def classify_match(
+    canonical_skill: str,
+    related_skills: set[str],
+    evidence: dict[str, Any],
+    acceptable_skills: set[str] | None = None,
+    text_patterns: list[str] | None = None,
+) -> str:
     text = evidence.get("text", "")
     mentions = extract_skill_mentions(text)
-    if canonical_skill in mentions:
-        return "exact" if contains_literal_skill(text, canonical_skill) else "alias"
+    acceptable_skills = acceptable_skills or {canonical_skill}
+    if any(re.search(pattern, text, re.IGNORECASE) for pattern in (text_patterns or [])):
+        return "exact"
+    direct_matches = [
+        skill for skill in acceptable_skills
+        if skill in mentions and not explicitly_negated(text, skill)
+    ]
+    if direct_matches:
+        return "exact" if any(contains_literal_skill(text, skill) for skill in direct_matches) else "alias"
     if any(mention in related_skills for mention in mentions):
         return "related"
     fuzzy_terms = mentions + re.findall(r"[a-zA-Z][a-zA-Z0-9.+#-]{2,}", text)
@@ -112,6 +138,17 @@ def is_controlled_fuzzy_match(canonical_skill: str, mention: str, threshold: int
 def contains_literal_skill(text: str, canonical_skill: str) -> bool:
     pattern = re.escape(canonical_skill)
     return re.search(rf"(?<!\w){pattern}(?!\w)", text, flags=re.IGNORECASE) is not None
+
+
+def explicitly_negated(text: str, canonical_skill: str) -> bool:
+    """Avoid treating a resume's stated absence of a skill as evidence."""
+    names = [canonical_skill]
+    names.extend(alias for alias, canonical in ALIASES.items() if canonical == canonical_skill)
+    negation = r"(?:no|not|without|never|has not|have not|hasn't|haven't)"
+    return any(
+        re.search(rf"{negation}[^.\n]{{0,80}}(?<!\w){re.escape(name)}(?!\w)", text, re.IGNORECASE)
+        for name in names
+    )
 
 
 def build_result(

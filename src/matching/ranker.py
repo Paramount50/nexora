@@ -12,6 +12,14 @@ MANDATORY_MATCH_TYPES = {"exact", "alias", "fuzzy"}
 MUST_HAVE_IMPORTANCE = {"required"}
 GOOD_TO_HAVE_IMPORTANCE = {"preferred", "nice_to_have"}
 
+MATCH_QUALITY_SCORES = {
+    "exact": 1.0,
+    "alias": 0.95,
+    "fuzzy": 0.80,
+    "related": 0.55,
+    "none": 0.0,
+}
+
 
 def rank_candidates(
     candidates: list[dict[str, Any]],
@@ -32,9 +40,9 @@ def rank_candidates(
         )
         for candidate in candidates
     ]
-    # Recruiter mode ranks the complete pool by fit. Missing required evidence
-    # remains visible as a risk but does not hide a candidate from comparison.
-    rankings.sort(key=lambda item: item["final_score"], reverse=True)
+    # Candidates who satisfy the JD's must-haves always rank before those who
+    # do not. Fit score breaks ties within each eligibility cohort.
+    rankings.sort(key=lambda item: (item["eligible"], item["final_score"]), reverse=True)
     for rank, item in enumerate(rankings, start=1):
         item["rank"] = rank
     return rankings
@@ -79,27 +87,26 @@ def rank_candidate(
     # define the role. Mandatory gaps remain a recruiter-facing risk signal,
     # rather than a hard exclusion from the ranked pool.
     required_score = weighted_requirement_score(required, requirements, requirement_results)
-    preferred_score = weighted_requirement_score(preferred, requirements, requirement_results)
-    nice_to_have_score = weighted_requirement_score(nice_to_have, requirements, requirement_results)
+    good_to_have_score = weighted_requirement_score(good_to_have, requirements, requirement_results)
     if required:
-        fit_score = (
-            0.80 * required_score
-            + 0.15 * preferred_score
-            + 0.05 * nice_to_have_score
-        )
+        fit_score = 0.90 * required_score + 0.10 * good_to_have_score
     elif good_to_have:
         fit_score = 0.75 * preferred_score + 0.25 * nice_to_have_score
     else:
         fit_score = 0.0
 
+    final_score = round(fit_score * 100, 4)
+    meets_mandatory = not mandatory_missing
+    eligibility_status = "eligible" if meets_mandatory else "review_required"
+
     return {
         "candidate_id": candidate["candidate_id"],
         "candidate_name": candidate.get("candidate_name", candidate["candidate_id"]),
-        "eligible": True,
+        "eligible": meets_mandatory,
         "eligibility": {
-            "mandatory_requirements_met": not mandatory_missing,
-            "meets_mandatory_requirements": not mandatory_missing,
-            "status": "meets_mandatory_requirements" if not mandatory_missing else "review_required",
+            "mandatory_requirements_met": meets_mandatory,
+            "meets_mandatory_requirements": meets_mandatory,
+            "status": eligibility_status,
             "mandatory_requirements_missing": mandatory_missing,
             "failed_critical_requirements": len(mandatory_missing),
         },
@@ -108,7 +115,7 @@ def rank_candidate(
             "preferred_requirement_coverage": preferred_coverage,
             "good_to_have_coverage": preferred_coverage,
         },
-        "final_score": round(fit_score * 100, 4),
+        "final_score": final_score,
         "keyword_score": average(result["keyword_score"] for result in requirement_results),
         "semantic_score": average(result["semantic_score"] for result in requirement_results),
         "bm25_score": average(result.get("bm25_score", 0.0) for result in requirement_results),
@@ -150,9 +157,22 @@ def weighted_requirement_score(
     if not total_weight:
         return 0.0
     return sum(
-        weights.get(result["requirement_id"], 1.0) * result["fused_score"]
+        weights.get(result["requirement_id"], 1.0) * requirement_quality_score(result)
         for result in tier_results
     ) / total_weight
+
+
+def requirement_quality_score(result: dict[str, Any]) -> float:
+    """Score evidence quality without requiring a semantic model to be loaded."""
+    if result.get("missing"):
+        return 0.0
+    match_quality = MATCH_QUALITY_SCORES.get(result.get("match_type", "none"), 0.0)
+    evidence_strength = max(0.0, min(1.0, float(result.get("evidence_strength_score", 0.0))))
+    # A direct skill named in a resume deserves a high base score even when it
+    # appears in a compact skills section. Evidence strength differentiates
+    # applied work from a list, but should not collapse credible fit scores.
+    lexical_quality = 0.90 * match_quality + 0.10 * evidence_strength
+    return max(lexical_quality, float(result.get("fused_score", 0.0)))
 
 
 def average(values: Any) -> float:

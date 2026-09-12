@@ -47,7 +47,7 @@ def test_no_evidence_candidate_is_ranked_with_mandatory_risk() -> None:
         {"candidate_id": "empty", "candidate_name": "Empty", "evidence": []},
         REQUIREMENTS,
     )
-    assert result["eligible"]
+    assert not result["eligible"]
     assert not result["eligibility"]["meets_mandatory_requirements"]
     assert result["eligibility"]["status"] == "review_required"
     assert result["eligibility"]["mandatory_requirements_missing"] == ["Node.js"]
