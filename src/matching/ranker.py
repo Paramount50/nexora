@@ -16,6 +16,7 @@ def rank_candidates(
     requirements: list[dict[str, Any]],
     semantic_engine: Any | None = None,
     semantic_results: dict[tuple[str, str], dict[str, Any]] | None = None,
+    bm25_results: dict[tuple[str, str], dict[str, Any]] | None = None,
     fusion_config: dict[str, float] | None = None,
 ) -> list[dict[str, Any]]:
     rankings = [
@@ -24,6 +25,7 @@ def rank_candidates(
             requirements,
             semantic_engine=semantic_engine,
             semantic_results=semantic_results,
+            bm25_results=bm25_results,
             fusion_config=fusion_config,
         )
         for candidate in candidates
@@ -39,6 +41,7 @@ def rank_candidate(
     requirements: list[dict[str, Any]],
     semantic_engine: Any | None = None,
     semantic_results: dict[tuple[str, str], dict[str, Any]] | None = None,
+    bm25_results: dict[tuple[str, str], dict[str, Any]] | None = None,
     fusion_config: dict[str, float] | None = None,
 ) -> dict[str, Any]:
     requirement_results = []
@@ -52,8 +55,11 @@ def rank_candidate(
                 requirement, candidate["evidence"], top_k=1
             )
             semantic_result = candidate_semantic_results[0] if candidate_semantic_results else None
+        bm25_result = (bm25_results or {}).get(
+            (candidate["candidate_id"], requirement["requirement_id"])
+        )
         requirement_results.append(
-            fuse_requirement_result(keyword_result, semantic_result, config=fusion_config)
+            fuse_requirement_result(keyword_result, semantic_result, bm25_result=bm25_result, config=fusion_config)
         )
 
     required = [item for item in requirement_results if item["importance"] == "required"]
@@ -84,6 +90,7 @@ def rank_candidate(
         "final_score": round(fit_score * 100, 4),
         "keyword_score": average(result["keyword_score"] for result in requirement_results),
         "semantic_score": average(result["semantic_score"] for result in requirement_results),
+        "bm25_score": average(result.get("bm25_score", 0.0) for result in requirement_results),
         "mandatory_coverage": mandatory_coverage,
         "preferred_coverage": preferred_coverage,
         "missing_requirements": [result["canonical_name"] for result in requirement_results if result["missing"]],

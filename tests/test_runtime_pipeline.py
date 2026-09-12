@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from src.app import rank_uploaded_inputs
+from src.pipeline import rank_uploaded_inputs
 
 
 class UploadedFile:

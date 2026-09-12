@@ -44,6 +44,7 @@ def build_explanation(ranking: dict[str, Any]) -> dict[str, Any]:
 
     return {
         "candidate_id": ranking["candidate_id"],
+        "candidate_name": ranking.get("candidate_name", ranking["candidate_id"]),
         "rank": ranking.get("rank"),
         "summary": build_summary(ranking, strongest, missing_or_weak),
         "strongest_matches": strongest_matches,

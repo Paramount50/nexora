@@ -115,6 +115,30 @@ def first_line(value: str, fallback: str) -> str:
     return next((line.strip() for line in value.splitlines() if line.strip()), fallback)
 
 
+def classify_evidence(section: str, value: str) -> tuple[str, str, str]:
+    """Return (evidence_type, evidence_source_type, evidence_strength)."""
+    norm_section = section.lower().strip()
+    if norm_section in {"skills", "technicalskills", "technical_skills", "skill_list", "core_competencies"}:
+        return "skill_list", "skills_section", "mentioned"
+    if norm_section in {"experience", "work_experience", "employment", "professional_experience", "work_history"}:
+        words = len(value.split())
+        has_impact = bool(re.search(r"\b(led|built|developed|designed|implemented|managed|increased|reduced|achieved|created|architected|delivered|scaled)\b", value, re.IGNORECASE))
+        strength = "substantial" if words >= 12 or has_impact else "applied"
+        return "work_experience", "work_history", strength
+    if norm_section in {"projects", "project", "personal_projects", "academic_projects", "key_projects"}:
+        words = len(value.split())
+        has_action = bool(re.search(r"\b(built|developed|created|implemented|architected|designed|engineered)\b", value, re.IGNORECASE))
+        strength = "substantial" if words >= 12 or has_action else "applied"
+        return "project_or_experience", "projects_section", strength
+    if norm_section in {"education", "academic_background", "qualifications"}:
+        return "education", "education_section", "applied"
+    if norm_section in {"certifications", "licenses", "certificates"}:
+        return "certification", "certification_section", "applied"
+    if norm_section in {"summary", "objective", "profile", "about_me"}:
+        return "summary", "summary_section", "mentioned"
+    return "other", norm_section or "other", "mentioned"
+
+
 def build_candidate(
     path: Path,
     candidate_name: str,
@@ -131,6 +155,7 @@ def build_candidate(
             if not value:
                 continue
             skills = find_skills(value)
+            ev_type, ev_source_type, ev_strength = classify_evidence(section, value)
             evidence.append(
                 {
                     "candidate_id": candidate_id,
@@ -141,10 +166,10 @@ def build_candidate(
                     "position": position,
                     "extracted_skill": skills[0] if skills else None,
                     "canonical_skill": skills[0] if skills else None,
-                    "evidence_type": "skill_list" if section == "skills" else "project_or_experience",
+                    "evidence_type": ev_type,
                     "source": section,
-                    "evidence_source_type": "skills_section" if section == "skills" else section,
-                    "evidence_strength": "applied" if section == "skills" else "substantial",
+                    "evidence_source_type": ev_source_type,
+                    "evidence_strength": ev_strength,
                 }
             )
             position += 1

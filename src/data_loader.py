@@ -25,6 +25,20 @@ def load_dataset(data_dir: Path) -> tuple[dict[str, Any], dict[str, Any]]:
     return dataset, requirements
 
 
+def load_runtime_dataset(data_dir: Path) -> tuple[dict[str, Any], dict[str, Any]]:
+    runtime_dir = data_dir / "runtime"
+    jd_pdf = runtime_dir / "Sample_JD.pdf"
+    resumes_dir = runtime_dir / "Testing Dataset"
+    if jd_pdf.exists() and resumes_dir.exists():
+        from src.parsing.jd_loader import extract_jd_text, extract_requirements
+        from src.parsing.resume_loader import load_resume_directory
+        jd_text = extract_jd_text(jd_pdf)
+        req_data = extract_requirements(jd_text)
+        candidates = load_resume_directory(resumes_dir, ("pdf", "docx", "txt", "xml"))
+        return {"candidates": candidates}, req_data
+    return load_dataset(data_dir)
+
+
 def validate_dataset(dataset: dict[str, Any]) -> None:
     candidates = dataset.get("candidates")
     if not isinstance(candidates, list) or not candidates:

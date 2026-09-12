@@ -25,6 +25,20 @@ MATCH_SCORES = {
 }
 
 
+EVIDENCE_SOURCE_REASON_CODES = {
+    "projects_section": "PROJECT_EVIDENCE",
+    "project": "PROJECT_EVIDENCE",
+    "work_history": "WORK_EXPERIENCE_EVIDENCE",
+    "experience": "WORK_EXPERIENCE_EVIDENCE",
+    "education_section": "EDUCATION_EVIDENCE",
+    "education": "EDUCATION_EVIDENCE",
+    "certification_section": "CERTIFICATION_EVIDENCE",
+    "certifications": "CERTIFICATION_EVIDENCE",
+    "skills_section": "SKILLS_SECTION_EVIDENCE",
+    "skills": "SKILLS_SECTION_EVIDENCE",
+}
+
+
 def match_requirement(requirement: dict[str, Any], evidence_items: list[dict[str, Any]]) -> dict[str, Any]:
     canonical_name = requirement["canonical_name"]
     canonical_skill = normalize_skill(canonical_name) or canonical_name
@@ -53,14 +67,17 @@ def match_requirement(requirement: dict[str, Any], evidence_items: list[dict[str
 
     match_type = best_match["match_type"]
     evidence = best_match["evidence"]
-    reason_codes = {
+    reason_codes = list({
         "exact": ["EXACT_KEYWORD"],
         "alias": ["ALIAS_MATCH"],
         "fuzzy": ["FUZZY_MATCH"],
         "related": ["RELATED_SKILL"],
-    }[match_type]
-    if evidence.get("evidence_source_type") in {"project", "experience"}:
-        reason_codes.append("PROJECT_EVIDENCE")
+    }[match_type])
+    source_key = evidence.get("evidence_source_type") or evidence.get("section")
+    if source_key in EVIDENCE_SOURCE_REASON_CODES:
+        reason_codes.append(EVIDENCE_SOURCE_REASON_CODES[source_key])
+    if evidence.get("evidence_strength") == "substantial":
+        reason_codes.append("SUBSTANTIAL_EVIDENCE")
     return build_result(
         requirement,
         match_type,
