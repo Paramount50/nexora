@@ -45,9 +45,10 @@ def rank_candidate(
             (candidate["candidate_id"], requirement["requirement_id"])
         )
         if semantic_result is None and semantic_engine is not None and candidate.get("evidence"):
-            semantic_results = semantic_engine.match_requirement(
+            candidate_semantic_results = semantic_engine.match_requirement(
                 requirement, candidate["evidence"], top_k=1
             )
+            semantic_result = candidate_semantic_results[0] if candidate_semantic_results else None
             semantic_result = semantic_results[0] if semantic_results else None
         requirement_results.append(fuse_requirement_result(keyword_result, semantic_result))
 
