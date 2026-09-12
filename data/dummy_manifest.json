@@ -1,0 +1,3000 @@
+{
+  "source_directory": "data/dummy_resumes/Dummy Resumes",
+  "file_count": 220,
+  "group_count": 154,
+  "variant_group_count": 22,
+  "groups": [
+    {
+      "candidate_key": "aditya_kulkarni_cybersec_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Aditya Kulkarni CyberSec Resume.docx",
+          "filename": "Aditya Kulkarni CyberSec Resume.docx",
+          "format": "docx",
+          "size_bytes": 12242,
+          "sha256": "f4a0ea57ad90534bc106773de603220ea5325ebfa8abbab5b06b832864090ab2"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "ai_dev_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/AI_Dev_A.docx",
+          "filename": "AI_Dev_A.docx",
+          "format": "docx",
+          "size_bytes": 10120,
+          "sha256": "2c49fa7f3eeadce74b66111c938934bcf0cb22563f977d80fcaaa9eccb494670"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "ai_dev_ananya_subramanian",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/ai_dev__ananya_subramanian.pdf",
+          "filename": "ai_dev__ananya_subramanian.pdf",
+          "format": "pdf",
+          "size_bytes": 49832,
+          "sha256": "240d23eb8ab0a3c8ea477d5c52e069ee001394ba0ab7ca1621833ecb0a40008d"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "ai_dev_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/AI_Dev_B.docx",
+          "filename": "AI_Dev_B.docx",
+          "format": "docx",
+          "size_bytes": 9596,
+          "sha256": "8a52f7dda57aadc35a1998920f3e8a1356842449fe893cd28f486e241b50a47a"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "ai_dev_rohan_mehta",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/ai_dev__rohan_mehta.pdf",
+          "filename": "ai_dev__rohan_mehta.pdf",
+          "format": "pdf",
+          "size_bytes": 50805,
+          "sha256": "092daba36fb38abf57a9dfcf987ca76e7920ba763a9a436dec0e9264d2d7521e"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "ai_developer_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/AI_Developer_Resume_1.docx",
+          "filename": "AI_Developer_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 38031,
+          "sha256": "38484990f2ff736fd4c44b7ce674ecb390e2280783480a689d6641cce70b1cb9"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "ai_developer_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/AI_Developer_Resume_2.docx",
+          "filename": "AI_Developer_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37926,
+          "sha256": "6de3cd2ee3c4e22e2e81eb431377b59f7e0ab3303c0e30f012c49337b1a018ba"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "ananya_krishnamurthy_ds_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Ananya Krishnamurthy DS Resume.docx",
+          "filename": "Ananya Krishnamurthy DS Resume.docx",
+          "format": "docx",
+          "size_bytes": 11906,
+          "sha256": "af728f3989afeebc28ee3bc01c9a19a6fc281c22a992b90dabb2170d75e440aa"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "app_dev_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Dev_A.docx",
+          "filename": "App_Dev_A.docx",
+          "format": "docx",
+          "size_bytes": 9719,
+          "sha256": "65ad6ac931cde489952419ea589ffcd5aff63fa0599e486a9db48a51e90483ce"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "app_dev_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Dev_B.docx",
+          "filename": "App_Dev_B.docx",
+          "format": "docx",
+          "size_bytes": 9486,
+          "sha256": "87d0e16ecf87de14071ced9d8ceef415742e2b04a79d41d4ac74b25e4cba2403"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "app_dev_rahul_bose",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/app_dev__rahul_bose.pdf",
+          "filename": "app_dev__rahul_bose.pdf",
+          "format": "pdf",
+          "size_bytes": 50252,
+          "sha256": "492b7a55eeb6c1841106bc45757f3e9577bd2fbcfb157bfe0ee9fea25e665585"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "app_dev_tanvi_joshi",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/app_dev__tanvi_joshi.pdf",
+          "filename": "app_dev__tanvi_joshi.pdf",
+          "format": "pdf",
+          "size_bytes": 50275,
+          "sha256": "52670a850fb18be5c5baa0b9ac32230a88496f4030cb3ff96222e95621d69a4d"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "app_developer_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Developer_Resume_1.docx",
+          "filename": "App_Developer_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37851,
+          "sha256": "0a715ba9c696fe0643af98af26c3b7ef6d47468287dabd26bb308c322f3db9b9"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "app_developer_resume_1_siddharth_rao",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Developer_Resume_1_Siddharth_Rao.docx",
+          "filename": "App_Developer_Resume_1_Siddharth_Rao.docx",
+          "format": "docx",
+          "size_bytes": 10861,
+          "sha256": "09689b5e33153746bfb180380ba5cfa8db82f0bf758026dd0ad43eb6ad967d7d"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Developer_Resume_1_Siddharth_Rao.pdf",
+          "filename": "App_Developer_Resume_1_Siddharth_Rao.pdf",
+          "format": "pdf",
+          "size_bytes": 59646,
+          "sha256": "62cfaf08973b7b7a688d87f6c831179448fbd8a9544b7c86d1d2e46c6ec98d19"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Developer_Resume_1_Siddharth_Rao.txt",
+          "filename": "App_Developer_Resume_1_Siddharth_Rao.txt",
+          "format": "txt",
+          "size_bytes": 3215,
+          "sha256": "8384fee950a5be0ff349423917c572d099d6f39153b9ddaf5a7756a70b5c3bb9"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Developer_Resume_1_Siddharth_Rao.xml",
+          "filename": "App_Developer_Resume_1_Siddharth_Rao.xml",
+          "format": "xml",
+          "size_bytes": 4830,
+          "sha256": "5a6ae80debdf618511f0c0056bdfdb14cbeec010310b310f2d1d1ca0c2da81c0"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "app_developer_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Developer_Resume_2.docx",
+          "filename": "App_Developer_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37858,
+          "sha256": "66fa9df76c9c24113515310bbb2065f26823ffe0a794b7e52a503720257bf448"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "app_developer_resume_2_kavya_menon",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Developer_Resume_2_Kavya_Menon.docx",
+          "filename": "App_Developer_Resume_2_Kavya_Menon.docx",
+          "format": "docx",
+          "size_bytes": 10878,
+          "sha256": "60abcd038dd029c1313a9bfaaebad5e7c84617a1c969fd5d21b69e0f5e16daa8"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Developer_Resume_2_Kavya_Menon.pdf",
+          "filename": "App_Developer_Resume_2_Kavya_Menon.pdf",
+          "format": "pdf",
+          "size_bytes": 59496,
+          "sha256": "7a33dbd13822078c883f319f8e6667b5b533cddbbda4f6fe00f0765990e57893"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Developer_Resume_2_Kavya_Menon.txt",
+          "filename": "App_Developer_Resume_2_Kavya_Menon.txt",
+          "format": "txt",
+          "size_bytes": 3218,
+          "sha256": "f30566446d3d1f3a2f19b70c0f136318ec25bed8e52c5807cab9e5b310d7a635"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/App_Developer_Resume_2_Kavya_Menon.xml",
+          "filename": "App_Developer_Resume_2_Kavya_Menon.xml",
+          "format": "xml",
+          "size_bytes": 4833,
+          "sha256": "619c6bb87e20fab3cc8bb77b8d04c01646e4955ea0b71046387221f0218d50eb"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "blockchain_developer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Blockchain_Developer_Resume.docx",
+          "filename": "Blockchain_Developer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37065,
+          "sha256": "5e41f86eda1da33108131137b53b3818c457b56fb919a79e7cb97295f18deaf4"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "business_analyst_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Business_Analyst_Resume.docx",
+          "filename": "Business_Analyst_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37061,
+          "sha256": "ebca19c4ace4dd845974b3035007353adcc423ebe4c3bad105d3d0d7322b0e48"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "business_development_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Business_Development_Resume.docx",
+          "filename": "Business_Development_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37063,
+          "sha256": "868031b26b833f1e9cce63d854bf2dd27e20aa8161a12bff46c2d2b757da08e6"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "cloud_engineer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cloud_Engineer_Resume.docx",
+          "filename": "Cloud_Engineer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37060,
+          "sha256": "8bb2f4afce8b5bcca77cd0da9940a6fc8eeba7d2b1b15f371bcee165b539cb1e"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "cloud_support_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cloud_Support_Resume.docx",
+          "filename": "Cloud_Support_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37060,
+          "sha256": "37b50dacc91edd955673a9f0c404375c07ae359b85e140a3ff95d2dd81ba0c08"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "content_creation_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creation_A.docx",
+          "filename": "Content_Creation_A.docx",
+          "format": "docx",
+          "size_bytes": 9449,
+          "sha256": "9f46eb9d907480155c23c4c4f2898c377136993dbeb1e4bfe2571535d07c5ec7"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "content_creation_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creation_B.docx",
+          "filename": "Content_Creation_B.docx",
+          "format": "docx",
+          "size_bytes": 9541,
+          "sha256": "1945dbafbfd5a78ecf04ba5a8f5b2df6a0a6172437a2cdaf1d223b94b6d6febb"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "content_creation_kabir_malik",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/content_creation__kabir_malik.pdf",
+          "filename": "content_creation__kabir_malik.pdf",
+          "format": "pdf",
+          "size_bytes": 50567,
+          "sha256": "c84c7e98b4930220dd0926c3771094c51c3e91f736312bd78445fb8663e78dc5"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "content_creation_resume_1_varun_kapoor",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creation_Resume_1_Varun_Kapoor.docx",
+          "filename": "Content_Creation_Resume_1_Varun_Kapoor.docx",
+          "format": "docx",
+          "size_bytes": 10843,
+          "sha256": "d350ca3cd4ca3824cdccbc889133fefb44b28c4dc61171b14f163575e69a315c"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creation_Resume_1_Varun_Kapoor.pdf",
+          "filename": "Content_Creation_Resume_1_Varun_Kapoor.pdf",
+          "format": "pdf",
+          "size_bytes": 58620,
+          "sha256": "b7cdfdfbda0f0639936f831da689b096a021274ddf097912a4a673e2a358ac12"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creation_Resume_1_Varun_Kapoor.txt",
+          "filename": "Content_Creation_Resume_1_Varun_Kapoor.txt",
+          "format": "txt",
+          "size_bytes": 3221,
+          "sha256": "5c9a8ac2e6cad43ba326362cd35d7d25551701d83b1fcac1cb54cc05e887cd66"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creation_Resume_1_Varun_Kapoor.xml",
+          "filename": "Content_Creation_Resume_1_Varun_Kapoor.xml",
+          "format": "xml",
+          "size_bytes": 4804,
+          "sha256": "799a06759565cfad20edc7d17868e74b3aaaf8303bd99ac61b3738147d961eff"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "content_creation_resume_2_neha_bhatia",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creation_Resume_2_Neha_Bhatia.docx",
+          "filename": "Content_Creation_Resume_2_Neha_Bhatia.docx",
+          "format": "docx",
+          "size_bytes": 10861,
+          "sha256": "5b8ce14952c3cbfc30cdc918c5546d3bc12a159397bb481f703a216fcd6760bd"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creation_Resume_2_Neha_Bhatia.pdf",
+          "filename": "Content_Creation_Resume_2_Neha_Bhatia.pdf",
+          "format": "pdf",
+          "size_bytes": 58942,
+          "sha256": "fdc6a1c3ceca659dd86fb0fe7acaa731c585ca9b20531a43ce8342053919e0a1"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creation_Resume_2_Neha_Bhatia.txt",
+          "filename": "Content_Creation_Resume_2_Neha_Bhatia.txt",
+          "format": "txt",
+          "size_bytes": 3248,
+          "sha256": "66f80647b8bae49a42e1f1302d4a1c88676e16e25c25eb7ae577cafb5efc9c50"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creation_Resume_2_Neha_Bhatia.xml",
+          "filename": "Content_Creation_Resume_2_Neha_Bhatia.xml",
+          "format": "xml",
+          "size_bytes": 4831,
+          "sha256": "28244fa361017f09d66c758b9a4ed185e772d6faaa9fb419b472c289b7f9c2e4"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "content_creation_riya_bansal",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/content_creation__riya_bansal.pdf",
+          "filename": "content_creation__riya_bansal.pdf",
+          "format": "pdf",
+          "size_bytes": 49676,
+          "sha256": "6b4ff435600dbc13ffc7cee2015061e8652e4193f75fe422e878014f98b1e667"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "content_creator_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creator_Resume_1.docx",
+          "filename": "Content_Creator_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37809,
+          "sha256": "e721cca50aaa1ea47a5f4a5a0c1f07524cb537e80825878b5f2b70dbe4225a82"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "content_creator_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Content_Creator_Resume_2.docx",
+          "filename": "Content_Creator_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37809,
+          "sha256": "ca8a05b2e02412e53043458080c4066ea2e74fba404061f157f28ed3356ba349"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "customer_success_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Customer_Success_Resume.docx",
+          "filename": "Customer_Success_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37061,
+          "sha256": "88e853db7db0e5e26c8d8ec9fa229d933688363061419a0a4c490eeaebdd27aa"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "cyber_sec_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Sec_A.docx",
+          "filename": "Cyber_Sec_A.docx",
+          "format": "docx",
+          "size_bytes": 10132,
+          "sha256": "30185fa435512368ebef6a23068045cb42e09438a264590ccbd4f40701ead7a0"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "cyber_sec_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Sec_B.docx",
+          "filename": "Cyber_Sec_B.docx",
+          "format": "docx",
+          "size_bytes": 10001,
+          "sha256": "e911039aeb074e373e468cc05de20e27eeba5ea70cdc935d6e626a5a032b3f86"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "cyber_security_meera_iyer",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/cyber_security__meera_iyer.pdf",
+          "filename": "cyber_security__meera_iyer.pdf",
+          "format": "pdf",
+          "size_bytes": 50566,
+          "sha256": "3c3d01dc82746e6a9324176eb007ccb7faff37044add5b3a71c0b1682167ef7a"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "cyber_security_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Security_Resume_1.docx",
+          "filename": "Cyber_Security_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37898,
+          "sha256": "16f9308c6ead5adff0d3cf9908529bd34b68d308caf8e44a2745434b2fba9b5b"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "cyber_security_resume_1_vikram_nair",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Security_Resume_1_Vikram_Nair.docx",
+          "filename": "Cyber_Security_Resume_1_Vikram_Nair.docx",
+          "format": "docx",
+          "size_bytes": 10943,
+          "sha256": "6adb003e171256cb6ee0a01ef0828149521bdeb7ca38f848d578a65637762760"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Security_Resume_1_Vikram_Nair.pdf",
+          "filename": "Cyber_Security_Resume_1_Vikram_Nair.pdf",
+          "format": "pdf",
+          "size_bytes": 60806,
+          "sha256": "842c9f59fa0fe97e4e602b879f1be10fb438d2cd90d26800d404c29172f89252"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Security_Resume_1_Vikram_Nair.txt",
+          "filename": "Cyber_Security_Resume_1_Vikram_Nair.txt",
+          "format": "txt",
+          "size_bytes": 3414,
+          "sha256": "ea7af286a43e349eff5722d4b752390ce026fcebd583d8b616f570840e46cc99"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Security_Resume_1_Vikram_Nair.xml",
+          "filename": "Cyber_Security_Resume_1_Vikram_Nair.xml",
+          "format": "xml",
+          "size_bytes": 5009,
+          "sha256": "94560930338e0312ad30b988c267e37a51a111b4a319731e1d5756a86e094e19"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "cyber_security_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Security_Resume_2.docx",
+          "filename": "Cyber_Security_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37790,
+          "sha256": "7d2c642b5363ffca596c283dc1d693ec0c57c3c4b4f1b8b54da41cc3bb201f85"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "cyber_security_resume_2_priya_kulkarni",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Security_Resume_2_Priya_Kulkarni.docx",
+          "filename": "Cyber_Security_Resume_2_Priya_Kulkarni.docx",
+          "format": "docx",
+          "size_bytes": 10936,
+          "sha256": "f153097de25f88aaf4b110d2c779051673ed0122f07621354677d7650fe27a94"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Security_Resume_2_Priya_Kulkarni.pdf",
+          "filename": "Cyber_Security_Resume_2_Priya_Kulkarni.pdf",
+          "format": "pdf",
+          "size_bytes": 60822,
+          "sha256": "7421d89fb4ee1c956aa5ed79dd3411360d1a970521a0cbc938f65e435583b404"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Security_Resume_2_Priya_Kulkarni.txt",
+          "filename": "Cyber_Security_Resume_2_Priya_Kulkarni.txt",
+          "format": "txt",
+          "size_bytes": 3418,
+          "sha256": "244edeaf5571187b9fc8af32751e3bb8065c941f1b214a1465129a7f12814b07"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Cyber_Security_Resume_2_Priya_Kulkarni.xml",
+          "filename": "Cyber_Security_Resume_2_Priya_Kulkarni.xml",
+          "format": "xml",
+          "size_bytes": 5013,
+          "sha256": "f54403e12aea664bcecb95212f2d530050b4cc9df46435770da119da7a824350"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "cyber_security_vikram_singh",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/cyber_security__vikram_singh.pdf",
+          "filename": "cyber_security__vikram_singh.pdf",
+          "format": "pdf",
+          "size_bytes": 50711,
+          "sha256": "c724ecb227d8094e013321ee6ae56b037b730385b1eb1fa99b613b78a73a74a5"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "data_analyst_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Analyst_Resume.docx",
+          "filename": "Data_Analyst_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37058,
+          "sha256": "5bd1d2de1b3666663f1b070c4788896b228e751ec6f9ea1f02166568ea0b0c99"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "data_scientist_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_A.docx",
+          "filename": "Data_Scientist_A.docx",
+          "format": "docx",
+          "size_bytes": 9957,
+          "sha256": "4a3a7853206742dd6417268dd257f1b70c13701fdae7c2eddd1c2c4e6a5af1a2"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "data_scientist_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_B.docx",
+          "filename": "Data_Scientist_B.docx",
+          "format": "docx",
+          "size_bytes": 9972,
+          "sha256": "205155ebb56bbc52df708b033c0e5f2c64f7a67f0c3655b31982be63fd21d635"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "data_scientist_divya_pillai",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/data_scientist__divya_pillai.pdf",
+          "filename": "data_scientist__divya_pillai.pdf",
+          "format": "pdf",
+          "size_bytes": 48752,
+          "sha256": "4ac993738644afdbca53aa643860af0fc6fba462b192c52646f3db205be40144"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "data_scientist_nikhil_rao",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/data_scientist__nikhil_rao.pdf",
+          "filename": "data_scientist__nikhil_rao.pdf",
+          "format": "pdf",
+          "size_bytes": 49798,
+          "sha256": "2afe43ef4f11c5fe58c3bd6d8682be2a3520f15aa3fad7a964401ce91c87f779"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "data_scientist_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_Resume_1.docx",
+          "filename": "Data_Scientist_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37889,
+          "sha256": "1ba87ee168a676ab847884a789838db93f268caa84dba91e489f1b843b23d09c"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "data_scientist_resume_1_nikhil_desai",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_Resume_1_Nikhil_Desai.docx",
+          "filename": "Data_Scientist_Resume_1_Nikhil_Desai.docx",
+          "format": "docx",
+          "size_bytes": 10913,
+          "sha256": "db1c5ff8416e7ba0bd12dd3724ae67e7cf6345633d3e7ccf7592a74bfccb8b71"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_Resume_1_Nikhil_Desai.pdf",
+          "filename": "Data_Scientist_Resume_1_Nikhil_Desai.pdf",
+          "format": "pdf",
+          "size_bytes": 58993,
+          "sha256": "e2e0ce66bb80cce400907fde7f2ee51b09355a8d3b77b54fabaf11222d3a0806"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_Resume_1_Nikhil_Desai.txt",
+          "filename": "Data_Scientist_Resume_1_Nikhil_Desai.txt",
+          "format": "txt",
+          "size_bytes": 3342,
+          "sha256": "bd745a93b92f1c9c57d7cd9bf03f712197f0f43acd2c904ec6a457dc7040d2a2"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_Resume_1_Nikhil_Desai.xml",
+          "filename": "Data_Scientist_Resume_1_Nikhil_Desai.xml",
+          "format": "xml",
+          "size_bytes": 4929,
+          "sha256": "127394cbd6fa90dbcf22d8868fd3b26f4ea1616e67536a2f5d3520cfa452b245"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "data_scientist_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_Resume_2.docx",
+          "filename": "Data_Scientist_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37830,
+          "sha256": "dfda6b1a40fce03540fc9e56aa73062afce62c814fcb68117e383b645590f446"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "data_scientist_resume_2_ishita_gupta",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_Resume_2_Ishita_Gupta.docx",
+          "filename": "Data_Scientist_Resume_2_Ishita_Gupta.docx",
+          "format": "docx",
+          "size_bytes": 10919,
+          "sha256": "e0371608702afe779099b38312c463ba08b73b676ee12fe5a0ab6cd701c5f1ca"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_Resume_2_Ishita_Gupta.pdf",
+          "filename": "Data_Scientist_Resume_2_Ishita_Gupta.pdf",
+          "format": "pdf",
+          "size_bytes": 58926,
+          "sha256": "07a881f88c54b7dba440b9ed54922292d2ad0fc584fd5b8136012cb6668243a9"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_Resume_2_Ishita_Gupta.txt",
+          "filename": "Data_Scientist_Resume_2_Ishita_Gupta.txt",
+          "format": "txt",
+          "size_bytes": 3328,
+          "sha256": "316c36e975e787337feba4270f7107df865febca6f2cb50d271b688c65228508"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Data_Scientist_Resume_2_Ishita_Gupta.xml",
+          "filename": "Data_Scientist_Resume_2_Ishita_Gupta.xml",
+          "format": "xml",
+          "size_bytes": 4916,
+          "sha256": "18b37246050a4ab7cdb797b998c741bd633a84a2fa0fc5822c787a7ae20280dc"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "deepak_yadav_ai_developer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Deepak Yadav AI Developer Resume.docx",
+          "filename": "Deepak Yadav AI Developer Resume.docx",
+          "format": "docx",
+          "size_bytes": 11553,
+          "sha256": "abb296f27683fdc2aec32c28289f99c1a58cb04fe39219c66ce75a97c3140cd9"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "design_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Design_A.docx",
+          "filename": "Design_A.docx",
+          "format": "docx",
+          "size_bytes": 10003,
+          "sha256": "d0e79a958f6d38af954d9ae37234567f3114bb59e372c913bf1cb120447a5e05"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "design_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Design_B.docx",
+          "filename": "Design_B.docx",
+          "format": "docx",
+          "size_bytes": 9219,
+          "sha256": "171cdabc400af51226d2b2415e596fd77bdf42d54dce4d112422614031605419"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "design_devansh_kothari",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/design__devansh_kothari.pdf",
+          "filename": "design__devansh_kothari.pdf",
+          "format": "pdf",
+          "size_bytes": 49818,
+          "sha256": "03bf0c85133a8f768a0be2e7b754c17dc39d9c0bdbbfe095326c2f5041a02ff5"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "design_ira_sen",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/design__ira_sen.pdf",
+          "filename": "design__ira_sen.pdf",
+          "format": "pdf",
+          "size_bytes": 49240,
+          "sha256": "0eaf593da2daa37497e766e6d36d19b307c1b521f3878e92c97d0b51e06aaae3"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "designer_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Designer_Resume_1.docx",
+          "filename": "Designer_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37729,
+          "sha256": "ede9e9f140451d7ef7b3e66203b744651e906889cbe261057c37ea4a7df9cb94"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "designer_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Designer_Resume_2.docx",
+          "filename": "Designer_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37760,
+          "sha256": "67a9bad3659667168f07a0f0daee0a8113faeb29be94bf5de137169e11bb239e"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "devops_engineer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/DevOps_Engineer_Resume.docx",
+          "filename": "DevOps_Engineer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37061,
+          "sha256": "b9f027ca9a735b1f63ab35e3785291ab965fe3264c9c39b1d4229cc4348e3a6b"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "devrel_engineer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/DevRel_Engineer_Resume.docx",
+          "filename": "DevRel_Engineer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37061,
+          "sha256": "e5e3a752d1743d33c1d7a63f44fc5d09b710c588a98debdab27565d79ab5cb71"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "embedded_systems_engineer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Embedded_Systems_Engineer_Resume.docx",
+          "filename": "Embedded_Systems_Engineer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37071,
+          "sha256": "b01d498a7284ea6eac70240a853247b8a2f0ce271991d632a55b9a4a665e5e98"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "finance_intern_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Finance_Intern_Resume.docx",
+          "filename": "Finance_Intern_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37059,
+          "sha256": "ba562d06729b1690f7bde16b21b3360069b9a4fbbaf5e16f19a4f1689c66b6fa"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "founder_s_office_aarushi_sharma",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/founder_s_office__aarushi_sharma.pdf",
+          "filename": "founder_s_office__aarushi_sharma.pdf",
+          "format": "pdf",
+          "size_bytes": 49076,
+          "sha256": "6249fd139133ead142a7bfc1871a3da399e6aa3f960943f12f6f910a79a8f095"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "founder_s_office_siddharth_rao",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/founder_s_office__siddharth_rao.pdf",
+          "filename": "founder_s_office__siddharth_rao.pdf",
+          "format": "pdf",
+          "size_bytes": 51445,
+          "sha256": "377668e882686fa938561b3d295ea802b004529a8cc7d0a45c9f515aa8639dc2"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "founders_office_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Founders_Office_B.docx",
+          "filename": "Founders_Office_B.docx",
+          "format": "docx",
+          "size_bytes": 9730,
+          "sha256": "c775bbaed104a1aa9e99c22ed9c99d0eaf435db62e80ec1e35a8fe83fb06b97b"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "founders_office_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Founders_Office_Resume_1.docx",
+          "filename": "Founders_Office_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37866,
+          "sha256": "08c89e434f28fba5c4cf20c018acbbfbb86daeecfbec51838a2827799f05513b"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "founders_office_resume_1_aman_tripathi",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Founders_Office_Resume_1_Aman_Tripathi.docx",
+          "filename": "Founders_Office_Resume_1_Aman_Tripathi.docx",
+          "format": "docx",
+          "size_bytes": 10887,
+          "sha256": "677a5181384aa404f2fb3129cbe7c5c83c13d91c3d5159c9c9cf0ab7506d49be"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Founders_Office_Resume_1_Aman_Tripathi.pdf",
+          "filename": "Founders_Office_Resume_1_Aman_Tripathi.pdf",
+          "format": "pdf",
+          "size_bytes": 58569,
+          "sha256": "0da1909565b19ce84659bf5aecab8639ed64b4a4859b1a4fdf37a537036495c5"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Founders_Office_Resume_1_Aman_Tripathi.txt",
+          "filename": "Founders_Office_Resume_1_Aman_Tripathi.txt",
+          "format": "txt",
+          "size_bytes": 3336,
+          "sha256": "e9017c391dfc6292c40a22c799c4d629ba04bf0f5e8cef466541718d5921db25"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Founders_Office_Resume_1_Aman_Tripathi.xml",
+          "filename": "Founders_Office_Resume_1_Aman_Tripathi.xml",
+          "format": "xml",
+          "size_bytes": 4934,
+          "sha256": "f54bb6d0d0d6b9b773ad773e6803487e67d7999ddbfcdcf6528c452ce57b40b8"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "founders_office_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Founders_Office_Resume_2.docx",
+          "filename": "Founders_Office_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37842,
+          "sha256": "d2751dbf7e5b31a8518b8db115d1736688ea85cceb86165918b1938e46468f9c"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "founders_office_resume_2_shreya_mehra",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Founders_Office_Resume_2_Shreya_Mehra.docx",
+          "filename": "Founders_Office_Resume_2_Shreya_Mehra.docx",
+          "format": "docx",
+          "size_bytes": 10879,
+          "sha256": "c57efb7c18cc06f0dc6f8da3b13567416bfa543328f7a61d7dff12eaae966dbf"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Founders_Office_Resume_2_Shreya_Mehra.pdf",
+          "filename": "Founders_Office_Resume_2_Shreya_Mehra.pdf",
+          "format": "pdf",
+          "size_bytes": 58701,
+          "sha256": "507796791f56e3b460501bcc269d637b9de256befe290ef5e12fb11d73e091d2"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Founders_Office_Resume_2_Shreya_Mehra.txt",
+          "filename": "Founders_Office_Resume_2_Shreya_Mehra.txt",
+          "format": "txt",
+          "size_bytes": 3326,
+          "sha256": "73171250332b95990e8f980cb8b396f31b1dba02135ba8a5a6a5e64b10aaaf4c"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Founders_Office_Resume_2_Shreya_Mehra.xml",
+          "filename": "Founders_Office_Resume_2_Shreya_Mehra.xml",
+          "format": "xml",
+          "size_bytes": 4920,
+          "sha256": "b5793ffb3f51a831ea72eab637f4150c7e3a8a2d3daaee214ae4ba12aa9ce374"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "foundersoffice_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/FoundersOffice_A.docx",
+          "filename": "FoundersOffice_A.docx",
+          "format": "docx",
+          "size_bytes": 9826,
+          "sha256": "4f043bbc00755a00827fd5d375b091e8928fd25973cfa52efc3d61cf5acc88f8"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "full_stack_developer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Full_Stack_Developer_Resume.docx",
+          "filename": "Full_Stack_Developer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37064,
+          "sha256": "c1b4a2c85c6e371f12df10f6d1127f559e222e757f65ffa7868b95153dbeed13"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "game_developer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Game_Developer_Resume.docx",
+          "filename": "Game_Developer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37061,
+          "sha256": "0c7030b0da30f236b11d1e2085ece4ae13eb7b2a83c1e860affeff088eeeef86"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "graphic_designer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Graphic_Designer_Resume.docx",
+          "filename": "Graphic_Designer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37062,
+          "sha256": "497f7afc75c6a1c3eb5607af6ef8b0a56694368b7d17022af7d82b9475135131"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "hr_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/HR_A.docx",
+          "filename": "HR_A.docx",
+          "format": "docx",
+          "size_bytes": 9674,
+          "sha256": "eac09f16c085be0448c965d5fc1374c69797c8b3464d1653c17f0e985e92d215"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "hr_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/HR_B.docx",
+          "filename": "HR_B.docx",
+          "format": "docx",
+          "size_bytes": 9227,
+          "sha256": "c7746d81c006eb6faecf744c9063a5f1d9619126683fbc80aa7104dab0a097ed"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "hr_kavya_menon",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/hr__kavya_menon.pdf",
+          "filename": "hr__kavya_menon.pdf",
+          "format": "pdf",
+          "size_bytes": 48910,
+          "sha256": "4894ffe1c4f7a8616dd3a772be5f43112086e0051e6fe287ef24cca8701f588c"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "hr_rajesh_pillai",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/hr__rajesh_pillai.pdf",
+          "filename": "hr__rajesh_pillai.pdf",
+          "format": "pdf",
+          "size_bytes": 48048,
+          "sha256": "4fac3bf6b47db8fe4f93a6e7df8517ba8fc67053e508e013256f5a8465b080ae"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "hr_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/HR_Resume_1.docx",
+          "filename": "HR_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37784,
+          "sha256": "f78087a98c9246731150453c7b5b36c6ffbc1256b86c139b2a97c0f15cdf9deb"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "hr_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/HR_Resume_2.docx",
+          "filename": "HR_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37821,
+          "sha256": "0c71918b33f8f2fabfb1c90b80f2add8b615314c6ec5d9f747f05e9df5f630f7"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "ishaan_bhattacharya_python_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Ishaan Bhattacharya Python Resume.docx",
+          "filename": "Ishaan Bhattacharya Python Resume.docx",
+          "format": "docx",
+          "size_bytes": 12176,
+          "sha256": "7f89629946aa081f1ed6d518577e46c21c4fb04b8d732099d5884c067919b41d"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "it_support_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_A.docx",
+          "filename": "IT_Support_A.docx",
+          "format": "docx",
+          "size_bytes": 9332,
+          "sha256": "9abe06e4ef6876daa42daa9bb35a355d662355676715dfcd9242d9495bc26fdf"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "it_support_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_B.docx",
+          "filename": "IT_Support_B.docx",
+          "format": "docx",
+          "size_bytes": 9412,
+          "sha256": "f3752b47bb75e81ee54fd567cb3aaea6be59d3e6c0dcb40f8e7d990e20ae9ade"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "it_support_deepak_yadav",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/it_support__deepak_yadav.pdf",
+          "filename": "it_support__deepak_yadav.pdf",
+          "format": "pdf",
+          "size_bytes": 50772,
+          "sha256": "782cda0b714457730225d8bba79d02c2ee2690101e9fe11059383e579438b0be"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "it_support_farhan_ali",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/it_support__farhan_ali.pdf",
+          "filename": "it_support__farhan_ali.pdf",
+          "format": "pdf",
+          "size_bytes": 50415,
+          "sha256": "8d0250e2d1ed786d0106efe5f9789d97de2e4fe0d6aab768b7cc3073b933efe1"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "it_support_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_Resume_1.docx",
+          "filename": "IT_Support_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37890,
+          "sha256": "f0618ec5e19ed8de144f67b23e594660fa419cd4db213cc13054c9410466f337"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "it_support_resume_1_yash_choudhary",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_Resume_1_Yash_Choudhary.docx",
+          "filename": "IT_Support_Resume_1_Yash_Choudhary.docx",
+          "format": "docx",
+          "size_bytes": 10864,
+          "sha256": "01ad11a293161173ac7a006a6952e5e67ca385e9412a936c0abd53b50e20c4d7"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_Resume_1_Yash_Choudhary.pdf",
+          "filename": "IT_Support_Resume_1_Yash_Choudhary.pdf",
+          "format": "pdf",
+          "size_bytes": 59287,
+          "sha256": "c3e944327fcf123000272ac530544f1cc194be537526aea2f481bafc84b8725d"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_Resume_1_Yash_Choudhary.txt",
+          "filename": "IT_Support_Resume_1_Yash_Choudhary.txt",
+          "format": "txt",
+          "size_bytes": 3363,
+          "sha256": "56b20f5c0c501cd8670fdb33c70ae216ae635d227d3e53a7a8509ff429f45ca5"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_Resume_1_Yash_Choudhary.xml",
+          "filename": "IT_Support_Resume_1_Yash_Choudhary.xml",
+          "format": "xml",
+          "size_bytes": 4934,
+          "sha256": "a3acabb9ed2d8b7146be5b62230e696d8536b39d8cea370b3c59ee907e365ff5"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "it_support_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_Resume_2.docx",
+          "filename": "IT_Support_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37838,
+          "sha256": "bc4310e83163600131d9d2763731d20d89ebc15c8159ab6fb02de15e7782fa36"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "it_support_resume_2_anjali_bose",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_Resume_2_Anjali_Bose.docx",
+          "filename": "IT_Support_Resume_2_Anjali_Bose.docx",
+          "format": "docx",
+          "size_bytes": 10870,
+          "sha256": "47f6a9160be1c4c2b80c0a3afc53faae78d86ed1d1a0e7b19c472ac87b01bba2"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_Resume_2_Anjali_Bose.pdf",
+          "filename": "IT_Support_Resume_2_Anjali_Bose.pdf",
+          "format": "pdf",
+          "size_bytes": 59858,
+          "sha256": "fe05f27f13542dbb0b0ffb81ef532c6cf6c3a1fc847bc29c8d777140bfa2ba9d"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_Resume_2_Anjali_Bose.txt",
+          "filename": "IT_Support_Resume_2_Anjali_Bose.txt",
+          "format": "txt",
+          "size_bytes": 3361,
+          "sha256": "85154a2196f2edd1428645412e5b7e681ed40e6f16cfc6555d8584380ec2f4fa"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/IT_Support_Resume_2_Anjali_Bose.xml",
+          "filename": "IT_Support_Resume_2_Anjali_Bose.xml",
+          "format": "xml",
+          "size_bytes": 4936,
+          "sha256": "0f70b947889dd683ec5ea7fc48c4a7ad9c08372cecf7196bc6e7b848d32e8160"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "karthik_venkataraman_webdev_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Karthik Venkataraman WebDev Resume.docx",
+          "filename": "Karthik Venkataraman WebDev Resume.docx",
+          "format": "docx",
+          "size_bytes": 11958,
+          "sha256": "e5b3cd2ff99cfc1e6937d70419a1ff9800cb614f8e821748aeeba689a0d54984"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "manish_tripathi_cybersec_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Manish Tripathi CyberSec Resume.docx",
+          "filename": "Manish Tripathi CyberSec Resume.docx",
+          "format": "docx",
+          "size_bytes": 12560,
+          "sha256": "f3613622430c4824a249010932ae9800f4676e84a39d4773d74a81bef603c119"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "marketing_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Marketing_A.docx",
+          "filename": "Marketing_A.docx",
+          "format": "docx",
+          "size_bytes": 9645,
+          "sha256": "ccd7e85b2f0499e3b6de8f5241c32b2d09895875ef71851ee9bb47030dd3bf99"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "marketing_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Marketing_B.docx",
+          "filename": "Marketing_B.docx",
+          "format": "docx",
+          "size_bytes": 9301,
+          "sha256": "894a45fe63730e0bc42b6b63cb2c5c99478e61d4f10c5b88792e2c5846d13ede"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "marketing_harsh_vardhan",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/marketing__harsh_vardhan.pdf",
+          "filename": "marketing__harsh_vardhan.pdf",
+          "format": "pdf",
+          "size_bytes": 56671,
+          "sha256": "6cb66889aa6e7c43ea51c50cbc19b73b68cefb18198eb8e13adaf5ab25fdf825"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "marketing_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Marketing_Resume_1.docx",
+          "filename": "Marketing_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37754,
+          "sha256": "b0534567c669aedf9ecb54baf10de0d76f2fc7dfc31b71edcf48b8b5c0145db7"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "marketing_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Marketing_Resume_2.docx",
+          "filename": "Marketing_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37766,
+          "sha256": "f1a06c42ea830b9f3bd5d03612081ed905d1aa48be1c9ed7b24107081e2c74f0"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "marketing_tanya_kapoor",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/marketing__tanya_kapoor.pdf",
+          "filename": "marketing__tanya_kapoor.pdf",
+          "format": "pdf",
+          "size_bytes": 56230,
+          "sha256": "d26379b2e8ee298a0d228e08883e926b392bc513f0d2d90648a13a82a5749485"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "ml_engineer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/ML_Engineer_Resume.docx",
+          "filename": "ML_Engineer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37059,
+          "sha256": "c24b9427a71bee48a1908cc6fdd4091bd84bc660edf6dedebe27ed052c919362"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "nikhil_patil_webdev_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Nikhil Patil WebDev Resume.docx",
+          "filename": "Nikhil Patil WebDev Resume.docx",
+          "format": "docx",
+          "size_bytes": 11653,
+          "sha256": "04373ebecc15bbacad54079e521dade423951caf505c98e5f01691361b97c9fc"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "operations_intern_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Operations_Intern_Resume.docx",
+          "filename": "Operations_Intern_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37058,
+          "sha256": "06109d3ba31b5e3c5b87ff57dde5e10f7fefd262911b033a91f470f6b2d10afd"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "priya_nair_ai_developer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Priya Nair AI Developer Resume.docx",
+          "filename": "Priya Nair AI Developer Resume.docx",
+          "format": "docx",
+          "size_bytes": 11868,
+          "sha256": "3e3e90ee2ecc0af0d778da3209102ef6ba4ca153afe630abfe47f4e0ceb00757"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "product_manager_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Product_Manager_Resume.docx",
+          "filename": "Product_Manager_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37062,
+          "sha256": "4ba4bd06447f2de92cd170a562acefa372443fff642ecc307503f54c82c61431"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "python_dev_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Dev_A.docx",
+          "filename": "Python_Dev_A.docx",
+          "format": "docx",
+          "size_bytes": 9804,
+          "sha256": "d61430dfd8f6815691203b312db6c3f2ebb5ff71a1071541a84cc157d18f29b6"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "python_dev_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Dev_B.docx",
+          "filename": "Python_Dev_B.docx",
+          "format": "docx",
+          "size_bytes": 9272,
+          "sha256": "2712bc5338eef70f55f098b98a1f7399eecd7ab90d8b144e5f0d0c90791a6b07"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "python_dev_karan_verma",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/python_dev__karan_verma.pdf",
+          "filename": "python_dev__karan_verma.pdf",
+          "format": "pdf",
+          "size_bytes": 50561,
+          "sha256": "bfd854fa704b11f1fc1020349b7616eb6850f3e3965da699b09994cdbec2aaab"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "python_dev_sneha_reddy",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/python_dev__sneha_reddy.pdf",
+          "filename": "python_dev__sneha_reddy.pdf",
+          "format": "pdf",
+          "size_bytes": 50435,
+          "sha256": "b0b0e6f15d749f88a19623f630372157386b427ef7fa893fbd92dabfb9907151"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "python_developer_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Developer_Resume_1.docx",
+          "filename": "Python_Developer_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37879,
+          "sha256": "770e58c680d4d640c6bec346cf6af2588c944ec355a3825404c488f34d3bfbae"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "python_developer_resume_1_karan_malhotra",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Developer_Resume_1_Karan_Malhotra.docx",
+          "filename": "Python_Developer_Resume_1_Karan_Malhotra.docx",
+          "format": "docx",
+          "size_bytes": 10863,
+          "sha256": "ca39e4abad2c68dfc5db8291ea72ad42d007b8909636eae12d70c399dbdf61df"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Developer_Resume_1_Karan_Malhotra.pdf",
+          "filename": "Python_Developer_Resume_1_Karan_Malhotra.pdf",
+          "format": "pdf",
+          "size_bytes": 59725,
+          "sha256": "69c8c352bb6b1d0a5f3d3e4b6698fc975f7f81b313d7ef2d127d4b532a931ac0"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Developer_Resume_1_Karan_Malhotra.txt",
+          "filename": "Python_Developer_Resume_1_Karan_Malhotra.txt",
+          "format": "txt",
+          "size_bytes": 3238,
+          "sha256": "716b7b6234f3774890ef65985d081ccf76b6ccc255ed0f107e10070599aaec33"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Developer_Resume_1_Karan_Malhotra.xml",
+          "filename": "Python_Developer_Resume_1_Karan_Malhotra.xml",
+          "format": "xml",
+          "size_bytes": 4853,
+          "sha256": "350622d631987c8e708e8ae9a4898e97c130220ecb7a8c5dacd38e03ba4683c9"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "python_developer_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Developer_Resume_2.docx",
+          "filename": "Python_Developer_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37817,
+          "sha256": "46ad207fd6a5e884744f28aacc478e2ef3a85af8cc0672a1b4bbe6263ddc69ae"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "python_developer_resume_2_ananya_reddy",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Developer_Resume_2_Ananya_Reddy.docx",
+          "filename": "Python_Developer_Resume_2_Ananya_Reddy.docx",
+          "format": "docx",
+          "size_bytes": 10872,
+          "sha256": "c1122186863a639d6b203d9f4107a1c35016a0abb6890babf9fd5de01369a68d"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Developer_Resume_2_Ananya_Reddy.pdf",
+          "filename": "Python_Developer_Resume_2_Ananya_Reddy.pdf",
+          "format": "pdf",
+          "size_bytes": 60062,
+          "sha256": "844ddd05e31d337cb0499cfa39ee38c83f93470446c4de31b4d83bbdbdd67832"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Developer_Resume_2_Ananya_Reddy.txt",
+          "filename": "Python_Developer_Resume_2_Ananya_Reddy.txt",
+          "format": "txt",
+          "size_bytes": 3226,
+          "sha256": "f76e62ae64af66dd0e531c5b97a7ed81d1504d9774f6f050be8f54cb8dc9eff9"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Python_Developer_Resume_2_Ananya_Reddy.xml",
+          "filename": "Python_Developer_Resume_2_Ananya_Reddy.xml",
+          "format": "xml",
+          "size_bytes": 4837,
+          "sha256": "1e3db49d328bcdab7efc4e92c6b719c40cfb1cc9e1713327a7f33c9fc43fe624"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "qa_engineer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/QA_Engineer_Resume.docx",
+          "filename": "QA_Engineer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37058,
+          "sha256": "c8c3a5524b987cdec546f45bd65374730cae7026fa31f310a4721e95e86dde7e"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "rahul_saxena_sde_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Rahul Saxena SDE Resume.docx",
+          "filename": "Rahul Saxena SDE Resume.docx",
+          "format": "docx",
+          "size_bytes": 12143,
+          "sha256": "595b62e828ad096d19cd190bc4a45eb5ba8794951380f5ebc7db7da2ff95a09f"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "riya_menon_appdev_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Riya Menon AppDev Resume.docx",
+          "filename": "Riya Menon AppDev Resume.docx",
+          "format": "docx",
+          "size_bytes": 12387,
+          "sha256": "5adb5489343ceae86b6b0c1fce29c44aa8a15407e47a1b881e271ed5a885b66e"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sahil_deshmukh_ds_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sahil Deshmukh DS Resume.docx",
+          "filename": "Sahil Deshmukh DS Resume.docx",
+          "format": "docx",
+          "size_bytes": 11911,
+          "sha256": "1a0b76acf3c6b2e52a77aa74c2fb04301e188120a04f06e4ef20099d0ee23499"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sales_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_A.docx",
+          "filename": "Sales_A.docx",
+          "format": "docx",
+          "size_bytes": 9672,
+          "sha256": "5ce303b1d8c6996d501b308423c6bae4e14a82c0c120e2c0da28b145d53c1292"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sales_aman_tiwari",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/sales__aman_tiwari.pdf",
+          "filename": "sales__aman_tiwari.pdf",
+          "format": "pdf",
+          "size_bytes": 56486,
+          "sha256": "9a2a7dedc4f6b4650f5911b51e91aa14c10310def00944279862f5a265185189"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sales_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_B.docx",
+          "filename": "Sales_B.docx",
+          "format": "docx",
+          "size_bytes": 9704,
+          "sha256": "849bc8413905ffb03d36c1fac6917d372d06612248a388ce97395f4442a0ce2e"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sales_neha_choudhary",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/sales__neha_choudhary.pdf",
+          "filename": "sales__neha_choudhary.pdf",
+          "format": "pdf",
+          "size_bytes": 48952,
+          "sha256": "e4a593522f740a5e511e4fbdf0f8a524525666de3539435cde57dc54db73439e"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sales_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_Resume_1.docx",
+          "filename": "Sales_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37806,
+          "sha256": "eadfdf1f20f596a6cc5c2153176e5dc20b3a55c39188d65a64336320e4084c84"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sales_resume_1_sahil_khanna",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_Resume_1_Sahil_Khanna.docx",
+          "filename": "Sales_Resume_1_Sahil_Khanna.docx",
+          "format": "docx",
+          "size_bytes": 10875,
+          "sha256": "eb2c013b8865ff3c029c8b3972e76fa14df93f10034dfe08e6331ed3e3096271"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_Resume_1_Sahil_Khanna.pdf",
+          "filename": "Sales_Resume_1_Sahil_Khanna.pdf",
+          "format": "pdf",
+          "size_bytes": 57975,
+          "sha256": "bb29d4aca47095b3fc8d406bf4d14004ef7b6c8300704905d24866f272948710"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_Resume_1_Sahil_Khanna.txt",
+          "filename": "Sales_Resume_1_Sahil_Khanna.txt",
+          "format": "txt",
+          "size_bytes": 3287,
+          "sha256": "cf7549b6934193868599328333c0bf8e0c90f331c78c9edd092bfb6fa983b4d2"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_Resume_1_Sahil_Khanna.xml",
+          "filename": "Sales_Resume_1_Sahil_Khanna.xml",
+          "format": "xml",
+          "size_bytes": 4858,
+          "sha256": "b538ad61839196b2a3dbfcf6263c68a112d0fc51f5a1d57f38fb823b55602b92"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "sales_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_Resume_2.docx",
+          "filename": "Sales_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37786,
+          "sha256": "c39a55e022397dfadd830f5f94d281400dc0900a87e3404e2284f7f4f2e7b61e"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sales_resume_2_riya_singh",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_Resume_2_Riya_Singh.docx",
+          "filename": "Sales_Resume_2_Riya_Singh.docx",
+          "format": "docx",
+          "size_bytes": 10883,
+          "sha256": "b07873bbec4f428b057aea81738edba80a84f8c0cec79d6406f81ff5e5b2ca96"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_Resume_2_Riya_Singh.pdf",
+          "filename": "Sales_Resume_2_Riya_Singh.pdf",
+          "format": "pdf",
+          "size_bytes": 58531,
+          "sha256": "1e62d47d2bed8f38d4082171660df3c8653c7b073b62c63b28e02fc1db8d5ac3"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_Resume_2_Riya_Singh.txt",
+          "filename": "Sales_Resume_2_Riya_Singh.txt",
+          "format": "txt",
+          "size_bytes": 3278,
+          "sha256": "3d0fd3e76a61d1198f00cddb0dfa29ec909103f225ff86887583b4eb5903969c"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sales_Resume_2_Riya_Singh.xml",
+          "filename": "Sales_Resume_2_Riya_Singh.xml",
+          "format": "xml",
+          "size_bytes": 4849,
+          "sha256": "f595aed2f4a9518778a9fb8dfc5c61b15486e327d8dc56bbf1de4bdf53ece52e"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "sde_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_A.docx",
+          "filename": "SDE_A.docx",
+          "format": "docx",
+          "size_bytes": 9953,
+          "sha256": "58633995f1ac0b34a6e651f63559ee387f29eee17f2539160f794ed9fa82cd48"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sde_arjun_desai",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/sde__arjun_desai.pdf",
+          "filename": "sde__arjun_desai.pdf",
+          "format": "pdf",
+          "size_bytes": 52122,
+          "sha256": "06fe844059fe310e010a4ba394e7143b789e6c7d6be2ff3349c922752d34af77"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sde_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_B.docx",
+          "filename": "SDE_B.docx",
+          "format": "docx",
+          "size_bytes": 9720,
+          "sha256": "003c2ba7fa005a24daac8986e57a489299c448743c39771810eb905a632a00e3"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sde_ishaan_kapoor",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/sde__ishaan_kapoor.pdf",
+          "filename": "sde__ishaan_kapoor.pdf",
+          "format": "pdf",
+          "size_bytes": 50821,
+          "sha256": "29e2fbc7e88bd666faa421e6588b2a29e76a28dd327708cf9495cb46414f1ecb"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sde_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_Resume_1.docx",
+          "filename": "SDE_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37887,
+          "sha256": "108c8752029387c16c11afe28e6656e6fe8a324f0269068a698317e787b6faf5"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sde_resume_1_aditya_joshi",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_Resume_1_Aditya_Joshi.docx",
+          "filename": "SDE_Resume_1_Aditya_Joshi.docx",
+          "format": "docx",
+          "size_bytes": 10871,
+          "sha256": "4e14d6a53efc07d8927ea32e3e46b89b1c53b1b7e6ceff6aff029d48144151dc"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_Resume_1_Aditya_Joshi.pdf",
+          "filename": "SDE_Resume_1_Aditya_Joshi.pdf",
+          "format": "pdf",
+          "size_bytes": 59987,
+          "sha256": "917ac53b5fa68b43484480a608844bf7a8cc80f5ea17c32ab7c51b189e6029a0"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_Resume_1_Aditya_Joshi.txt",
+          "filename": "SDE_Resume_1_Aditya_Joshi.txt",
+          "format": "txt",
+          "size_bytes": 3239,
+          "sha256": "6e8ce1a5cff628ef80412bd4a8b7fd7783bbeec2b9696de83eb60ee969624345"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_Resume_1_Aditya_Joshi.xml",
+          "filename": "SDE_Resume_1_Aditya_Joshi.xml",
+          "format": "xml",
+          "size_bytes": 4838,
+          "sha256": "671a52947c8c4c6c395e10c8efd807d024c673d745c42036342b0b46c96ed5b0"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "sde_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_Resume_2.docx",
+          "filename": "SDE_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37836,
+          "sha256": "9ac7c6d1f922da9633d7a71249b288dc1a088b33184384942527bfa15214214e"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "sde_resume_2_meera_pillai",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_Resume_2_Meera_Pillai.docx",
+          "filename": "SDE_Resume_2_Meera_Pillai.docx",
+          "format": "docx",
+          "size_bytes": 10865,
+          "sha256": "f12159845db9ebaaddd5e1f1fe4084778c26524dac5dea53aa1ed2b61c60a1ac"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_Resume_2_Meera_Pillai.pdf",
+          "filename": "SDE_Resume_2_Meera_Pillai.pdf",
+          "format": "pdf",
+          "size_bytes": 60047,
+          "sha256": "883d1e6dd6e1be7f30e539542b598cebf2eb53551bd0d605389bb26726eb038e"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_Resume_2_Meera_Pillai.txt",
+          "filename": "SDE_Resume_2_Meera_Pillai.txt",
+          "format": "txt",
+          "size_bytes": 3215,
+          "sha256": "671fd8df9221b0e1bce79037daa48bd1c1fdabc2af23c996f048a35ec5d27c91"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/SDE_Resume_2_Meera_Pillai.xml",
+          "filename": "SDE_Resume_2_Meera_Pillai.xml",
+          "format": "xml",
+          "size_bytes": 4806,
+          "sha256": "34a3309458e1c2d10c3d35b712bf7671574dd83446ffb67e4e560e755c0d662f"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "sneha_iyer_sde_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Sneha Iyer SDE Resume.docx",
+          "filename": "Sneha Iyer SDE Resume.docx",
+          "format": "docx",
+          "size_bytes": 12410,
+          "sha256": "74166dfc7a7915cceb208c9d11e65463628791a849aebdb38d9bda120a96ce03"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "social_media_intern_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_A.docx",
+          "filename": "Social_Media_Intern_A.docx",
+          "format": "docx",
+          "size_bytes": 9628,
+          "sha256": "2f417bc6a8a76cbff6fd576dfe8271bc08114f4335ba2bd555d212071b4c3216"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "social_media_intern_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_B.docx",
+          "filename": "Social_Media_Intern_B.docx",
+          "format": "docx",
+          "size_bytes": 9698,
+          "sha256": "9941c3e660d508c2e696464e39c4326f3abe0d159a3b56a53186adbb49e0d984"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "social_media_intern_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_Resume_1.docx",
+          "filename": "Social_Media_Intern_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37779,
+          "sha256": "6eafd3aba5e0999e614b010bcedcd1dde0cbd3a007e01c9c02d9bcffb5d7ca8a"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "social_media_intern_resume_1_arjun_bhatt",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_Resume_1_Arjun_Bhatt.docx",
+          "filename": "Social_Media_Intern_Resume_1_Arjun_Bhatt.docx",
+          "format": "docx",
+          "size_bytes": 10899,
+          "sha256": "6528dca97017965642f510fc4f4b7f40d908bfd7812f6ad0bd651bfbd1ec6c3e"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_Resume_1_Arjun_Bhatt.pdf",
+          "filename": "Social_Media_Intern_Resume_1_Arjun_Bhatt.pdf",
+          "format": "pdf",
+          "size_bytes": 59967,
+          "sha256": "8b436fa5ea79591ac715a2e3211d7c4ab124ad6a098e287a95957a210cab6271"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_Resume_1_Arjun_Bhatt.txt",
+          "filename": "Social_Media_Intern_Resume_1_Arjun_Bhatt.txt",
+          "format": "txt",
+          "size_bytes": 3404,
+          "sha256": "84f1dcb585a3e02432c903abdaff5176e95fb53e6bf9155dcb2f6ea582393133"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_Resume_1_Arjun_Bhatt.xml",
+          "filename": "Social_Media_Intern_Resume_1_Arjun_Bhatt.xml",
+          "format": "xml",
+          "size_bytes": 5016,
+          "sha256": "8bce944417c78b46d1594dad385d6b11580d0b5eaaa2ee6afe98884e9cfb49e9"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "social_media_intern_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_Resume_2.docx",
+          "filename": "Social_Media_Intern_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37820,
+          "sha256": "1344854dd268f329b63228ed6f5c3e04fbbb614e0919954d67ddfb650a838528"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "social_media_intern_resume_2_tanya_chauhan",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_Resume_2_Tanya_Chauhan.docx",
+          "filename": "Social_Media_Intern_Resume_2_Tanya_Chauhan.docx",
+          "format": "docx",
+          "size_bytes": 10915,
+          "sha256": "b45a06f7dd98d457f1747aefabd9596cc73d54b0e062d817d3c5180d8f90c291"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_Resume_2_Tanya_Chauhan.pdf",
+          "filename": "Social_Media_Intern_Resume_2_Tanya_Chauhan.pdf",
+          "format": "pdf",
+          "size_bytes": 59693,
+          "sha256": "10ddeff69713cbd2cb31a3364165ad064d0c190d67a073232a7e300436bd6865"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_Resume_2_Tanya_Chauhan.txt",
+          "filename": "Social_Media_Intern_Resume_2_Tanya_Chauhan.txt",
+          "format": "txt",
+          "size_bytes": 3409,
+          "sha256": "86dd798ea0d5ae6595c30bad4e2e4aa403972602e146c29abb11cee13864d951"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Social_Media_Intern_Resume_2_Tanya_Chauhan.xml",
+          "filename": "Social_Media_Intern_Resume_2_Tanya_Chauhan.xml",
+          "format": "xml",
+          "size_bytes": 5021,
+          "sha256": "c058a12d6761a771ce070f4cb381ff746e5a690e2e2c406778391927689898eb"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "social_media_intern_sara_khan",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/social_media_intern__sara_khan.pdf",
+          "filename": "social_media_intern__sara_khan.pdf",
+          "format": "pdf",
+          "size_bytes": 50103,
+          "sha256": "81dccfcea44d7ba5f83649381254c03e95ccc6cc4d06b9e00a71cb7c4e719cad"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "social_media_intern_yash_agarwal",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/social_media_intern__yash_agarwal.pdf",
+          "filename": "social_media_intern__yash_agarwal.pdf",
+          "format": "pdf",
+          "size_bytes": 50185,
+          "sha256": "a8432c6c6e2fefc93014a816dffc943328c51bebf17a4567507512fe8da3a92e"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "technical_writer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Technical_Writer_Resume.docx",
+          "filename": "Technical_Writer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37061,
+          "sha256": "e9d135c45f5bd4853e372caa2688f3df59b91713e642c5eafcf4a7ea64886499"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "ui_ux_designer_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/UI_UX_Designer_Resume.docx",
+          "filename": "UI_UX_Designer_Resume.docx",
+          "format": "docx",
+          "size_bytes": 37060,
+          "sha256": "3e6489816639d3d13b0ab3955bc9097e3eacf2585e8afea35c60382613c8cbd6"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "video_editing_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editing_A.docx",
+          "filename": "Video_Editing_A.docx",
+          "format": "docx",
+          "size_bytes": 9969,
+          "sha256": "3a845f455ddddc1645eae390798d02bff2c57b33b51ae7a14252fb44eceeb421"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "video_editing_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editing_B.docx",
+          "filename": "Video_Editing_B.docx",
+          "format": "docx",
+          "size_bytes": 9747,
+          "sha256": "086db8a45c2193feccc61e2c80ceda287dd7527a606908bd49190985c2ffb9c0"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "video_editing_manav_chopra",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/video_editing__manav_chopra.pdf",
+          "filename": "video_editing__manav_chopra.pdf",
+          "format": "pdf",
+          "size_bytes": 49495,
+          "sha256": "875e70fe17c089aa40369504240d7df80093c467e0491d6d131405099cca0173"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "video_editing_pooja_malhotra",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/video_editing__pooja_malhotra.pdf",
+          "filename": "video_editing__pooja_malhotra.pdf",
+          "format": "pdf",
+          "size_bytes": 49826,
+          "sha256": "cd6347db8a7233af1984f8b35cea8e81c65260aabc87a9deedc7922e3e809b95"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "video_editing_resume_1_rahul_saxena",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editing_Resume_1_Rahul_Saxena.docx",
+          "filename": "Video_Editing_Resume_1_Rahul_Saxena.docx",
+          "format": "docx",
+          "size_bytes": 10828,
+          "sha256": "36ee8c9f9e7b448c087450fca81f3ee415a313bcce3a0ad21566c2a6c80da2cb"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editing_Resume_1_Rahul_Saxena.pdf",
+          "filename": "Video_Editing_Resume_1_Rahul_Saxena.pdf",
+          "format": "pdf",
+          "size_bytes": 58415,
+          "sha256": "03eb4f70f7415c3a14a337d4cb985050aa34ef6145821ed03e5158b2992553f1"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editing_Resume_1_Rahul_Saxena.txt",
+          "filename": "Video_Editing_Resume_1_Rahul_Saxena.txt",
+          "format": "txt",
+          "size_bytes": 3275,
+          "sha256": "aaae1ba4ce7d0d98223b0b48a9cf42e2f5b806670a2e7fff17bfc47aa3207ec0"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editing_Resume_1_Rahul_Saxena.xml",
+          "filename": "Video_Editing_Resume_1_Rahul_Saxena.xml",
+          "format": "xml",
+          "size_bytes": 4854,
+          "sha256": "727f800f6ebf35dd8b9c9b731ca993f58013a78a47193064a75b46fd3816f1b2"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "video_editing_resume_2_pooja_agarwal",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editing_Resume_2_Pooja_Agarwal.docx",
+          "filename": "Video_Editing_Resume_2_Pooja_Agarwal.docx",
+          "format": "docx",
+          "size_bytes": 10834,
+          "sha256": "775e1c3ca967553e578a69d10c03f2422a8c9dd6b6870288ffe9f153f0164f46"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editing_Resume_2_Pooja_Agarwal.pdf",
+          "filename": "Video_Editing_Resume_2_Pooja_Agarwal.pdf",
+          "format": "pdf",
+          "size_bytes": 59122,
+          "sha256": "4aac0e4b9fc7d1ad5644b69918c5b5349ef510ec32feaa103cddcff57fcbd9bc"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editing_Resume_2_Pooja_Agarwal.txt",
+          "filename": "Video_Editing_Resume_2_Pooja_Agarwal.txt",
+          "format": "txt",
+          "size_bytes": 3291,
+          "sha256": "c21c6a82b53199b3f2466336b166e657e20ad70cb688baa7b8799cda65c31e50"
+        },
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editing_Resume_2_Pooja_Agarwal.xml",
+          "filename": "Video_Editing_Resume_2_Pooja_Agarwal.xml",
+          "format": "xml",
+          "size_bytes": 4878,
+          "sha256": "9338ecb4cb6abe53bf0dfe50de7c06d3ae2325b51b043b34a7db41af1876d886"
+        }
+      ],
+      "formats": [
+        "docx",
+        "pdf",
+        "txt",
+        "xml"
+      ],
+      "needs_review": true
+    },
+    {
+      "candidate_key": "video_editor_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editor_Resume_1.docx",
+          "filename": "Video_Editor_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37817,
+          "sha256": "dae2007418a673907cdcd5d94a788f19e5811354de5b074a1d114c33793273fe"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "video_editor_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Video_Editor_Resume_2.docx",
+          "filename": "Video_Editor_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37791,
+          "sha256": "26d1f3ec8b36e29e5a887b12367435ba98570fd55541f366c4d5878cb715c2e9"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "vikram_nair_appdev_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Vikram Nair AppDev Resume.docx",
+          "filename": "Vikram Nair AppDev Resume.docx",
+          "format": "docx",
+          "size_bytes": 12699,
+          "sha256": "1438655ce344b838c3da9aad63fda6883b5f2ef06489defe630bb844b042ba22"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "vishal_rathore_python_resume",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Vishal Rathore Python Resume.docx",
+          "filename": "Vishal Rathore Python Resume.docx",
+          "format": "docx",
+          "size_bytes": 11678,
+          "sha256": "0454258464a8b54177f666a50dbe6e587a457d07b6eb289d9345f5d9f52128d0"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "web_dev_a",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Web_Dev_A.docx",
+          "filename": "Web_Dev_A.docx",
+          "format": "docx",
+          "size_bytes": 9552,
+          "sha256": "d1a5f05de95fed2b00f27111c36b226a8078f84b3d02306dde757c53eade375a"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "web_dev_aditya_kulkarni",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/web_dev__aditya_kulkarni.pdf",
+          "filename": "web_dev__aditya_kulkarni.pdf",
+          "format": "pdf",
+          "size_bytes": 52081,
+          "sha256": "f69fda77915b062e0367700eed0579d70e8eccb7d918aa0442f6ccad58eb6287"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "web_dev_b",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Web_Dev_B.docx",
+          "filename": "Web_Dev_B.docx",
+          "format": "docx",
+          "size_bytes": 9904,
+          "sha256": "42582d27de8e1de1c4abbd520be153cc08be23d82e9a163b6282b3a629fd0e05"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "web_dev_priya_nair",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/web_dev__priya_nair.pdf",
+          "filename": "web_dev__priya_nair.pdf",
+          "format": "pdf",
+          "size_bytes": 49558,
+          "sha256": "e79c855da0e8a1b8d31c8478715a6e506bb31f15694e030cbbefd0a73bcfb4f1"
+        }
+      ],
+      "formats": [
+        "pdf"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "web_developer_resume_1",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Web_Developer_Resume_1.docx",
+          "filename": "Web_Developer_Resume_1.docx",
+          "format": "docx",
+          "size_bytes": 37942,
+          "sha256": "93a2c7d484b31587907b46e0edbbfae2ff5ea3b7c5f55a6dbd484fa654dd7ef4"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "web_developer_resume_2",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Web_Developer_Resume_2.docx",
+          "filename": "Web_Developer_Resume_2.docx",
+          "format": "docx",
+          "size_bytes": 37867,
+          "sha256": "374d0b6fb893b3ae6fe812beb59f98ac56039d6a873a0e5efab94ffa10e1c84e"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "web_developer_resume_3",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Web_Developer_Resume_3.docx",
+          "filename": "Web_Developer_Resume_3.docx",
+          "format": "docx",
+          "size_bytes": 37638,
+          "sha256": "4eb10beba3ea0b89bf6713ec68cdb371221d1742fafc2577e70e333164805b8a"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    },
+    {
+      "candidate_key": "web_developer_resume_4",
+      "files": [
+        {
+          "path": "data/dummy_resumes/Dummy Resumes/Web_Developer_Resume_4.docx",
+          "filename": "Web_Developer_Resume_4.docx",
+          "format": "docx",
+          "size_bytes": 37612,
+          "sha256": "5c952ae04dfd7344d53a31943ad7dc0f0a3c461f4962e308cf341fdb64fdeef2"
+        }
+      ],
+      "formats": [
+        "docx"
+      ],
+      "needs_review": false
+    }
+  ]
+}

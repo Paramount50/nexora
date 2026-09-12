@@ -38,6 +38,7 @@
 - [ ] Normalize extracted text
 - [ ] Detect resume sections
 - [~] Create candidate evidence store
+- [x] Build mixed-format resume manifest
 
 ## Person 2 — Matching / Ranking
 - [ ] Review JD requirements relevant to scoring

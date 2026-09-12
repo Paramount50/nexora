@@ -63,3 +63,13 @@ This writes `dummy_candidates.json`, which is an intermediate parser fixture
 for matching and extraction tests. The next parsing step is to add DOCX and
 PDF ingestion, then build a manifest to identify duplicate or alternate
 representations before ranking all unique candidates.
+
+Generate the conservative file manifest with:
+
+```text
+python src/parsing/manifest.py
+```
+
+This writes `dummy_manifest.json`. It groups identical normalized filenames and
+flags multi-format groups for review; it does not merge candidates
+automatically.
