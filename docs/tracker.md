@@ -199,15 +199,15 @@
 # Phase 7 — Streamlit Demo
 
 ## Person 3 — Owner
-- [ ] Build ranking table
-- [ ] Show all 18 candidates
-- [ ] Show final score
-- [ ] Show keyword score
-- [ ] Show semantic score
-- [ ] Show mandatory coverage
-- [ ] Build candidate detail view
-- [ ] Show evidence behind matches
-- [ ] Show top-3 explanations
+- [x] Build ranking table
+- [~] Show all candidates (synthetic demo currently shows 120; runtime count remains configurable)
+- [x] Show final score
+- [x] Show keyword score
+- [~] Show semantic score (ranking contract ready; default UI uses keyword mode)
+- [x] Show mandatory coverage
+- [x] Build candidate detail view
+- [x] Show evidence behind matches
+- [x] Show top-3 explanations
 - [ ] Build candidate comparison view
 
 ## Person 1
