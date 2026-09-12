@@ -60,6 +60,45 @@ function exportBrief(candidates, jobTitle) {
   URL.revokeObjectURL(url);
 }
 
+function RecruiterChat({ analysis }) {
+  const [open, setOpen] = useState(false);
+  const [question, setQuestion] = useState('');
+  const [messages, setMessages] = useState([]);
+  const [asking, setAsking] = useState(false);
+
+  async function ask(value = question) {
+    const prompt = value.trim();
+    if (!prompt || asking) return;
+    setQuestion('');
+    setMessages(current => [...current, { role: 'user', text: prompt }]);
+    setAsking(true);
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question: prompt }),
+      });
+      const payload = await response.json();
+      if (!response.ok) throw new Error(payload.detail || 'Chat is unavailable.');
+      setMessages(current => [...current, { role: 'assistant', text: payload.answer }]);
+    } catch (requestError) {
+      setMessages(current => [...current, { role: 'assistant', text: requestError.message || 'Chat is unavailable.' }]);
+    } finally {
+      setAsking(false);
+    }
+  }
+
+  return <>
+    <button className="chat-launcher" onClick={() => setOpen(value => !value)}>{open ? 'Close assistant' : 'Ask Nexora'} <span>✦</span></button>
+    {open && <section className="recruiter-chat" aria-label="Recruiter assistant">
+      <div className="chat-header"><div><span className="section-kicker">NEXORA ASSISTANT</span><strong>Recruiter decision support</strong></div><button className="chat-close" onClick={() => setOpen(false)}>×</button></div>
+      <p className="chat-grounding">Answers use only the current JD and ranked resume evidence.</p>
+      <div className="chat-messages">{!messages.length && <div className="chat-empty"><strong>Ask about this shortlist</strong><span>Try a ranking, candidate gap, or evidence question.</span><div className="prompt-list"><button onClick={() => ask('Who are the top candidates?')}>Who are the top candidates?</button><button onClick={() => ask('Why is the top candidate ranked first?')}>Why is the top candidate ranked first?</button></div></div>}{messages.map((message, index) => <div className={`chat-message ${message.role}`} key={`${message.role}-${index}`}>{message.text}</div>)}{asking && <div className="chat-message assistant typing">Reviewing evidence...</div>}</div>
+      <form className="chat-form" onSubmit={event => { event.preventDefault(); ask(); }}><input value={question} onChange={event => setQuestion(event.target.value)} placeholder="Ask about the ranking..." /><button disabled={!question.trim() || asking}>Send</button></form>
+    </section>}
+  </>;
+}
+
 function App() {
   const [screen, setScreen] = useState('intake');
   const [analysis, setAnalysis] = useState(null);
@@ -114,6 +153,7 @@ function App() {
       {screen === 'shortlist' && analysis && <ShortlistScreen key="shortlist" go={go} candidates={candidates} jobTitle={analysis.job?.job_title} setSelectedId={setSelectedId} />}
       {screen === 'intake' && <IntakeScreen key="intake" onAnalyze={analyze} loading={loading} />}
     </AnimatePresence>
+    {analysis && screen !== 'intake' && <RecruiterChat analysis={analysis} />}
   </main></div>;
 }
 

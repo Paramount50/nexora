@@ -8,6 +8,7 @@ from typing import Any
 
 from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -16,6 +17,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from src.evaluation.jd_bias import flag_jd_bias
+from src.explanations.recruiter_chat import answer_recruiter_question, answer_with_gemini
 from src.matching.ranker import rank_candidates
 from src.pipeline import rank_documents
 from src.parsing.jd_loader import extract_jd_text, extract_requirements
@@ -30,7 +32,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 RANKING_CACHE: dict[str, dict[str, Any]] = {}
+CURRENT_RANKINGS: list[dict[str, Any]] = []
 FRONTEND_DIST = ROOT / "frontend" / "dist"
+
+
+class ChatRequest(BaseModel):
+    question: str
+
+
+class ChatResponse(BaseModel):
+    answer: str
+    grounded: bool = True
 
 
 def parse_upload(upload: UploadFile, directory: Path) -> Path:
@@ -69,6 +81,8 @@ def analyze(
             semantic_engine=semantic_engine,
             fusion_config=fusion_config,
         )
+        CURRENT_RANKINGS.clear()
+        CURRENT_RANKINGS.extend(rankings)
         for item in rankings:
             RANKING_CACHE[item["candidate_id"]] = item
         return {
@@ -104,6 +118,12 @@ def candidate(candidate_id: str) -> dict[str, Any]:
     if candidate_data is None:
         return {"error": "Candidate not found", "candidate_id": candidate_id}
     return candidate_data
+
+
+@app.post("/api/chat", response_model=ChatResponse)
+def chat(request: ChatRequest) -> ChatResponse:
+    answer = answer_with_gemini(request.question, CURRENT_RANKINGS)
+    return ChatResponse(answer=answer or answer_recruiter_question(request.question, CURRENT_RANKINGS))
 
 
 def fusion_for_mode(mode: str) -> dict[str, float]:
