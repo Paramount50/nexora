@@ -14,6 +14,7 @@ from src.matching.semantic_engine import SemanticEngine
 def run_pipeline(
     data_dir: Path,
     semantic_engine: SemanticEngine | None = None,
+    fusion_config: dict[str, float] | None = None,
 ) -> list[dict[str, Any]]:
     dataset, requirement_data = load_dataset(data_dir)
     candidates = dataset["candidates"]
@@ -31,6 +32,7 @@ def run_pipeline(
         candidates,
         requirements,
         semantic_results=semantic_results,
+        fusion_config=fusion_config,
     )
 
 

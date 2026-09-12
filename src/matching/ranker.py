@@ -16,6 +16,7 @@ def rank_candidates(
     requirements: list[dict[str, Any]],
     semantic_engine: Any | None = None,
     semantic_results: dict[tuple[str, str], dict[str, Any]] | None = None,
+    fusion_config: dict[str, float] | None = None,
 ) -> list[dict[str, Any]]:
     rankings = [
         rank_candidate(
@@ -23,6 +24,7 @@ def rank_candidates(
             requirements,
             semantic_engine=semantic_engine,
             semantic_results=semantic_results,
+            fusion_config=fusion_config,
         )
         for candidate in candidates
     ]
@@ -37,6 +39,7 @@ def rank_candidate(
     requirements: list[dict[str, Any]],
     semantic_engine: Any | None = None,
     semantic_results: dict[tuple[str, str], dict[str, Any]] | None = None,
+    fusion_config: dict[str, float] | None = None,
 ) -> dict[str, Any]:
     requirement_results = []
     for requirement in requirements:
@@ -50,7 +53,9 @@ def rank_candidate(
             )
             semantic_result = candidate_semantic_results[0] if candidate_semantic_results else None
             semantic_result = semantic_results[0] if semantic_results else None
-        requirement_results.append(fuse_requirement_result(keyword_result, semantic_result))
+        requirement_results.append(
+            fuse_requirement_result(keyword_result, semantic_result, config=fusion_config)
+        )
 
     required = [item for item in requirement_results if item["importance"] == "required"]
     preferred = [item for item in requirement_results if item["importance"] == "preferred"]

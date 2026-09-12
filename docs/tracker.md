@@ -113,8 +113,8 @@
 ## Person 3 — Integration / Evaluation
 - [x] Connect parsing output to matching pipeline
 - [x] Run first end-to-end ranking
-- [ ] Compare keyword-only vs semantic-only
-- [ ] Compare hybrid ranking
+- [x] Compare keyword-only vs semantic-only
+- [x] Compare hybrid ranking
 - [ ] Evaluate top-k overlap against human reference
 - [ ] Evaluate pairwise ranking agreement
 - [ ] Identify obvious ranking failures
