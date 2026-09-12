@@ -33,7 +33,7 @@
 ## Person 1 — Data / Parsing
 - [x] Implement PyMuPDF extraction
 - [x] Implement DOCX extraction
-- [ ] Add OCR fallback for poor-quality PDFs
+- [~] Add OCR fallback for poor-quality PDFs (implemented; scanned-PDF runtime test pending)
 - [x] Preserve page numbers and section boundaries
 - [x] Normalize extracted text
 - [x] Detect resume sections for XML and flattened text inputs

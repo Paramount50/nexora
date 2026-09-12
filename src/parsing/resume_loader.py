@@ -66,6 +66,8 @@ def load_pdf_resume(path: Path) -> dict[str, Any]:
 
     document = fitz.open(path)
     page_text = [normalize_text(page.get_text("text")) for page in document]
+    if needs_ocr(page_text):
+        page_text = ocr_pdf_pages(document)
     raw_text = normalize_text("\n".join(page_text))
     return build_candidate(
         path,
@@ -74,6 +76,29 @@ def load_pdf_resume(path: Path) -> dict[str, Any]:
         raw_text,
         source_pages=page_text,
     )
+
+
+def needs_ocr(page_text: list[str], minimum_characters: int = 40) -> bool:
+    if not page_text:
+        return True
+    low_text_pages = sum(len(text.strip()) < minimum_characters for text in page_text)
+    return low_text_pages > len(page_text) / 2
+
+
+def ocr_pdf_pages(document: Any) -> list[str]:
+    try:
+        import fitz
+        import pytesseract
+        from PIL import Image
+    except ImportError as error:
+        raise RuntimeError("OCR support requires pytesseract and pillow") from error
+
+    pages = []
+    for page in document:
+        pixmap = page.get_pixmap(matrix=fitz.Matrix(2, 2), alpha=False)
+        image = Image.frombytes("RGB", [pixmap.width, pixmap.height], pixmap.samples)
+        pages.append(normalize_text(pytesseract.image_to_string(image)))
+    return pages
 
 
 def load_docx_resume(path: Path) -> dict[str, Any]:
