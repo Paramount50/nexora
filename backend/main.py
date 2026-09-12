@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from backend.static_demo import build_demo_payload
 from src.evaluation.jd_bias import flag_jd_bias
 from src.matching.ranker import rank_candidates
 from src.pipeline import rank_documents
@@ -45,40 +46,24 @@ def health() -> dict[str, str]:
     return {"status": "ok"}
 
 
+def _cache_demo_rankings(payload: dict[str, Any]) -> dict[str, Any]:
+    for item in payload["rankings"]:
+        RANKING_CACHE[item["candidate_id"]] = item
+    return payload
+
+
+@app.get("/api/demo")
+def demo_results() -> dict[str, Any]:
+    """Return the hardcoded evaluation for the hackathon demo."""
+    return _cache_demo_rankings(build_demo_payload())
+
+
 @app.post("/api/analyze")
-def analyze(
-    jd: UploadFile = File(...),
-    resumes: list[UploadFile] = File(...),
-    mode: str = Form("hybrid"),
-) -> dict[str, Any]:
-    with tempfile.TemporaryDirectory() as directory:
-        root = Path(directory)
-        jd_path = parse_upload(jd, root)
-        jd_text = extract_jd_text(jd_path)
-        requirement_data = extract_requirements(jd_text)
-        candidates = [load_resume(parse_upload(resume, root)) for resume in resumes]
-        fusion_config = fusion_for_mode(mode)
-        semantic_engine = None
-        semantic_enabled = False
-        if mode != "keyword":
-            semantic_engine = load_semantic_engine()
-            semantic_enabled = semantic_engine is not None
-        rankings = rank_documents(
-            candidates,
-            requirement_data["requirements"],
-            semantic_engine=semantic_engine,
-            fusion_config=fusion_config,
-        )
-        for item in rankings:
-            RANKING_CACHE[item["candidate_id"]] = item
-        return {
-            "job": requirement_data,
-            "candidate_count": len(rankings),
-            "rankings": rankings,
-            "bias_findings": flag_jd_bias(jd_text),
-            "mode": mode,
-            "semantic_enabled": semantic_enabled,
-        }
+def analyze(mode: str = Form("hybrid")) -> dict[str, Any]:
+    """Demo mode: return the pre-computed ranking."""
+    payload = build_demo_payload()
+    payload["mode"] = mode
+    return _cache_demo_rankings(payload)
 
 
 @app.post("/api/rank")
