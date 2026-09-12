@@ -52,7 +52,6 @@ def rank_candidate(
                 requirement, candidate["evidence"], top_k=1
             )
             semantic_result = candidate_semantic_results[0] if candidate_semantic_results else None
-            semantic_result = semantic_results[0] if semantic_results else None
         requirement_results.append(
             fuse_requirement_result(keyword_result, semantic_result, config=fusion_config)
         )
