@@ -1,0 +1,484 @@
+{
+  "labels": [
+    {
+      "resume_id": "r001",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r002",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r003",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r004",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r005",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r006",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r007",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r008",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r009",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r010",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r011",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r012",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r013",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r014",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r015",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r016",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r017",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r018",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r019",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r020",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r021",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r022",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r023",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r024",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r025",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r026",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r027",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r028",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r029",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r030",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r031",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r032",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r033",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r034",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r035",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r036",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r037",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r038",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r039",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r040",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r041",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r042",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r043",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r044",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r045",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r046",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r047",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r048",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r049",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r050",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r051",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r052",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r053",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r054",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r055",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r056",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r057",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r058",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r059",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r060",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r061",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r062",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r063",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r064",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r065",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r066",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r067",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r068",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r069",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r070",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r071",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r072",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r073",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r074",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r075",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r076",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r077",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r078",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r079",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r080",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r081",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r082",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r083",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r084",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r085",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r086",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r087",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r088",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r089",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r090",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r091",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r092",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r093",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r094",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r095",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r096",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r097",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r098",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r099",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r100",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r101",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r102",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r103",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r104",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r105",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r106",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r107",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r108",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r109",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r110",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r111",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r112",
+      "expected_fit": "strong"
+    },
+    {
+      "resume_id": "r113",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r114",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r115",
+      "expected_fit": "partial"
+    },
+    {
+      "resume_id": "r116",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r117",
+      "expected_fit": "adjacent"
+    },
+    {
+      "resume_id": "r118",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r119",
+      "expected_fit": "weak"
+    },
+    {
+      "resume_id": "r120",
+      "expected_fit": "weak"
+    }
+  ]
+}
