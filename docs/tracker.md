@@ -106,8 +106,8 @@
 - [x] Keep strongest semantic evidence per requirement
 - [x] Produce `semantic_engine.py` (real fallback model validated; preferred Qwen model remains configurable)
 - [x] Implement requirement-level score fusion
-- [ ] Implement mandatory requirement eligibility checks and penalties
-- [ ] Produce `ranker.py`
+- [x] Implement mandatory requirement eligibility checks and penalties
+- [x] Produce `ranker.py`
 - [ ] Cache embeddings and processed artifacts
 
 ## Person 3 — Integration / Evaluation
