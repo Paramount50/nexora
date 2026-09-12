@@ -1,0 +1,1444 @@
+{
+  "resumes": [
+    {
+      "id": "r001",
+      "name": "Aarav Sharma",
+      "raw_text": "Aarav Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 1)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 1)\n- Containerized services with Docker and deployed them to AWS (cohort project 1)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 1)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 1)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 1)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r002",
+      "name": "Aditi Nair",
+      "raw_text": "Aditi Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 1)\n- Designed SQL queries and data models in MySQL (cohort project 1)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 1)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 1)",
+        "Designed SQL queries and data models in MySQL (cohort project 1)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 1)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r003",
+      "name": "Arjun Iyer",
+      "raw_text": "Arjun Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 1)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 1)\n- Reviewed changes through Git branches and pull requests (cohort project 1)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 1)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 1)",
+        "Reviewed changes through Git branches and pull requests (cohort project 1)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r004",
+      "name": "Diya Das",
+      "raw_text": "Diya Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 1)\n- Maintained Express REST routes and SQL reports (cohort project 1)\n- Collaborated with designers and engineers using Git (cohort project 1)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 1)",
+        "Maintained Express REST routes and SQL reports (cohort project 1)",
+        "Collaborated with designers and engineers using Git (cohort project 1)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r005",
+      "name": "Ishaan Singh",
+      "raw_text": "Ishaan Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 1)\n- Modeled application data with SQLite and wrote integration tests (cohort project 1)\n- Tracked work in Git and documented API behavior (cohort project 1)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 1)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 1)",
+        "Tracked work in Git and documented API behavior (cohort project 1)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r006",
+      "name": "Kavya Sharma",
+      "raw_text": "Kavya Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 1)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 1)\n- Worked in an agile team with Git code review (cohort project 1)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 1)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 1)",
+        "Worked in an agile team with Git code review (cohort project 1)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r007",
+      "name": "Meera Nair",
+      "raw_text": "Meera Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 1)\n- Built simple JavaScript pages and MySQL reports (cohort project 1)\n- Used Git workflows and wrote unit tests for service logic (cohort project 1)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 1)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 1)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 1)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r008",
+      "name": "Nikhil Iyer",
+      "raw_text": "Nikhil Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 1)\n- Practiced object-oriented design and basic testing (cohort project 1)\n- Used Git for coursework submissions (cohort project 1)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 1)",
+        "Practiced object-oriented design and basic testing (cohort project 1)",
+        "Used Git for coursework submissions (cohort project 1)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r009",
+      "name": "Rhea Das",
+      "raw_text": "Rhea Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 1)\n- Ran usability interviews and synthesized user feedback (cohort project 1)\n- Presented interaction flows to a cross-functional project team (cohort project 1)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 1)",
+        "Ran usability interviews and synthesized user feedback (cohort project 1)",
+        "Presented interaction flows to a cross-functional project team (cohort project 1)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r010",
+      "name": "Saanvi Singh",
+      "raw_text": "Saanvi Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 1)\n- Wrote SQL queries for weekly reporting (cohort project 1)\n- Automated spreadsheet checks with Python scripts (cohort project 1)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 1)",
+        "Wrote SQL queries for weekly reporting (cohort project 1)",
+        "Automated spreadsheet checks with Python scripts (cohort project 1)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    },
+    {
+      "id": "r011",
+      "name": "Vihaan Sharma",
+      "raw_text": "Vihaan Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 2)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 2)\n- Containerized services with Docker and deployed them to AWS (cohort project 2)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 2)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 2)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 2)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r012",
+      "name": "Zoya Nair",
+      "raw_text": "Zoya Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 2)\n- Designed SQL queries and data models in MySQL (cohort project 2)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 2)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 2)",
+        "Designed SQL queries and data models in MySQL (cohort project 2)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 2)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r013",
+      "name": "Ananya Iyer",
+      "raw_text": "Ananya Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 2)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 2)\n- Reviewed changes through Git branches and pull requests (cohort project 2)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 2)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 2)",
+        "Reviewed changes through Git branches and pull requests (cohort project 2)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r014",
+      "name": "Dev Das",
+      "raw_text": "Dev Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 2)\n- Maintained Express REST routes and SQL reports (cohort project 2)\n- Collaborated with designers and engineers using Git (cohort project 2)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 2)",
+        "Maintained Express REST routes and SQL reports (cohort project 2)",
+        "Collaborated with designers and engineers using Git (cohort project 2)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r015",
+      "name": "Ira Singh",
+      "raw_text": "Ira Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 2)\n- Modeled application data with SQLite and wrote integration tests (cohort project 2)\n- Tracked work in Git and documented API behavior (cohort project 2)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 2)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 2)",
+        "Tracked work in Git and documented API behavior (cohort project 2)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r016",
+      "name": "Kabir Sharma",
+      "raw_text": "Kabir Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 2)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 2)\n- Worked in an agile team with Git code review (cohort project 2)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 2)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 2)",
+        "Worked in an agile team with Git code review (cohort project 2)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r017",
+      "name": "Maya Nair",
+      "raw_text": "Maya Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 2)\n- Built simple JavaScript pages and MySQL reports (cohort project 2)\n- Used Git workflows and wrote unit tests for service logic (cohort project 2)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 2)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 2)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 2)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r018",
+      "name": "Neel Iyer",
+      "raw_text": "Neel Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 2)\n- Practiced object-oriented design and basic testing (cohort project 2)\n- Used Git for coursework submissions (cohort project 2)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 2)",
+        "Practiced object-oriented design and basic testing (cohort project 2)",
+        "Used Git for coursework submissions (cohort project 2)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r019",
+      "name": "Pari Das",
+      "raw_text": "Pari Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 2)\n- Ran usability interviews and synthesized user feedback (cohort project 2)\n- Presented interaction flows to a cross-functional project team (cohort project 2)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 2)",
+        "Ran usability interviews and synthesized user feedback (cohort project 2)",
+        "Presented interaction flows to a cross-functional project team (cohort project 2)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r020",
+      "name": "Rohan Singh",
+      "raw_text": "Rohan Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 2)\n- Wrote SQL queries for weekly reporting (cohort project 2)\n- Automated spreadsheet checks with Python scripts (cohort project 2)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 2)",
+        "Wrote SQL queries for weekly reporting (cohort project 2)",
+        "Automated spreadsheet checks with Python scripts (cohort project 2)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    },
+    {
+      "id": "r021",
+      "name": "Tara Sharma",
+      "raw_text": "Tara Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 3)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 3)\n- Containerized services with Docker and deployed them to AWS (cohort project 3)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 3)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 3)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 3)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r022",
+      "name": "Yash Nair",
+      "raw_text": "Yash Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 3)\n- Designed SQL queries and data models in MySQL (cohort project 3)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 3)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 3)",
+        "Designed SQL queries and data models in MySQL (cohort project 3)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 3)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r023",
+      "name": "Anika Iyer",
+      "raw_text": "Anika Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 3)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 3)\n- Reviewed changes through Git branches and pull requests (cohort project 3)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 3)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 3)",
+        "Reviewed changes through Git branches and pull requests (cohort project 3)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r024",
+      "name": "Karan Das",
+      "raw_text": "Karan Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 3)\n- Maintained Express REST routes and SQL reports (cohort project 3)\n- Collaborated with designers and engineers using Git (cohort project 3)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 3)",
+        "Maintained Express REST routes and SQL reports (cohort project 3)",
+        "Collaborated with designers and engineers using Git (cohort project 3)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r025",
+      "name": "Aarav Singh",
+      "raw_text": "Aarav Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 3)\n- Modeled application data with SQLite and wrote integration tests (cohort project 3)\n- Tracked work in Git and documented API behavior (cohort project 3)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 3)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 3)",
+        "Tracked work in Git and documented API behavior (cohort project 3)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r026",
+      "name": "Aditi Sharma",
+      "raw_text": "Aditi Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 3)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 3)\n- Worked in an agile team with Git code review (cohort project 3)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 3)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 3)",
+        "Worked in an agile team with Git code review (cohort project 3)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r027",
+      "name": "Arjun Nair",
+      "raw_text": "Arjun Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 3)\n- Built simple JavaScript pages and MySQL reports (cohort project 3)\n- Used Git workflows and wrote unit tests for service logic (cohort project 3)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 3)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 3)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 3)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r028",
+      "name": "Diya Iyer",
+      "raw_text": "Diya Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 3)\n- Practiced object-oriented design and basic testing (cohort project 3)\n- Used Git for coursework submissions (cohort project 3)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 3)",
+        "Practiced object-oriented design and basic testing (cohort project 3)",
+        "Used Git for coursework submissions (cohort project 3)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r029",
+      "name": "Ishaan Das",
+      "raw_text": "Ishaan Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 3)\n- Ran usability interviews and synthesized user feedback (cohort project 3)\n- Presented interaction flows to a cross-functional project team (cohort project 3)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 3)",
+        "Ran usability interviews and synthesized user feedback (cohort project 3)",
+        "Presented interaction flows to a cross-functional project team (cohort project 3)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r030",
+      "name": "Kavya Singh",
+      "raw_text": "Kavya Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 3)\n- Wrote SQL queries for weekly reporting (cohort project 3)\n- Automated spreadsheet checks with Python scripts (cohort project 3)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 3)",
+        "Wrote SQL queries for weekly reporting (cohort project 3)",
+        "Automated spreadsheet checks with Python scripts (cohort project 3)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    },
+    {
+      "id": "r031",
+      "name": "Meera Sharma",
+      "raw_text": "Meera Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 4)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 4)\n- Containerized services with Docker and deployed them to AWS (cohort project 4)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 4)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 4)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 4)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r032",
+      "name": "Nikhil Nair",
+      "raw_text": "Nikhil Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 4)\n- Designed SQL queries and data models in MySQL (cohort project 4)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 4)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 4)",
+        "Designed SQL queries and data models in MySQL (cohort project 4)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 4)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r033",
+      "name": "Rhea Iyer",
+      "raw_text": "Rhea Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 4)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 4)\n- Reviewed changes through Git branches and pull requests (cohort project 4)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 4)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 4)",
+        "Reviewed changes through Git branches and pull requests (cohort project 4)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r034",
+      "name": "Saanvi Das",
+      "raw_text": "Saanvi Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 4)\n- Maintained Express REST routes and SQL reports (cohort project 4)\n- Collaborated with designers and engineers using Git (cohort project 4)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 4)",
+        "Maintained Express REST routes and SQL reports (cohort project 4)",
+        "Collaborated with designers and engineers using Git (cohort project 4)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r035",
+      "name": "Vihaan Singh",
+      "raw_text": "Vihaan Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 4)\n- Modeled application data with SQLite and wrote integration tests (cohort project 4)\n- Tracked work in Git and documented API behavior (cohort project 4)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 4)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 4)",
+        "Tracked work in Git and documented API behavior (cohort project 4)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r036",
+      "name": "Zoya Sharma",
+      "raw_text": "Zoya Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 4)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 4)\n- Worked in an agile team with Git code review (cohort project 4)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 4)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 4)",
+        "Worked in an agile team with Git code review (cohort project 4)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r037",
+      "name": "Ananya Nair",
+      "raw_text": "Ananya Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 4)\n- Built simple JavaScript pages and MySQL reports (cohort project 4)\n- Used Git workflows and wrote unit tests for service logic (cohort project 4)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 4)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 4)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 4)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r038",
+      "name": "Dev Iyer",
+      "raw_text": "Dev Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 4)\n- Practiced object-oriented design and basic testing (cohort project 4)\n- Used Git for coursework submissions (cohort project 4)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 4)",
+        "Practiced object-oriented design and basic testing (cohort project 4)",
+        "Used Git for coursework submissions (cohort project 4)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r039",
+      "name": "Ira Das",
+      "raw_text": "Ira Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 4)\n- Ran usability interviews and synthesized user feedback (cohort project 4)\n- Presented interaction flows to a cross-functional project team (cohort project 4)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 4)",
+        "Ran usability interviews and synthesized user feedback (cohort project 4)",
+        "Presented interaction flows to a cross-functional project team (cohort project 4)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r040",
+      "name": "Kabir Singh",
+      "raw_text": "Kabir Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 4)\n- Wrote SQL queries for weekly reporting (cohort project 4)\n- Automated spreadsheet checks with Python scripts (cohort project 4)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 4)",
+        "Wrote SQL queries for weekly reporting (cohort project 4)",
+        "Automated spreadsheet checks with Python scripts (cohort project 4)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    },
+    {
+      "id": "r041",
+      "name": "Maya Sharma",
+      "raw_text": "Maya Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 5)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 5)\n- Containerized services with Docker and deployed them to AWS (cohort project 5)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 5)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 5)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 5)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r042",
+      "name": "Neel Nair",
+      "raw_text": "Neel Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 5)\n- Designed SQL queries and data models in MySQL (cohort project 5)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 5)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 5)",
+        "Designed SQL queries and data models in MySQL (cohort project 5)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 5)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r043",
+      "name": "Pari Iyer",
+      "raw_text": "Pari Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 5)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 5)\n- Reviewed changes through Git branches and pull requests (cohort project 5)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 5)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 5)",
+        "Reviewed changes through Git branches and pull requests (cohort project 5)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r044",
+      "name": "Rohan Das",
+      "raw_text": "Rohan Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 5)\n- Maintained Express REST routes and SQL reports (cohort project 5)\n- Collaborated with designers and engineers using Git (cohort project 5)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 5)",
+        "Maintained Express REST routes and SQL reports (cohort project 5)",
+        "Collaborated with designers and engineers using Git (cohort project 5)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r045",
+      "name": "Tara Singh",
+      "raw_text": "Tara Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 5)\n- Modeled application data with SQLite and wrote integration tests (cohort project 5)\n- Tracked work in Git and documented API behavior (cohort project 5)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 5)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 5)",
+        "Tracked work in Git and documented API behavior (cohort project 5)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r046",
+      "name": "Yash Sharma",
+      "raw_text": "Yash Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 5)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 5)\n- Worked in an agile team with Git code review (cohort project 5)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 5)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 5)",
+        "Worked in an agile team with Git code review (cohort project 5)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r047",
+      "name": "Anika Nair",
+      "raw_text": "Anika Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 5)\n- Built simple JavaScript pages and MySQL reports (cohort project 5)\n- Used Git workflows and wrote unit tests for service logic (cohort project 5)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 5)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 5)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 5)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r048",
+      "name": "Karan Iyer",
+      "raw_text": "Karan Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 5)\n- Practiced object-oriented design and basic testing (cohort project 5)\n- Used Git for coursework submissions (cohort project 5)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 5)",
+        "Practiced object-oriented design and basic testing (cohort project 5)",
+        "Used Git for coursework submissions (cohort project 5)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r049",
+      "name": "Aarav Das",
+      "raw_text": "Aarav Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 5)\n- Ran usability interviews and synthesized user feedback (cohort project 5)\n- Presented interaction flows to a cross-functional project team (cohort project 5)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 5)",
+        "Ran usability interviews and synthesized user feedback (cohort project 5)",
+        "Presented interaction flows to a cross-functional project team (cohort project 5)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r050",
+      "name": "Aditi Singh",
+      "raw_text": "Aditi Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 5)\n- Wrote SQL queries for weekly reporting (cohort project 5)\n- Automated spreadsheet checks with Python scripts (cohort project 5)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 5)",
+        "Wrote SQL queries for weekly reporting (cohort project 5)",
+        "Automated spreadsheet checks with Python scripts (cohort project 5)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    },
+    {
+      "id": "r051",
+      "name": "Arjun Sharma",
+      "raw_text": "Arjun Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 6)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 6)\n- Containerized services with Docker and deployed them to AWS (cohort project 6)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 6)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 6)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 6)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r052",
+      "name": "Diya Nair",
+      "raw_text": "Diya Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 6)\n- Designed SQL queries and data models in MySQL (cohort project 6)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 6)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 6)",
+        "Designed SQL queries and data models in MySQL (cohort project 6)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 6)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r053",
+      "name": "Ishaan Iyer",
+      "raw_text": "Ishaan Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 6)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 6)\n- Reviewed changes through Git branches and pull requests (cohort project 6)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 6)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 6)",
+        "Reviewed changes through Git branches and pull requests (cohort project 6)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r054",
+      "name": "Kavya Das",
+      "raw_text": "Kavya Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 6)\n- Maintained Express REST routes and SQL reports (cohort project 6)\n- Collaborated with designers and engineers using Git (cohort project 6)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 6)",
+        "Maintained Express REST routes and SQL reports (cohort project 6)",
+        "Collaborated with designers and engineers using Git (cohort project 6)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r055",
+      "name": "Meera Singh",
+      "raw_text": "Meera Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 6)\n- Modeled application data with SQLite and wrote integration tests (cohort project 6)\n- Tracked work in Git and documented API behavior (cohort project 6)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 6)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 6)",
+        "Tracked work in Git and documented API behavior (cohort project 6)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r056",
+      "name": "Nikhil Sharma",
+      "raw_text": "Nikhil Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 6)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 6)\n- Worked in an agile team with Git code review (cohort project 6)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 6)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 6)",
+        "Worked in an agile team with Git code review (cohort project 6)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r057",
+      "name": "Rhea Nair",
+      "raw_text": "Rhea Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 6)\n- Built simple JavaScript pages and MySQL reports (cohort project 6)\n- Used Git workflows and wrote unit tests for service logic (cohort project 6)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 6)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 6)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 6)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r058",
+      "name": "Saanvi Iyer",
+      "raw_text": "Saanvi Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 6)\n- Practiced object-oriented design and basic testing (cohort project 6)\n- Used Git for coursework submissions (cohort project 6)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 6)",
+        "Practiced object-oriented design and basic testing (cohort project 6)",
+        "Used Git for coursework submissions (cohort project 6)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r059",
+      "name": "Vihaan Das",
+      "raw_text": "Vihaan Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 6)\n- Ran usability interviews and synthesized user feedback (cohort project 6)\n- Presented interaction flows to a cross-functional project team (cohort project 6)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 6)",
+        "Ran usability interviews and synthesized user feedback (cohort project 6)",
+        "Presented interaction flows to a cross-functional project team (cohort project 6)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r060",
+      "name": "Zoya Singh",
+      "raw_text": "Zoya Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 6)\n- Wrote SQL queries for weekly reporting (cohort project 6)\n- Automated spreadsheet checks with Python scripts (cohort project 6)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 6)",
+        "Wrote SQL queries for weekly reporting (cohort project 6)",
+        "Automated spreadsheet checks with Python scripts (cohort project 6)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    },
+    {
+      "id": "r061",
+      "name": "Ananya Sharma",
+      "raw_text": "Ananya Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 7)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 7)\n- Containerized services with Docker and deployed them to AWS (cohort project 7)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 7)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 7)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 7)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r062",
+      "name": "Dev Nair",
+      "raw_text": "Dev Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 7)\n- Designed SQL queries and data models in MySQL (cohort project 7)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 7)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 7)",
+        "Designed SQL queries and data models in MySQL (cohort project 7)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 7)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r063",
+      "name": "Ira Iyer",
+      "raw_text": "Ira Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 7)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 7)\n- Reviewed changes through Git branches and pull requests (cohort project 7)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 7)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 7)",
+        "Reviewed changes through Git branches and pull requests (cohort project 7)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r064",
+      "name": "Kabir Das",
+      "raw_text": "Kabir Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 7)\n- Maintained Express REST routes and SQL reports (cohort project 7)\n- Collaborated with designers and engineers using Git (cohort project 7)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 7)",
+        "Maintained Express REST routes and SQL reports (cohort project 7)",
+        "Collaborated with designers and engineers using Git (cohort project 7)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r065",
+      "name": "Maya Singh",
+      "raw_text": "Maya Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 7)\n- Modeled application data with SQLite and wrote integration tests (cohort project 7)\n- Tracked work in Git and documented API behavior (cohort project 7)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 7)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 7)",
+        "Tracked work in Git and documented API behavior (cohort project 7)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r066",
+      "name": "Neel Sharma",
+      "raw_text": "Neel Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 7)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 7)\n- Worked in an agile team with Git code review (cohort project 7)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 7)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 7)",
+        "Worked in an agile team with Git code review (cohort project 7)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r067",
+      "name": "Pari Nair",
+      "raw_text": "Pari Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 7)\n- Built simple JavaScript pages and MySQL reports (cohort project 7)\n- Used Git workflows and wrote unit tests for service logic (cohort project 7)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 7)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 7)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 7)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r068",
+      "name": "Rohan Iyer",
+      "raw_text": "Rohan Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 7)\n- Practiced object-oriented design and basic testing (cohort project 7)\n- Used Git for coursework submissions (cohort project 7)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 7)",
+        "Practiced object-oriented design and basic testing (cohort project 7)",
+        "Used Git for coursework submissions (cohort project 7)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r069",
+      "name": "Tara Das",
+      "raw_text": "Tara Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 7)\n- Ran usability interviews and synthesized user feedback (cohort project 7)\n- Presented interaction flows to a cross-functional project team (cohort project 7)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 7)",
+        "Ran usability interviews and synthesized user feedback (cohort project 7)",
+        "Presented interaction flows to a cross-functional project team (cohort project 7)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r070",
+      "name": "Yash Singh",
+      "raw_text": "Yash Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 7)\n- Wrote SQL queries for weekly reporting (cohort project 7)\n- Automated spreadsheet checks with Python scripts (cohort project 7)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 7)",
+        "Wrote SQL queries for weekly reporting (cohort project 7)",
+        "Automated spreadsheet checks with Python scripts (cohort project 7)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    },
+    {
+      "id": "r071",
+      "name": "Anika Sharma",
+      "raw_text": "Anika Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 8)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 8)\n- Containerized services with Docker and deployed them to AWS (cohort project 8)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 8)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 8)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 8)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r072",
+      "name": "Karan Nair",
+      "raw_text": "Karan Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 8)\n- Designed SQL queries and data models in MySQL (cohort project 8)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 8)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 8)",
+        "Designed SQL queries and data models in MySQL (cohort project 8)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 8)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r073",
+      "name": "Aarav Iyer",
+      "raw_text": "Aarav Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 8)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 8)\n- Reviewed changes through Git branches and pull requests (cohort project 8)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 8)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 8)",
+        "Reviewed changes through Git branches and pull requests (cohort project 8)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r074",
+      "name": "Aditi Das",
+      "raw_text": "Aditi Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 8)\n- Maintained Express REST routes and SQL reports (cohort project 8)\n- Collaborated with designers and engineers using Git (cohort project 8)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 8)",
+        "Maintained Express REST routes and SQL reports (cohort project 8)",
+        "Collaborated with designers and engineers using Git (cohort project 8)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r075",
+      "name": "Arjun Singh",
+      "raw_text": "Arjun Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 8)\n- Modeled application data with SQLite and wrote integration tests (cohort project 8)\n- Tracked work in Git and documented API behavior (cohort project 8)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 8)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 8)",
+        "Tracked work in Git and documented API behavior (cohort project 8)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r076",
+      "name": "Diya Sharma",
+      "raw_text": "Diya Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 8)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 8)\n- Worked in an agile team with Git code review (cohort project 8)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 8)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 8)",
+        "Worked in an agile team with Git code review (cohort project 8)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r077",
+      "name": "Ishaan Nair",
+      "raw_text": "Ishaan Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 8)\n- Built simple JavaScript pages and MySQL reports (cohort project 8)\n- Used Git workflows and wrote unit tests for service logic (cohort project 8)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 8)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 8)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 8)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r078",
+      "name": "Kavya Iyer",
+      "raw_text": "Kavya Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 8)\n- Practiced object-oriented design and basic testing (cohort project 8)\n- Used Git for coursework submissions (cohort project 8)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 8)",
+        "Practiced object-oriented design and basic testing (cohort project 8)",
+        "Used Git for coursework submissions (cohort project 8)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r079",
+      "name": "Meera Das",
+      "raw_text": "Meera Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 8)\n- Ran usability interviews and synthesized user feedback (cohort project 8)\n- Presented interaction flows to a cross-functional project team (cohort project 8)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 8)",
+        "Ran usability interviews and synthesized user feedback (cohort project 8)",
+        "Presented interaction flows to a cross-functional project team (cohort project 8)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r080",
+      "name": "Nikhil Singh",
+      "raw_text": "Nikhil Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 8)\n- Wrote SQL queries for weekly reporting (cohort project 8)\n- Automated spreadsheet checks with Python scripts (cohort project 8)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 8)",
+        "Wrote SQL queries for weekly reporting (cohort project 8)",
+        "Automated spreadsheet checks with Python scripts (cohort project 8)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    },
+    {
+      "id": "r081",
+      "name": "Rhea Sharma",
+      "raw_text": "Rhea Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 9)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 9)\n- Containerized services with Docker and deployed them to AWS (cohort project 9)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 9)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 9)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 9)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r082",
+      "name": "Saanvi Nair",
+      "raw_text": "Saanvi Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 9)\n- Designed SQL queries and data models in MySQL (cohort project 9)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 9)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 9)",
+        "Designed SQL queries and data models in MySQL (cohort project 9)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 9)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r083",
+      "name": "Vihaan Iyer",
+      "raw_text": "Vihaan Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 9)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 9)\n- Reviewed changes through Git branches and pull requests (cohort project 9)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 9)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 9)",
+        "Reviewed changes through Git branches and pull requests (cohort project 9)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r084",
+      "name": "Zoya Das",
+      "raw_text": "Zoya Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 9)\n- Maintained Express REST routes and SQL reports (cohort project 9)\n- Collaborated with designers and engineers using Git (cohort project 9)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 9)",
+        "Maintained Express REST routes and SQL reports (cohort project 9)",
+        "Collaborated with designers and engineers using Git (cohort project 9)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r085",
+      "name": "Ananya Singh",
+      "raw_text": "Ananya Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 9)\n- Modeled application data with SQLite and wrote integration tests (cohort project 9)\n- Tracked work in Git and documented API behavior (cohort project 9)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 9)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 9)",
+        "Tracked work in Git and documented API behavior (cohort project 9)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r086",
+      "name": "Dev Sharma",
+      "raw_text": "Dev Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 9)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 9)\n- Worked in an agile team with Git code review (cohort project 9)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 9)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 9)",
+        "Worked in an agile team with Git code review (cohort project 9)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r087",
+      "name": "Ira Nair",
+      "raw_text": "Ira Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 9)\n- Built simple JavaScript pages and MySQL reports (cohort project 9)\n- Used Git workflows and wrote unit tests for service logic (cohort project 9)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 9)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 9)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 9)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r088",
+      "name": "Kabir Iyer",
+      "raw_text": "Kabir Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 9)\n- Practiced object-oriented design and basic testing (cohort project 9)\n- Used Git for coursework submissions (cohort project 9)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 9)",
+        "Practiced object-oriented design and basic testing (cohort project 9)",
+        "Used Git for coursework submissions (cohort project 9)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r089",
+      "name": "Maya Das",
+      "raw_text": "Maya Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 9)\n- Ran usability interviews and synthesized user feedback (cohort project 9)\n- Presented interaction flows to a cross-functional project team (cohort project 9)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 9)",
+        "Ran usability interviews and synthesized user feedback (cohort project 9)",
+        "Presented interaction flows to a cross-functional project team (cohort project 9)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r090",
+      "name": "Neel Singh",
+      "raw_text": "Neel Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 9)\n- Wrote SQL queries for weekly reporting (cohort project 9)\n- Automated spreadsheet checks with Python scripts (cohort project 9)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 9)",
+        "Wrote SQL queries for weekly reporting (cohort project 9)",
+        "Automated spreadsheet checks with Python scripts (cohort project 9)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    },
+    {
+      "id": "r091",
+      "name": "Pari Sharma",
+      "raw_text": "Pari Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 10)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 10)\n- Containerized services with Docker and deployed them to AWS (cohort project 10)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 10)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 10)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 10)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r092",
+      "name": "Rohan Nair",
+      "raw_text": "Rohan Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 10)\n- Designed SQL queries and data models in MySQL (cohort project 10)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 10)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 10)",
+        "Designed SQL queries and data models in MySQL (cohort project 10)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 10)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r093",
+      "name": "Tara Iyer",
+      "raw_text": "Tara Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 10)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 10)\n- Reviewed changes through Git branches and pull requests (cohort project 10)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 10)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 10)",
+        "Reviewed changes through Git branches and pull requests (cohort project 10)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r094",
+      "name": "Yash Das",
+      "raw_text": "Yash Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 10)\n- Maintained Express REST routes and SQL reports (cohort project 10)\n- Collaborated with designers and engineers using Git (cohort project 10)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 10)",
+        "Maintained Express REST routes and SQL reports (cohort project 10)",
+        "Collaborated with designers and engineers using Git (cohort project 10)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r095",
+      "name": "Anika Singh",
+      "raw_text": "Anika Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 10)\n- Modeled application data with SQLite and wrote integration tests (cohort project 10)\n- Tracked work in Git and documented API behavior (cohort project 10)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 10)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 10)",
+        "Tracked work in Git and documented API behavior (cohort project 10)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r096",
+      "name": "Karan Sharma",
+      "raw_text": "Karan Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 10)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 10)\n- Worked in an agile team with Git code review (cohort project 10)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 10)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 10)",
+        "Worked in an agile team with Git code review (cohort project 10)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r097",
+      "name": "Aarav Nair",
+      "raw_text": "Aarav Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 10)\n- Built simple JavaScript pages and MySQL reports (cohort project 10)\n- Used Git workflows and wrote unit tests for service logic (cohort project 10)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 10)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 10)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 10)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r098",
+      "name": "Aditi Iyer",
+      "raw_text": "Aditi Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 10)\n- Practiced object-oriented design and basic testing (cohort project 10)\n- Used Git for coursework submissions (cohort project 10)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 10)",
+        "Practiced object-oriented design and basic testing (cohort project 10)",
+        "Used Git for coursework submissions (cohort project 10)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r099",
+      "name": "Arjun Das",
+      "raw_text": "Arjun Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 10)\n- Ran usability interviews and synthesized user feedback (cohort project 10)\n- Presented interaction flows to a cross-functional project team (cohort project 10)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 10)",
+        "Ran usability interviews and synthesized user feedback (cohort project 10)",
+        "Presented interaction flows to a cross-functional project team (cohort project 10)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r100",
+      "name": "Diya Singh",
+      "raw_text": "Diya Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 10)\n- Wrote SQL queries for weekly reporting (cohort project 10)\n- Automated spreadsheet checks with Python scripts (cohort project 10)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 10)",
+        "Wrote SQL queries for weekly reporting (cohort project 10)",
+        "Automated spreadsheet checks with Python scripts (cohort project 10)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    },
+    {
+      "id": "r101",
+      "name": "Ishaan Sharma",
+      "raw_text": "Ishaan Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 11)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 11)\n- Containerized services with Docker and deployed them to AWS (cohort project 11)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 11)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 11)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 11)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r102",
+      "name": "Kavya Nair",
+      "raw_text": "Kavya Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 11)\n- Designed SQL queries and data models in MySQL (cohort project 11)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 11)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 11)",
+        "Designed SQL queries and data models in MySQL (cohort project 11)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 11)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r103",
+      "name": "Meera Iyer",
+      "raw_text": "Meera Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 11)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 11)\n- Reviewed changes through Git branches and pull requests (cohort project 11)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 11)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 11)",
+        "Reviewed changes through Git branches and pull requests (cohort project 11)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r104",
+      "name": "Nikhil Das",
+      "raw_text": "Nikhil Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 11)\n- Maintained Express REST routes and SQL reports (cohort project 11)\n- Collaborated with designers and engineers using Git (cohort project 11)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 11)",
+        "Maintained Express REST routes and SQL reports (cohort project 11)",
+        "Collaborated with designers and engineers using Git (cohort project 11)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r105",
+      "name": "Rhea Singh",
+      "raw_text": "Rhea Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 11)\n- Modeled application data with SQLite and wrote integration tests (cohort project 11)\n- Tracked work in Git and documented API behavior (cohort project 11)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 11)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 11)",
+        "Tracked work in Git and documented API behavior (cohort project 11)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r106",
+      "name": "Saanvi Sharma",
+      "raw_text": "Saanvi Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 11)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 11)\n- Worked in an agile team with Git code review (cohort project 11)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 11)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 11)",
+        "Worked in an agile team with Git code review (cohort project 11)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r107",
+      "name": "Vihaan Nair",
+      "raw_text": "Vihaan Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 11)\n- Built simple JavaScript pages and MySQL reports (cohort project 11)\n- Used Git workflows and wrote unit tests for service logic (cohort project 11)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 11)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 11)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 11)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r108",
+      "name": "Zoya Iyer",
+      "raw_text": "Zoya Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 11)\n- Practiced object-oriented design and basic testing (cohort project 11)\n- Used Git for coursework submissions (cohort project 11)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 11)",
+        "Practiced object-oriented design and basic testing (cohort project 11)",
+        "Used Git for coursework submissions (cohort project 11)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r109",
+      "name": "Ananya Das",
+      "raw_text": "Ananya Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 11)\n- Ran usability interviews and synthesized user feedback (cohort project 11)\n- Presented interaction flows to a cross-functional project team (cohort project 11)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 11)",
+        "Ran usability interviews and synthesized user feedback (cohort project 11)",
+        "Presented interaction flows to a cross-functional project team (cohort project 11)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r110",
+      "name": "Dev Singh",
+      "raw_text": "Dev Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 11)\n- Wrote SQL queries for weekly reporting (cohort project 11)\n- Automated spreadsheet checks with Python scripts (cohort project 11)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 11)",
+        "Wrote SQL queries for weekly reporting (cohort project 11)",
+        "Automated spreadsheet checks with Python scripts (cohort project 11)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    },
+    {
+      "id": "r111",
+      "name": "Ira Sharma",
+      "raw_text": "Ira Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, Node.js, Express.js, SQL, PostgreSQL, Git, Docker, AWS\n\nExperience\n- Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 12)\n- Developed responsive React dashboards backed by PostgreSQL (cohort project 12)\n- Containerized services with Docker and deployed them to AWS (cohort project 12)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, node.js, express.js, sql, postgresql, git, docker, aws",
+      "experience_bullets": [
+        "Built REST APIs with Node.js and Express.js for a student placement platform (cohort project 12)",
+        "Developed responsive React dashboards backed by PostgreSQL (cohort project 12)",
+        "Containerized services with Docker and deployed them to AWS (cohort project 12)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r112",
+      "name": "Kabir Nair",
+      "raw_text": "Kabir Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React.js, Node, REST APIs, MySQL, Git, Docker\n\nExperience\n- Implemented React components and Node REST services for a campus marketplace (cohort project 12)\n- Designed SQL queries and data models in MySQL (cohort project 12)\n- Used Git pull requests and Docker Compose in a four-person team (cohort project 12)\n\nEducation\nB.E. Information Technology, 2026",
+      "skills_section": "javascript, react.js, node, rest apis, mysql, git, docker",
+      "experience_bullets": [
+        "Implemented React components and Node REST services for a campus marketplace (cohort project 12)",
+        "Designed SQL queries and data models in MySQL (cohort project 12)",
+        "Used Git pull requests and Docker Compose in a four-person team (cohort project 12)"
+      ],
+      "education": "B.E. Information Technology, 2026"
+    },
+    {
+      "id": "r113",
+      "name": "Maya Iyer",
+      "raw_text": "Maya Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, React, TypeScript, Node.js, MongoDB, Git\n\nExperience\n- Created accessible React interfaces for an event discovery application (cohort project 12)\n- Built Node.js endpoints and stored document data in MongoDB (cohort project 12)\n- Reviewed changes through Git branches and pull requests (cohort project 12)\n\nEducation\nB.Tech Computer Science, 2026",
+      "skills_section": "javascript, react, typescript, node.js, mongodb, git",
+      "experience_bullets": [
+        "Created accessible React interfaces for an event discovery application (cohort project 12)",
+        "Built Node.js endpoints and stored document data in MongoDB (cohort project 12)",
+        "Reviewed changes through Git branches and pull requests (cohort project 12)"
+      ],
+      "education": "B.Tech Computer Science, 2026"
+    },
+    {
+      "id": "r114",
+      "name": "Neel Das",
+      "raw_text": "Neel Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJavaScript, Vue.js, Express, SQL, Git, REST\n\nExperience\n- Built responsive Vue views for an inventory tracker (cohort project 12)\n- Maintained Express REST routes and SQL reports (cohort project 12)\n- Collaborated with designers and engineers using Git (cohort project 12)\n\nEducation\nB.Sc. Software Engineering, 2025",
+      "skills_section": "javascript, vue.js, express, sql, git, rest",
+      "experience_bullets": [
+        "Built responsive Vue views for an inventory tracker (cohort project 12)",
+        "Maintained Express REST routes and SQL reports (cohort project 12)",
+        "Collaborated with designers and engineers using Git (cohort project 12)"
+      ],
+      "education": "B.Sc. Software Engineering, 2025"
+    },
+    {
+      "id": "r115",
+      "name": "Pari Singh",
+      "raw_text": "Pari Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, Django, JavaScript, React, SQLite, Git\n\nExperience\n- Developed Django services and small React admin screens (cohort project 12)\n- Modeled application data with SQLite and wrote integration tests (cohort project 12)\n- Tracked work in Git and documented API behavior (cohort project 12)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "python, django, javascript, react, sqlite, git",
+      "experience_bullets": [
+        "Developed Django services and small React admin screens (cohort project 12)",
+        "Modeled application data with SQLite and wrote integration tests (cohort project 12)",
+        "Tracked work in Git and documented API behavior (cohort project 12)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r116",
+      "name": "Rohan Sharma",
+      "raw_text": "Rohan Sharma\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nPython, FastAPI, PostgreSQL, Docker, Git, REST APIs\n\nExperience\n- Implemented FastAPI services for a research data portal (cohort project 12)\n- Optimized PostgreSQL queries and automated local environments with Docker (cohort project 12)\n- Worked in an agile team with Git code review (cohort project 12)\n\nEducation\nM.C.A., 2026",
+      "skills_section": "python, fastapi, postgresql, docker, git, rest apis",
+      "experience_bullets": [
+        "Implemented FastAPI services for a research data portal (cohort project 12)",
+        "Optimized PostgreSQL queries and automated local environments with Docker (cohort project 12)",
+        "Worked in an agile team with Git code review (cohort project 12)"
+      ],
+      "education": "M.C.A., 2026"
+    },
+    {
+      "id": "r117",
+      "name": "Tara Nair",
+      "raw_text": "Tara Nair\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nJava, Spring Boot, JavaScript, MySQL, Git, REST APIs\n\nExperience\n- Developed Spring Boot REST endpoints for a library system (cohort project 12)\n- Built simple JavaScript pages and MySQL reports (cohort project 12)\n- Used Git workflows and wrote unit tests for service logic (cohort project 12)\n\nEducation\nB.Tech Information Technology, 2026",
+      "skills_section": "java, spring boot, javascript, mysql, git, rest apis",
+      "experience_bullets": [
+        "Developed Spring Boot REST endpoints for a library system (cohort project 12)",
+        "Built simple JavaScript pages and MySQL reports (cohort project 12)",
+        "Used Git workflows and wrote unit tests for service logic (cohort project 12)"
+      ],
+      "education": "B.Tech Information Technology, 2026"
+    },
+    {
+      "id": "r118",
+      "name": "Yash Iyer",
+      "raw_text": "Yash Iyer\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nC++, Java, Data Structures, Algorithms, Git\n\nExperience\n- Solved algorithmic programming problems and contributed to a C++ project (cohort project 12)\n- Practiced object-oriented design and basic testing (cohort project 12)\n- Used Git for coursework submissions (cohort project 12)\n\nEducation\nB.Tech Computer Science, 2027",
+      "skills_section": "c++, java, data structures, algorithms, git",
+      "experience_bullets": [
+        "Solved algorithmic programming problems and contributed to a C++ project (cohort project 12)",
+        "Practiced object-oriented design and basic testing (cohort project 12)",
+        "Used Git for coursework submissions (cohort project 12)"
+      ],
+      "education": "B.Tech Computer Science, 2027"
+    },
+    {
+      "id": "r119",
+      "name": "Anika Das",
+      "raw_text": "Anika Das\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nFigma, HTML, CSS, UX Research, Canva\n\nExperience\n- Designed mobile-first prototypes for a student wellness application (cohort project 12)\n- Ran usability interviews and synthesized user feedback (cohort project 12)\n- Presented interaction flows to a cross-functional project team (cohort project 12)\n\nEducation\nB.Des. Interaction Design, 2026",
+      "skills_section": "figma, html, css, ux research, canva",
+      "experience_bullets": [
+        "Designed mobile-first prototypes for a student wellness application (cohort project 12)",
+        "Ran usability interviews and synthesized user feedback (cohort project 12)",
+        "Presented interaction flows to a cross-functional project team (cohort project 12)"
+      ],
+      "education": "B.Des. Interaction Design, 2026"
+    },
+    {
+      "id": "r120",
+      "name": "Karan Singh",
+      "raw_text": "Karan Singh\n\nSummary\nComputer science student seeking a software internship.\n\nSkills\nExcel, Power BI, SQL, Data Analysis, Python\n\nExperience\n- Cleaned survey data and built Power BI dashboards (cohort project 12)\n- Wrote SQL queries for weekly reporting (cohort project 12)\n- Automated spreadsheet checks with Python scripts (cohort project 12)\n\nEducation\nB.Sc. Data Science, 2026",
+      "skills_section": "excel, power bi, sql, data analysis, python",
+      "experience_bullets": [
+        "Cleaned survey data and built Power BI dashboards (cohort project 12)",
+        "Wrote SQL queries for weekly reporting (cohort project 12)",
+        "Automated spreadsheet checks with Python scripts (cohort project 12)"
+      ],
+      "education": "B.Sc. Data Science, 2026"
+    }
+  ]
+}
