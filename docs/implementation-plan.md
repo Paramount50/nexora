@@ -1,82 +1,267 @@
-# Implementation Plan — Smart Shortlisting Engine
+# Implementation Plan — Hybrid Resume Shortlisting Engine
 
-## Architecture (pipeline)
+## Objective
+Build a defensible, evidence-based hybrid ranking engine for 1 job description and 18 resumes.
+The system must rank every candidate, combine keyword and semantic evidence, and explain the top 3 using traceable resume evidence rather than opaque LLM judgments.
 
+## Final recommended architecture
+
+```text
+JOB DESCRIPTION
+      |
+      v
+PDF Extraction
+PyMuPDF + OCR fallback
+      |
+      v
+JD Requirement Extraction
+      |
+      +-------------------------------+
+      |                               |
+      v                               v
+Requirement Schema             Skill/Alias Map
+      |                               |
+      +---------------+---------------+
+                      |
+                      v
+18 RESUMES
+      |
+      v
+PDF Extraction
+      |
+      v
+Resume Section / Evidence Extraction
+      |
+      v
+Candidate Evidence Store
+      |
+      +--------------------+---------------------+
+      |                    |                     |
+      v                    v                     v
+BM25 lexical retrieval   Keyword matching    Semantic matching
+explicit skill signal    exact / alias / fuzzy  embeddings + cosine
+      |                    |                     |
+      +--------------------+---------------------+
+                      |
+                      v
+Evidence Pool
+      |
+      +--------------------+---------------------+
+      |                                          |
+      v                                          v
+Optional cross-encoder reranker        Evidence strength
+(refine retrieved evidence)            source + strength scoring
+      |                                          |
+      +--------------------+---------------------+
+                           |
+                           v
+                    Requirement score
+                lexical + semantic + strength
+                           |
+                           v
+              Eligibility check + fit scoring
+                           |
+                           v
+                 Weighted candidate ranking
+                           |
+                           v
+                  Top 3 explanations + full table
+                           |
+                           v
+                       Streamlit demo
 ```
-Input data (JD + 15-18 resumes, PDF)
-        |
-Parse and preprocess (extract + segment text)
-        |
-   -----------------------
-   |                     |
-Keyword matching     Semantic matching
-(taxonomy + fuzzy)   (embeddings + cosine sim)
-   |                     |
-   -----------------------
-        |
-Score fusion and ranking (weighted combine, sort)
-        |
-Top-3 explanations (matched vs missing skills)
-```
 
-### Stage details
-- **Parse and preprocess**: extract text from JD and resume PDFs (`pdfplumber` / `PyMuPDF`),
-  segment resumes into sections (skills, experience, education) via heading/regex detection.
-- **Keyword matching**: curated skills taxonomy with alias mapping (`js → javascript`), exact +
-  fuzzy match (`rapidfuzz`) against JD's required vs nice-to-have skills.
-  `keyword_score = (2*required_matched + 1*nice_to_have_matched) / (2*total_required + 1*total_nice_to_have)`
-- **Semantic matching**: sentence-transformer embeddings of JD requirement lines and resume
-  bullets, cosine similarity matrix, max-per-JD-line then averaged.
-- **Score fusion**: `final_score = α * semantic_score + β * keyword_score`, start at α=β=0.5,
-  tune after eyeballing results on the 18 sample resumes. Optional penalty if a hard-required
-  skill is fully absent.
-- **Explanations**: generated from the already-computed matched/missing skills and top evidence
-  sentences. An LLM may be used to phrase this naturally, but not to decide the match itself.
+## Core design principle
+Do not build:
+- JD + resume -> LLM -> score
 
-See `scheme.md` for the exact JSON contracts between stages.
+Build instead:
+- documents -> extraction -> structured requirements/evidence -> lexical retrieval -> semantic retrieval -> evidence fusion -> evidence-strength refinement -> requirement-level scoring -> eligibility and fit -> final ranking -> evidence-backed explanation
 
-## Team distribution (3 people)
+The ranking engine decides why a candidate ranks where they do. An LLM, if used, only converts verified evidence into clear natural-language output.
 
-### Person A — Data & parsing lead
-- PDF extraction for JD + all 18 resumes.
-- Section segmentation (skills, experience, education).
-- Build the skills taxonomy JSON (terms + aliases).
-- Once parsing is stable: builds the demo UI (simple table view of ranked output + score breakdown).
+## Stage-by-stage breakdown
 
-### Person B — Matching & ranking lead
-- Keyword matching module (exact + fuzzy, required vs nice-to-have weighting).
-- Semantic matching module (embeddings, cosine similarity).
-- Score fusion formula and final ranking sort.
-- Highest-weighted rubric item (35%) — must be ready to explain the logic and weighting choices
-  to judges in detail.
+### 1) Data extraction and normalization
+- Extract text from the JD and all resumes using PyMuPDF.
+- Use OCR fallback when extraction quality is poor.
+- Preserve page numbers and section boundaries.
+- Normalize whitespace, bullets, unicode, and common formatting noise.
+- Detect resume sections: summary, skills, experience, projects, education, certifications, other.
 
-### Person C — Explanation & bonus lead
-- Top-3 explanation generator (pulls from Person B's output).
-- Optional LLM polish pass on explanation wording.
-- Bonus features if time allows: JD bias-flagging, recruiter chat layer.
+### 2) JD requirement extraction
+Break the JD into individual requirement objects:
+- requirement_id
+- canonical_name
+- category
+- importance
+- weight
+- aliases
+- related_skills
+- source_text
+- evidence_expectations
 
-## Timeline (5-hour build)
+Separate:
+- mandatory/core requirements
+- preferred requirements
+- nice-to-have requirements
 
-| Time | Focus |
-|---|---|
-| Hour 1 | Lock schema, set up repo, mock data, everyone codes against mocks; Person A starts real parsing |
-| Hour 1.5–2.5 | Real integration: parsed output feeds matching modules |
-| Hour 2.5–3.5 | Score tuning, explanations built off real ranking output, basic demo view comes together |
-| Hour 3.5–4.25 | Bug fixes, run all 18 resumes end-to-end, check ranking spread — cut bonus work now if core isn't solid |
-| Hour 4.25–5 | Demo rehearsal — each person walks through their own module |
+### 3) Resume evidence extraction
+Create evidence chunks by meaningful section or bullet instead of one giant resume embedding.
+Each evidence item must retain:
+- candidate_id
+- evidence_id
+- section
+- text
+- page
+- position if available
+- extracted skill
+- canonical skill
+- evidence_type
+- source
 
-## First 15–20 minutes (before splitting up)
-1. Lock the JSON schema together (`scheme.md`) — do not skip this.
-2. Set up the shared repo with `/data`, `/parsing`, `/matching`, `/explanation`, `/demo`.
-3. Skim the real `Sample_JD.pdf` and a few real resumes to check actual formatting.
-4. Create mock data matching the schema so nobody waits on the real parser.
-5. Split and start coding in parallel.
+### 4) Keyword matching and BM25
+Use a deterministic hierarchy:
+1. exact canonical match
+2. known alias match
+3. controlled fuzzy match
+4. semantic relationship
+
+Use BM25 for explicit lexical retrieval per requirement. Store:
+- exact_match
+- alias_match
+- fuzzy_match
+- keyword_score
+
+### 5) Semantic matching
+For each JD requirement:
+- embed the requirement
+- embed each candidate evidence chunk
+- compute cosine similarity
+- keep the strongest semantic evidence
+- store semantic score + evidence text
+
+### 6) Evidence fusion and reranking
+- Run keyword and semantic matching independently.
+- Fuse at requirement level, not at whole-candidate level.
+- Baseline: 0.5 keyword + 0.5 semantic.
+- Optional Qwen3-Reranker-0.6B refines the strongest retrieved evidence only.
+- The reranker is not a separate additive term in the candidate score.
+- Evidence strength is tracked separately using the source and strength of the underlying evidence.
+
+### 7) Deterministic final scoring
+For each requirement:
+
+RequirementScore_i = lexical_component + semantic_component + evidence_strength_component
+
+Then:
+
+CandidateScore = sum(weight_i * RequirementScore_i)
+
+Mandatory penalties and eligibility checks are handled separately so that a candidate missing a critical requirement cannot outrank a candidate who meets it.
+
+Separate:
+1. eligibility / mandatory requirements
+2. fit / ranking among viable candidates
+
+### 8) Explanations and demo UI
+- Generate structured explanations from matched requirements, evidence, and missing/weak areas.
+- Attach reason codes for each requirement result.
+- Show ranking, requirement gaps, and evidence for the top 3.
+- Build a Streamlit UI with ranking table, candidate detail, and comparison screen.
+
+## Build order (locked)
+1. Inspect actual dataset
+2. Extract PDFs
+3. Structure JD requirements
+4. Structure resume evidence
+5. Build exact/alias keyword matching
+6. Add BM25
+7. Add embeddings
+8. Build baseline hybrid ranker
+9. Evaluate ranking
+10. Fix failure cases
+11. Add reranker
+12. Re-evaluate
+13. Build evidence-based explanations
+14. Build UI
+15. Add one bonus feature only if time remains
+16. Stress-test against judge questions
+17. Freeze the system
+
+## Team distribution
+
+### Person 1 — ML / matching lead
+- JD requirements
+- keyword engine
+- semantic engine
+- scoring and evaluation
+
+### Person 2 — Data / parsing lead
+- PDF extraction
+- OCR fallback
+- section detection
+- candidate evidence schema
+
+### Person 3 — Ranking / explanations lead
+- reranker (if time permits)
+- evidence scoring
+- explanation generation
+- comparison logic
+
+### Person 4 — UI / integration lead
+- Streamlit demo
+- API integration if useful
+- visualizations and demo flow
+
+## Timeline
+
+### Phase 1 — first 30–45 minutes
+- inspect JD
+- inspect resumes
+- define data schema
+- extract PDFs
+- validate extraction quality
+
+### Phase 2 — next 45–60 minutes
+- extract JD requirements
+- structure resume evidence
+- build keyword engine
+- build basic semantic engine
+
+### Phase 3 — next 30–45 minutes
+- baseline hybrid ranking
+- rank all 18 candidates
+- produce top-3 evidence summaries
+
+### Phase 4 — next 30–45 minutes
+- evaluation harness
+- inspect ranking failures
+- tune requirement weights and alias handling
+
+### Phase 5 — next 30–45 minutes
+- add reranker if compute/time allows
+- compare against baseline
+- keep it only if it improves quality
+
+### Phase 6 — final 45–60 minutes
+- Streamlit UI
+- explanations
+- comparison mode
+- end-to-end demo rehearsal
 
 ## Risks and mitigations
-- **Schema drift between modules** → lock it early, do not modify without telling both other people.
-- **Time runs out before bonus features** → bonus is only 10% of the rubric; a clean core beats an
-  incomplete system with extras. Cut bonus first.
-- **All-similar scores (no spread)** → sanity-check against the 18 resumes, which are deliberately
-  varied; if scores cluster, re-check the fusion weights.
-- **Can't explain matching logic live** → keep weights/thresholds in a config file, not hardcoded,
-  so the team can point to and justify specific numbers.
+- Schema drift → lock the contract early and keep all modules aligned.
+- Overreliance on LLM score → reject as a core approach; keep LLMs only for explanation phrasing.
+- Fuzzy matching treating semantically related but non-equivalent tech as equal → restrict fuzzy matching and keep canonical/alias spacing separate.
+- Exact-match inconsistency → only mark exact when the evidence literally contains the canonical skill or accepted alias.
+- Double-counting in scoring → use a single requirement-level score with separate mandatory eligibility logic.
+- Score clustering → inspect ranking distribution carefully and fix requirement weighting.
+- Overbuilding the demo → keep the UI simple and evidence-first; cut bonus features first.
+
+## Decision log to keep in front of the team
+- Keyword and semantic matching both matter.
+- Related tech is supporting evidence, not automatic equivalence.
+- Mandatory requirements should strongly affect ranking.
+- Explanations must be grounded in structured evidence.
+- The demo should prove the ranking is auditable, not mysterious.

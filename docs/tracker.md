@@ -1,69 +1,259 @@
-# Tracker — Smart Shortlisting Engine
+# Tracker — Hybrid Resume Shortlisting Engine
 
-Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
+## Status Legend
+- [ ] Not started
+- [~] In progress
+- [x] Done
 
-## Setup (all three, first 15–20 min)
-- [ ] Lock JSON schema (`scheme.md`) together
-- [ ] Set up shared repo: `/data`, `/parsing`, `/matching`, `/explanation`, `/demo`
-- [ ] Skim real `Sample_JD.pdf` and a few real resumes
-- [ ] Create mock data matching the schema
-- [ ] Confirm fusion-weight config file exists and is agreed
+---
 
-## Person A — Data & parsing lead
+# Phase 1 — Dataset & Foundation
 
-**Hour 1**
-- [ ] PDF extraction working on `Sample_JD.pdf`
-- [ ] PDF extraction working on at least 3 real resumes
+## Shared
+- [ ] Inspect the actual JD and all 18 resumes
+- [ ] Identify strong, medium, and weak candidates
+- [ ] Identify explicit vs implicit requirements
+- [ ] Identify semantic traps and keyword traps
+- [ ] Create initial human reference ranking
+- [ ] Lock shared data schema
+- [ ] Define scoring configuration and thresholds
+- [ ] Validate PDF extraction quality
+- [ ] Define golden test cases for matching edge cases
+- [ ] Define ranking metrics for evaluation
 
-**Hour 1.5–2.5**
-- [ ] Section segmentation (skills / experience / education) for all 18 resumes
-- [ ] Skills taxonomy JSON built (terms + aliases)
-- [ ] Parsed output matches agreed schema exactly — handed off to Person B
+## Person 1 — Data / Parsing
+- [ ] Implement PyMuPDF extraction
+- [ ] Add OCR fallback for poor-quality PDFs
+- [ ] Preserve page numbers and section boundaries
+- [ ] Normalize extracted text
+- [ ] Detect resume sections
+- [ ] Create candidate evidence store
 
-**Hour 2.5–3.5**
-- [ ] Start demo UI (Streamlit table: ranked candidates, scores, top-3 explanations)
+## Person 2 — Matching / Ranking
+- [ ] Review JD requirements relevant to scoring
+- [ ] Define keyword matching strategy
+- [ ] Define semantic matching strategy
+- [ ] Define requirement-level scoring approach
+- [ ] Define eligibility vs fit logic
+- [ ] Prepare mock requirement/evidence data for development
 
-**Hour 3.5–4.25**
-- [ ] Demo UI shows all 18 ranked resumes correctly
-- [ ] Handle at least one messy-resume edge case gracefully (bonus, if time allows)
+## Person 3 — Evaluation / Demo
+- [ ] Design evaluation methodology
+- [ ] Define ranking-quality checks
+- [ ] Define pairwise comparison checks
+- [ ] Design top-3 explanation format
+- [ ] Plan Streamlit ranking view
+- [ ] Prepare basic demo flow
 
-## Person B — Matching & ranking lead
+---
 
-**Hour 1**
-- [ ] Keyword matching module runs against mock data
-- [ ] Semantic matching module runs against mock data (embeddings loading correctly)
+# Phase 2 — JD & Resume Structuring
 
-**Hour 1.5–2.5**
-- [ ] Keyword + semantic modules running against Person A's real parsed output
-- [ ] Score fusion formula implemented, reading weights from config file
+## Person 1 — Data / Parsing
+- [ ] Extract and structure JD requirements
+- [ ] Classify required / preferred / nice-to-have
+- [ ] Build canonical names
+- [ ] Build aliases
+- [ ] Attach related skills
+- [ ] Define evidence expectations
+- [ ] Produce `requirements.json`
+- [ ] Structure all 18 resumes
+- [ ] Produce `candidates.json`
 
-**Hour 2.5–3.5**
-- [ ] Ranking output produced for all 18 resumes, sorted descending
-- [ ] Eyeball the spread — scores should not cluster; tune weights if they do
-- [ ] Ranking output matches agreed schema exactly — handed off to Person C
+## Person 2 — Matching / Ranking
+- [ ] Review requirement schema against scoring needs
+- [ ] Implement canonical skill normalization
+- [ ] Prepare matching configuration
+- [ ] Define mandatory requirement handling
+- [ ] Define evidence-source and evidence-strength categories
+- [ ] Define match types: exact / alias / related / semantic
 
-**Hour 3.5–4.25**
-- [ ] Can explain, out loud, why the weighting was chosen
-- [ ] Edge case checked: resume with zero matching skills doesn't break scoring
+## Person 3 — Evaluation / Demo
+- [ ] Inspect structured candidate data
+- [ ] Create human reference ranking
+- [ ] Identify expected top candidates
+- [ ] Document difficult matching cases
+- [ ] Define explanation output schema
 
-## Person C — Explanation & bonus lead
+---
 
-**Hour 1**
-- [ ] Explanation generator stubbed against mock ranking output
+# Phase 3 — Core Matching Engine
 
-**Hour 1.5–2.5**
-- [ ] Explanation generator pulls real matched/missing skills and evidence from Person B's output
+## Person 1 — Keyword Engine
+- [ ] Implement exact matching
+- [ ] Implement alias matching
+- [ ] Implement controlled fuzzy matching
+- [ ] Preserve evidence behind every match
+- [ ] Implement BM25 retrieval
+- [ ] Produce `keyword_engine.py`
 
-**Hour 2.5–3.5**
-- [ ] Top-3 explanations read clearly and are traceable to actual matched/missing data
-- [ ] (Optional) LLM polish pass on explanation wording
+## Person 2 — Semantic + Ranking Engine
+- [ ] Load embedding model
+- [ ] Embed JD requirements
+- [ ] Embed resume evidence chunks
+- [ ] Compute cosine similarity
+- [ ] Keep strongest semantic evidence per requirement
+- [ ] Produce `semantic_engine.py`
+- [ ] Implement requirement-level score fusion
+- [ ] Implement mandatory requirement eligibility checks and penalties
+- [ ] Produce `ranker.py`
+- [ ] Cache embeddings and processed artifacts
 
-**Hour 3.5–4.25**
-- [ ] Bonus: JD bias-flagging — only if core is fully done
-- [ ] Bonus: recruiter chat layer — only if core is fully done and bias-flagging is skipped or done
+## Person 3 — Integration / Evaluation
+- [ ] Connect parsing output to matching pipeline
+- [ ] Run first end-to-end ranking
+- [ ] Compare keyword-only vs semantic-only
+- [ ] Compare hybrid ranking
+- [ ] Evaluate top-k overlap against human reference
+- [ ] Evaluate pairwise ranking agreement
+- [ ] Identify obvious ranking failures
+- [ ] Record failure cases
 
-## Final (Hour 4.25–5, all three)
-- [ ] Full run on all 18 resumes end-to-end, no errors
-- [ ] Demo rehearsal — each person explains their own module
-- [ ] Confirm judging rubric is covered: matching (35%), ranking quality (20%), explanations (20%),
-      working demo (15%), bonus (10% — only if time allowed)
+---
+
+# Phase 4 — Ranking Quality
+
+## Person 1
+- [ ] Fix keyword false positives
+- [ ] Fix alias problems
+- [ ] Test Java vs JavaScript
+- [ ] Test React vs React Native
+- [ ] Test AWS vs Azure
+- [ ] Test fuzzy matching edge cases
+
+## Person 2
+- [ ] Tune keyword/semantic fusion
+- [ ] Tune requirement weights
+- [ ] Tune mandatory penalties
+- [ ] Normalize scoring signals
+- [ ] Ensure meaningful score spread
+- [ ] Validate no score double-counting
+- [ ] Generate final rank 1–18
+
+## Person 3
+- [ ] Compare ranking against human reference
+- [ ] Inspect top candidates
+- [ ] Inspect weak candidates
+- [ ] Analyze false positives
+- [ ] Analyze false negatives
+- [ ] Document final scoring behavior
+
+---
+
+# Phase 5 — Explanation Engine
+
+## Person 1
+- [ ] Ensure evidence contains source text and provenance
+- [ ] Validate evidence references
+- [ ] Ensure missing requirements are correctly identified
+
+## Person 2
+- [ ] Produce requirement-level match breakdown
+- [ ] Produce strongest evidence per requirement
+- [ ] Produce matched / weak / missing requirement lists
+- [ ] Attach reason codes and confidence values
+
+## Person 3
+- [ ] Build top-3 explanation generator
+- [ ] Generate strongest matches
+- [ ] Generate missing / weak requirements
+- [ ] Generate concise candidate summaries
+- [ ] Ensure explanations use only verified evidence
+- [ ] Produce `explanation.py`
+
+---
+
+# Phase 6 — Reranker (Optional)
+
+## Person 2
+- [ ] Retrieve strongest evidence per requirement
+- [ ] Test Qwen3-Reranker-0.6B
+- [ ] Compare reranked results with baseline
+- [ ] Maintain reranker as evidence refinement only
+- [ ] Keep reranker only if ranking quality materially improves
+
+## Person 3
+- [ ] Evaluate reranker against baseline
+- [ ] Document improvement / degradation
+
+## Person 1
+- [ ] No dedicated work unless integration requires changes
+
+> If the reranker takes too much time or does not clearly improve results, drop it.
+
+---
+
+# Phase 7 — Streamlit Demo
+
+## Person 3 — Owner
+- [ ] Build ranking table
+- [ ] Show all 18 candidates
+- [ ] Show final score
+- [ ] Show keyword score
+- [ ] Show semantic score
+- [ ] Show mandatory coverage
+- [ ] Build candidate detail view
+- [ ] Show evidence behind matches
+- [ ] Show top-3 explanations
+- [ ] Build candidate comparison view
+
+## Person 1
+- [ ] Connect extraction/data layer to UI
+- [ ] Fix data formatting issues
+
+## Person 2
+- [ ] Connect ranking engine to UI
+- [ ] Ensure score breakdown is displayed correctly
+
+---
+
+# Phase 8 — Final Validation
+
+## Shared
+- [ ] Test malformed PDFs
+- [ ] Test missing resume sections
+- [ ] Test duplicate skills
+- [ ] Test aliases
+- [ ] Test Java vs JavaScript
+- [ ] Test React vs React Native
+- [ ] Test Node.js vs ambiguous "Node" handling
+- [ ] Test keyword-heavy weak candidate
+- [ ] Test semantic-heavy candidate with few exact keywords
+- [ ] Test mandatory requirement failure
+- [ ] Test no-evidence case
+- [ ] Verify all 18 candidates appear
+- [ ] Verify ranking is deterministic
+- [ ] Verify top-3 explanations are evidence-grounded
+- [ ] Verify keyword and semantic signals both affect final ranking
+- [ ] Verify eligibility and fit logic disagree correctly in edge cases
+
+---
+
+# Final Demo Readiness
+
+## Person 1
+- [ ] Extraction works end-to-end
+- [ ] Resume evidence is correctly displayed
+- [ ] No major parsing failures
+
+## Person 2
+- [ ] Ranking works end-to-end
+- [ ] Keyword + semantic matching demonstrably contribute
+- [ ] Mandatory requirements behave correctly
+- [ ] Scores are sensible and explainable
+- [ ] Scoring configuration is ready to explain to judges
+
+## Person 3
+- [ ] Streamlit demo works
+- [ ] Top-3 explanations work
+- [ ] Candidate comparison works
+- [ ] Demo flow rehearsed
+- [ ] Judge questions prepared
+
+## Shared
+- [ ] Freeze scoring configuration
+- [ ] Freeze ranking
+- [ ] Freeze explanation format
+- [ ] End-to-end test from raw PDFs → final ranking
+- [ ] Rehearse judge walkthrough
+- [ ] Remove unstable bonus features
