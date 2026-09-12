@@ -99,12 +99,12 @@
 - [~] Produce `keyword_engine.py` (matcher and BM25 logic currently split by responsibility)
 
 ## Person 2 — Semantic + Ranking Engine
-- [ ] Load embedding model
-- [ ] Embed JD requirements
-- [ ] Embed resume evidence chunks
-- [ ] Compute cosine similarity
-- [ ] Keep strongest semantic evidence per requirement
-- [~] Produce `semantic_engine.py` (adapter and cosine retrieval implemented; model validation pending)
+- [x] Load embedding model (`all-MiniLM-L6-v2` fallback validated)
+- [x] Embed JD requirements
+- [x] Embed resume evidence chunks
+- [x] Compute cosine similarity
+- [x] Keep strongest semantic evidence per requirement
+- [x] Produce `semantic_engine.py` (real fallback model validated; preferred Qwen model remains configurable)
 - [ ] Implement requirement-level score fusion
 - [ ] Implement mandatory requirement eligibility checks and penalties
 - [ ] Produce `ranker.py`
