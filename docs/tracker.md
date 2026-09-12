@@ -95,8 +95,8 @@
 - [x] Implement alias matching
 - [x] Implement controlled fuzzy matching
 - [x] Preserve evidence behind every match
-- [ ] Implement BM25 retrieval
-- [ ] Produce `keyword_engine.py`
+- [x] Implement BM25 retrieval
+- [~] Produce `keyword_engine.py` (matcher and BM25 logic currently split by responsibility)
 
 ## Person 2 — Semantic + Ranking Engine
 - [ ] Load embedding model

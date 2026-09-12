@@ -3,3 +3,4 @@ python-docx
 pytesseract
 pillow
 rapidfuzz
+rank-bm25
