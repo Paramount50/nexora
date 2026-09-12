@@ -200,10 +200,10 @@
 
 ## Person 3 — Owner
 - [x] Build ranking table
-- [~] Show all candidates (synthetic demo currently shows 120; runtime count remains configurable)
+- [x] Show all candidates (synthetic demo shows 120; runtime count is configurable)
 - [x] Show final score
 - [x] Show keyword score
-- [~] Show semantic score (ranking contract ready; default UI uses keyword mode)
+- [x] Show semantic score
 - [x] Show mandatory coverage
 - [x] Build candidate detail view
 - [x] Show evidence behind matches
@@ -216,7 +216,7 @@
 
 ## Person 2
 - [x] Connect ranking engine to UI
-- [~] Ensure score breakdown is displayed correctly (keyword mode complete; semantic mode remains)
+- [x] Ensure score breakdown is displayed correctly
 
 ---
 

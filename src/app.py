@@ -10,6 +10,7 @@ import streamlit as st
 from src.explanations.explanation import explain_top_candidates
 from src.parsing.jd_loader import extract_requirements
 from src.parsing.resume_loader import load_resume
+from src.matching.semantic_engine import SentenceTransformerEmbedder, SemanticEngine
 from src.pipeline import rank_documents, run_pipeline
 
 
@@ -22,7 +23,21 @@ def load_keyword_ranking() -> list[dict]:
     return run_pipeline(DATA_DIR)
 
 
-def rank_uploaded_inputs(jd_upload, resume_uploads):
+@st.cache_resource(show_spinner="Loading embedding model...")
+def load_semantic_engine() -> SemanticEngine:
+    return SemanticEngine(SentenceTransformerEmbedder("all-MiniLM-L6-v2"))
+
+
+def selected_pipeline(mode: str):
+    if mode == "Keyword only":
+        return None, {"keyword_weight": 1.0, "semantic_weight": 0.0, "evidence_strength_weight": 0.0}
+    engine = load_semantic_engine()
+    if mode == "Semantic only":
+        return engine, {"keyword_weight": 0.0, "semantic_weight": 1.0, "evidence_strength_weight": 0.0}
+    return engine, {"keyword_weight": 0.5, "semantic_weight": 0.5, "evidence_strength_weight": 0.15}
+
+
+def rank_uploaded_inputs(jd_upload, resume_uploads, semantic_engine=None, fusion_config=None):
     import tempfile
 
     with tempfile.TemporaryDirectory() as directory:
@@ -35,7 +50,12 @@ def rank_uploaded_inputs(jd_upload, resume_uploads):
             path = root / upload.name
             path.write_bytes(upload.getvalue())
             candidates.append(load_resume(path))
-        return rank_documents(candidates, requirements)
+        return rank_documents(
+            candidates,
+            requirements,
+            semantic_engine=semantic_engine,
+            fusion_config=fusion_config,
+        )
 
 
 def main() -> None:
@@ -43,14 +63,16 @@ def main() -> None:
     st.title("Nexora Resume Ranking")
     st.caption("Evidence-first candidate ranking over the synthetic development dataset")
 
+    mode = st.radio("Ranking mode", ["Keyword only", "Semantic only", "Hybrid"], horizontal=True)
+    semantic_engine, fusion_config = selected_pipeline(mode)
     jd_upload = st.file_uploader("Job description", type=["pdf", "docx", "txt"])
     resume_uploads = st.file_uploader(
         "Resume files", type=["pdf", "docx", "txt", "xml"], accept_multiple_files=True
     )
     if jd_upload and resume_uploads:
-        rankings = rank_uploaded_inputs(jd_upload, resume_uploads)
+        rankings = rank_uploaded_inputs(jd_upload, resume_uploads, semantic_engine, fusion_config)
     else:
-        rankings = load_keyword_ranking()
+        rankings = run_pipeline(DATA_DIR, semantic_engine=semantic_engine, fusion_config=fusion_config)
         st.info("Showing the synthetic development dataset. Upload a JD and resumes to rank runtime inputs.")
     explanations = explain_top_candidates(rankings)
     st.metric("Candidates", len(rankings))
@@ -83,6 +105,7 @@ def main() -> None:
             st.write({
                 "match_type": result["match_type"],
                 "keyword_score": result["keyword_score"],
+                "semantic_score": result["semantic_score"],
                 "fused_score": result["fused_score"],
                 "missing": result["missing"],
                 "reason_codes": result["reason_codes"],
