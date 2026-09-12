@@ -34,7 +34,7 @@
 - [~] Implement PyMuPDF extraction
 - [~] Implement DOCX extraction
 - [ ] Add OCR fallback for poor-quality PDFs
-- [ ] Preserve page numbers and section boundaries
+- [~] Preserve page numbers and section boundaries (PDF page lookup implemented; runtime validation pending)
 - [x] Normalize extracted text
 - [x] Detect resume sections for XML and flattened text inputs
 - [~] Create candidate evidence store

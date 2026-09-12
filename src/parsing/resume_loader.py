@@ -65,9 +65,15 @@ def load_pdf_resume(path: Path) -> dict[str, Any]:
         raise RuntimeError("PDF support requires pymupdf") from error
 
     document = fitz.open(path)
-    page_text = [page.get_text("text") for page in document]
+    page_text = [normalize_text(page.get_text("text")) for page in document]
     raw_text = normalize_text("\n".join(page_text))
-    return build_candidate(path, first_line(raw_text, path.stem), detect_sections(raw_text), raw_text)
+    return build_candidate(
+        path,
+        first_line(raw_text, path.stem),
+        detect_sections(raw_text),
+        raw_text,
+        source_pages=page_text,
+    )
 
 
 def load_docx_resume(path: Path) -> dict[str, Any]:
@@ -111,7 +117,13 @@ def first_line(value: str, fallback: str) -> str:
     return next((line.strip() for line in value.splitlines() if line.strip()), fallback)
 
 
-def build_candidate(path: Path, candidate_name: str, sections: dict[str, Any], raw_text: str) -> dict[str, Any]:
+def build_candidate(
+    path: Path,
+    candidate_name: str,
+    sections: dict[str, Any],
+    raw_text: str,
+    source_pages: list[str] | None = None,
+) -> dict[str, Any]:
     candidate_id = slugify(path.stem)
     evidence = []
     position = 1
@@ -127,7 +139,7 @@ def build_candidate(path: Path, candidate_name: str, sections: dict[str, Any], r
                     "evidence_id": f"{candidate_id}_evidence_{position:03d}",
                     "section": section,
                     "text": value,
-                    "page": None,
+                    "page": find_page(value, source_pages),
                     "position": position,
                     "extracted_skill": skills[0] if skills else None,
                     "canonical_skill": skills[0] if skills else None,
@@ -148,6 +160,16 @@ def build_candidate(path: Path, candidate_name: str, sections: dict[str, Any], r
         "evidence": evidence,
         "metadata": {"source_format": path.suffix.lower().lstrip(".")},
     }
+
+
+def find_page(value: str, source_pages: list[str] | None) -> int | None:
+    if not source_pages:
+        return None
+    normalized_value = normalize_value(value).lower()
+    for page_number, page_text in enumerate(source_pages, start=1):
+        if normalized_value and normalized_value in page_text.lower():
+            return page_number
+    return None
 
 
 def section_items(root: ElementTree.Element, section_name: str) -> list[str]:
