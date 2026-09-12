@@ -19,32 +19,33 @@
 - [ ] Identify explicit vs implicit requirements
 - [ ] Identify semantic traps and keyword traps
 - [ ] Create initial human reference ranking
-- [ ] Lock shared data schema
-- [ ] Define scoring configuration and thresholds
+- [x] Lock shared data schema
+- [~] Define scoring configuration and thresholds (initial baseline only)
 - [ ] Validate PDF extraction quality
-- [ ] Define golden test cases for matching edge cases
-- [ ] Add keyword-stuffing adversarial case
-- [ ] Add semantic-without-exact-terminology case
-- [ ] Add ambiguous Node wording case
-- [ ] Add exact-mention-with-weak-evidence case
-- [ ] Add React vs React Native related-skill case
+- [~] Define golden test cases for matching edge cases
+- [x] Add keyword-stuffing adversarial case definition
+- [x] Add semantic-without-exact-terminology case definition
+- [x] Add ambiguous Node wording case definition
+- [x] Add exact-mention-with-weak-evidence case definition
+- [x] Add React vs React Native related-skill case definition
 - [ ] Define ranking metrics for evaluation
 
 ## Person 1 — Data / Parsing
-- [ ] Implement PyMuPDF extraction
+- [~] Implement PyMuPDF extraction
+- [~] Implement DOCX extraction
 - [ ] Add OCR fallback for poor-quality PDFs
 - [ ] Preserve page numbers and section boundaries
 - [ ] Normalize extracted text
 - [ ] Detect resume sections
-- [ ] Create candidate evidence store
+- [~] Create candidate evidence store
 
 ## Person 2 — Matching / Ranking
 - [ ] Review JD requirements relevant to scoring
 - [ ] Define keyword matching strategy
 - [ ] Define semantic matching strategy
-- [ ] Define requirement-level scoring approach
-- [ ] Define eligibility vs fit logic
-- [ ] Prepare mock requirement/evidence data for development
+- [x] Define requirement-level scoring approach
+- [x] Define eligibility vs fit logic
+- [x] Prepare mock requirement/evidence data for development
 
 ## Person 3 — Evaluation / Demo
 - [ ] Design evaluation methodology
@@ -70,19 +71,19 @@
 - [ ] Produce `candidates.json`
 
 ## Person 2 — Matching / Ranking
-- [ ] Review requirement schema against scoring needs
+- [x] Review requirement schema against scoring needs
 - [ ] Implement canonical skill normalization
-- [ ] Prepare matching configuration
-- [ ] Define mandatory requirement handling
-- [ ] Define evidence-source and evidence-strength categories
-- [ ] Define match types: exact / alias / related / semantic
+- [~] Prepare matching configuration
+- [x] Define mandatory requirement handling
+- [x] Define evidence-source and evidence-strength categories
+- [x] Define match types: exact / alias / related / semantic
 
 ## Person 3 — Evaluation / Demo
 - [ ] Inspect structured candidate data
 - [ ] Create human reference ranking
 - [ ] Identify expected top candidates
 - [ ] Document difficult matching cases
-- [ ] Define explanation output schema
+- [x] Define explanation output schema
 
 ---
 

@@ -8,6 +8,7 @@ Python 3.11+
 | Area | Preferred stack | Reason |
 |---|---|---|
 | PDF extraction | PyMuPDF (`fitz`) | Fast, reliable PDF text extraction with page-level provenance |
+| DOCX extraction | `python-docx` | Read supplied Word resumes while preserving paragraph order |
 | OCR fallback | PaddleOCR or Tesseract | Only used when PyMuPDF output is poor |
 | Data validation | Pydantic | Clean schemas for JD requirements, evidence, and ranking output |
 | Text normalization | Python stdlib + regex | Deterministic cleanup of whitespace, bullets, weird formatting, and date noise |
@@ -41,7 +42,7 @@ python -m venv .venv
 # macOS/Linux
 source .venv/bin/activate
 
-pip install pymupdf rapidfuzz pydantic numpy scikit-learn rank-bm25 streamlit
+pip install pymupdf python-docx rapidfuzz pydantic numpy scikit-learn rank-bm25 streamlit
 pip install sentence-transformers
 ```
 

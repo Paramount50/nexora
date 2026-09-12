@@ -1,0 +1,83 @@
+{
+  "job_title": "Junior Full Stack Developer Intern",
+  "company": "TechNova Solutions",
+  "requirements": [
+    {
+      "requirement_id": "req_01",
+      "canonical_name": "JavaScript",
+      "category": "technical_skill",
+      "importance": "required",
+      "weight": 0.15,
+      "aliases": ["js", "javascript"],
+      "related_skills": ["TypeScript"],
+      "source_text": "Strong JavaScript fundamentals",
+      "evidence_expectations": ["implemented frontend or backend code"]
+    },
+    {
+      "requirement_id": "req_02",
+      "canonical_name": "React",
+      "category": "technical_skill",
+      "importance": "required",
+      "weight": 0.15,
+      "aliases": ["react.js", "reactjs"],
+      "related_skills": ["Vue.js", "Angular"],
+      "source_text": "Build user interfaces using React",
+      "evidence_expectations": ["React component or application experience"]
+    },
+    {
+      "requirement_id": "req_03",
+      "canonical_name": "Node.js",
+      "category": "technical_skill",
+      "importance": "required",
+      "weight": 0.2,
+      "aliases": ["nodejs", "node js"],
+      "related_skills": ["Express.js", "REST API", "FastAPI", "Spring Boot"],
+      "source_text": "Develop backend services using Node.js",
+      "evidence_expectations": ["backend service or REST API implementation"]
+    },
+    {
+      "requirement_id": "req_04",
+      "canonical_name": "SQL",
+      "category": "technical_skill",
+      "importance": "preferred",
+      "weight": 0.15,
+      "aliases": ["structured query language"],
+      "related_skills": ["PostgreSQL", "MySQL", "SQLite"],
+      "source_text": "Work with SQL databases",
+      "evidence_expectations": ["queries, schema, or database-backed application work"]
+    },
+    {
+      "requirement_id": "req_05",
+      "canonical_name": "Git",
+      "category": "tooling",
+      "importance": "preferred",
+      "weight": 0.1,
+      "aliases": ["git version control"],
+      "related_skills": ["GitHub"],
+      "source_text": "Use Git for collaborative development",
+      "evidence_expectations": ["commits, branches, pull requests, or code review"]
+    },
+    {
+      "requirement_id": "req_06",
+      "canonical_name": "Docker",
+      "category": "tooling",
+      "importance": "nice_to_have",
+      "weight": 0.1,
+      "aliases": ["docker compose", "containers"],
+      "related_skills": ["AWS"],
+      "source_text": "Experience with containerized development or deployment",
+      "evidence_expectations": ["containerized service or deployment experience"]
+    },
+    {
+      "requirement_id": "req_07",
+      "canonical_name": "REST API",
+      "category": "technical_skill",
+      "importance": "preferred",
+      "weight": 0.15,
+      "aliases": ["rest apis", "restful api", "rest service"],
+      "related_skills": ["Express.js", "FastAPI", "Spring Boot"],
+      "source_text": "Build and consume REST APIs",
+      "evidence_expectations": ["implemented or integrated HTTP API endpoints"]
+    }
+  ]
+}
