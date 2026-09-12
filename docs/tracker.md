@@ -49,14 +49,14 @@
 - [x] Prepare mock requirement/evidence data for development
 
 ## Person 3 — Evaluation / Demo
-- [ ] Design evaluation methodology
+- [x] Design evaluation methodology (band-aware synthetic evaluation; human reference remains pending)
 - [x] Define ranking-quality checks
 - [x] Define pairwise comparison checks
 - [x] Identify obvious ranking failures
 - [x] Record failure cases
-- [ ] Design top-3 explanation format
-- [ ] Plan Streamlit ranking view
-- [ ] Prepare basic demo flow
+- [x] Design top-3 explanation format
+- [x] Plan Streamlit ranking view
+- [~] Prepare basic demo flow
 
 ---
 
@@ -69,9 +69,9 @@
 - [ ] Build aliases
 - [ ] Attach related skills
 - [ ] Define evidence expectations
-- [~] Produce `requirements.json` (synthetic fixture created as `mock_requirements.json`)
-- [~] Structure all 18 resumes (22 XML/TXT records structured; DOCX/PDF coverage remains)
-- [~] Produce `candidates.json` (synthetic candidate fixtures created)
+- [~] Produce `requirements.json` (synthetic fixture created as `mock_requirements.json`; runtime JD extraction remains)
+- [x] Structure dummy resumes across PDF, DOCX, XML, and TXT inputs
+- [~] Produce `candidates.json` (synthetic candidate fixtures created; runtime candidate artifact remains)
 
 ## Person 2 — Matching / Ranking
 - [x] Review requirement schema against scoring needs
@@ -118,29 +118,29 @@
 - [x] Compare keyword-only vs semantic-only
 - [x] Compare hybrid ranking
 - [ ] Evaluate top-k overlap against human reference
-- [ ] Evaluate pairwise ranking agreement
-- [ ] Identify obvious ranking failures
-- [ ] Record failure cases
+- [x] Evaluate pairwise ranking agreement against synthetic fit bands
+- [x] Identify obvious ranking failures
+- [x] Record failure cases
 
 ---
 
 # Phase 4 — Ranking Quality
 
 ## Person 1
-- [ ] Fix keyword false positives
-- [ ] Fix alias problems
-- [ ] Test Java vs JavaScript
-- [ ] Test React vs React Native
-- [ ] Test AWS vs Azure
-- [ ] Test fuzzy matching edge cases
+- [~] Fix keyword false positives
+- [x] Fix alias problems
+- [x] Test Java vs JavaScript
+- [x] Test React vs React Native
+- [x] Test AWS vs Azure (normalization coverage)
+- [x] Test fuzzy matching edge cases
 
 ## Person 2
 - [ ] Tune keyword/semantic fusion
 - [ ] Tune requirement weights
 - [ ] Tune mandatory penalties
-- [ ] Normalize scoring signals
-- [ ] Ensure meaningful score spread
-- [ ] Validate no score double-counting
+- [x] Normalize scoring signals
+- [x] Ensure meaningful score spread
+- [x] Validate no score double-counting
 - [ ] Generate final rank 1–18
 
 ## Person 3
@@ -211,12 +211,12 @@
 - [ ] Build candidate comparison view
 
 ## Person 1
-- [ ] Connect extraction/data layer to UI
+- [~] Connect extraction/data layer to UI (synthetic pipeline connected; runtime upload remains)
 - [ ] Fix data formatting issues
 
 ## Person 2
-- [ ] Connect ranking engine to UI
-- [ ] Ensure score breakdown is displayed correctly
+- [x] Connect ranking engine to UI
+- [~] Ensure score breakdown is displayed correctly (keyword mode complete; semantic mode remains)
 
 ---
 
@@ -226,19 +226,19 @@
 - [ ] Test malformed PDFs
 - [ ] Test missing resume sections
 - [ ] Test duplicate skills
-- [ ] Test aliases
-- [ ] Test Java vs JavaScript
-- [ ] Test React vs React Native
-- [ ] Test Node.js vs ambiguous "Node" handling
-- [ ] Test keyword-heavy weak candidate
-- [ ] Test semantic-heavy candidate with few exact keywords
-- [ ] Test mandatory requirement failure
-- [ ] Test no-evidence case
-- [ ] Verify all 18 candidates appear
-- [ ] Verify ranking is deterministic
-- [ ] Verify top-3 explanations are evidence-grounded
-- [ ] Verify keyword and semantic signals both affect final ranking
-- [ ] Verify eligibility and fit logic disagree correctly in edge cases
+- [x] Test aliases
+- [x] Test Java vs JavaScript
+- [x] Test React vs React Native
+- [x] Test Node.js vs ambiguous "Node" handling
+- [x] Test keyword-heavy weak candidate
+- [x] Test semantic-heavy candidate with few exact keywords
+- [x] Test mandatory requirement failure
+- [x] Test no-evidence case
+- [ ] Verify all 18 runtime candidates appear
+- [x] Verify ranking is deterministic
+- [x] Verify top-3 explanations are evidence-grounded
+- [x] Verify keyword and semantic signals both affect final ranking
+- [x] Verify eligibility and fit logic disagree correctly in edge cases
 
 ---
 
@@ -257,10 +257,10 @@
 - [ ] Scoring configuration is ready to explain to judges
 
 ## Person 3
-- [ ] Streamlit demo works
-- [ ] Top-3 explanations work
+- [x] Streamlit demo works (HTTP smoke test passed)
+- [x] Top-3 explanations work
 - [ ] Candidate comparison works
-- [ ] Demo flow rehearsed
+- [~] Demo flow rehearsed
 - [ ] Judge questions prepared
 
 ## Shared
