@@ -111,7 +111,8 @@
 - [x] Cache embeddings and processed artifacts (in-memory baseline)
 
 ## Person 3 — Integration / Evaluation
-- [ ] Connect parsing output to matching pipeline
+- [x] Connect parsing output to matching pipeline
+- [x] Run first end-to-end ranking
 - [ ] Run first end-to-end ranking
 - [ ] Compare keyword-only vs semantic-only
 - [ ] Compare hybrid ranking

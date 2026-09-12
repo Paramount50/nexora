@@ -15,9 +15,15 @@ def rank_candidates(
     candidates: list[dict[str, Any]],
     requirements: list[dict[str, Any]],
     semantic_engine: Any | None = None,
+    semantic_results: dict[tuple[str, str], dict[str, Any]] | None = None,
 ) -> list[dict[str, Any]]:
     rankings = [
-        rank_candidate(candidate, requirements, semantic_engine=semantic_engine)
+        rank_candidate(
+            candidate,
+            requirements,
+            semantic_engine=semantic_engine,
+            semantic_results=semantic_results,
+        )
         for candidate in candidates
     ]
     rankings.sort(key=lambda item: (item["eligible"], item["final_score"]), reverse=True)
@@ -30,12 +36,15 @@ def rank_candidate(
     candidate: dict[str, Any],
     requirements: list[dict[str, Any]],
     semantic_engine: Any | None = None,
+    semantic_results: dict[tuple[str, str], dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     requirement_results = []
     for requirement in requirements:
         keyword_result = match_requirement(requirement, candidate.get("evidence", []))
-        semantic_result = None
-        if semantic_engine is not None and candidate.get("evidence"):
+        semantic_result = (semantic_results or {}).get(
+            (candidate["candidate_id"], requirement["requirement_id"])
+        )
+        if semantic_result is None and semantic_engine is not None and candidate.get("evidence"):
             semantic_results = semantic_engine.match_requirement(
                 requirement, candidate["evidence"], top_k=1
             )
