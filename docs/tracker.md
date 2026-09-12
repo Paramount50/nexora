@@ -98,7 +98,7 @@
 - [x] Implement controlled fuzzy matching
 - [x] Preserve evidence behind every match
 - [x] Implement BM25 retrieval
-- [~] Produce `keyword_engine.py` (matcher and BM25 logic currently split by responsibility)
+- [x] Produce `keyword_engine.py`
 
 ## Person 2 — Semantic + Ranking Engine
 - [x] Load embedding model (`all-MiniLM-L6-v2` fallback validated)
