@@ -5,6 +5,8 @@ from __future__ import annotations
 import re
 from typing import Any
 
+from rapidfuzz.fuzz import ratio
+
 from src.matching.normalization import extract_skill_mentions, normalize_skill
 
 
@@ -17,6 +19,7 @@ EVIDENCE_STRENGTH_SCORES = {
 MATCH_SCORES = {
     "exact": 1.0,
     "alias": 0.9,
+    "fuzzy": 0.75,
     "related": 0.5,
     "none": 0.0,
 }
@@ -31,7 +34,7 @@ def match_requirement(requirement: dict[str, Any], evidence_items: list[dict[str
     best_match: dict[str, Any] | None = None
 
     for evidence in evidence_items:
-        match_type = classify_match(requirement, canonical_skill, related_skills, evidence)
+        match_type = classify_match(canonical_skill, related_skills, evidence)
         if match_type == "none":
             continue
         score = MATCH_SCORES[match_type]
@@ -50,10 +53,10 @@ def match_requirement(requirement: dict[str, Any], evidence_items: list[dict[str
 
     match_type = best_match["match_type"]
     evidence = best_match["evidence"]
-    keyword_score = MATCH_SCORES[match_type]
     reason_codes = {
         "exact": ["EXACT_KEYWORD"],
         "alias": ["ALIAS_MATCH"],
+        "fuzzy": ["FUZZY_MATCH"],
         "related": ["RELATED_SKILL"],
     }[match_type]
     if evidence.get("evidence_source_type") in {"project", "experience"}:
@@ -62,27 +65,31 @@ def match_requirement(requirement: dict[str, Any], evidence_items: list[dict[str
         requirement,
         match_type,
         evidence,
-        keyword_score,
+        MATCH_SCORES[match_type],
         best_match["evidence_strength_score"],
         reason_codes,
     )
 
 
-def classify_match(
-    requirement: dict[str, Any],
-    canonical_skill: str,
-    related_skills: set[str],
-    evidence: dict[str, Any],
-) -> str:
+def classify_match(canonical_skill: str, related_skills: set[str], evidence: dict[str, Any]) -> str:
     text = evidence.get("text", "")
     mentions = extract_skill_mentions(text)
     if canonical_skill in mentions:
-        if contains_literal_skill(text, canonical_skill):
-            return "exact"
-        return "alias"
+        return "exact" if contains_literal_skill(text, canonical_skill) else "alias"
     if any(mention in related_skills for mention in mentions):
         return "related"
+    fuzzy_terms = mentions + re.findall(r"[a-zA-Z][a-zA-Z0-9.+#-]{2,}", text)
+    if any(is_controlled_fuzzy_match(canonical_skill, term) for term in fuzzy_terms):
+        return "fuzzy"
     return "none"
+
+
+def is_controlled_fuzzy_match(canonical_skill: str, mention: str, threshold: int = 92) -> bool:
+    if canonical_skill.lower() == mention.lower():
+        return False
+    if abs(len(canonical_skill) - len(mention)) > 2:
+        return False
+    return ratio(canonical_skill.lower(), mention.lower()) >= threshold
 
 
 def contains_literal_skill(text: str, canonical_skill: str) -> bool:
@@ -112,7 +119,7 @@ def build_result(
         "status": "strong_match" if match_type == "exact" else "moderate_match" if matched else "no_evidence",
         "exact_match": match_type == "exact",
         "alias_match": match_type == "alias",
-        "fuzzy_match": False,
+        "fuzzy_match": match_type == "fuzzy",
         "semantic_match": False,
         "reason_codes": reason_codes or [],
         "evidence_text": [evidence["text"]] if evidence else [],

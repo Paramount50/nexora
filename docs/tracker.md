@@ -93,7 +93,7 @@
 ## Person 1 — Keyword Engine
 - [x] Implement exact matching
 - [x] Implement alias matching
-- [ ] Implement controlled fuzzy matching
+- [x] Implement controlled fuzzy matching
 - [x] Preserve evidence behind every match
 - [ ] Implement BM25 retrieval
 - [ ] Produce `keyword_engine.py`
