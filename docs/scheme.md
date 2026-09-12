@@ -1,94 +1,248 @@
 # Schema — Data Contracts Between Modules
 
-Lock this before splitting up. Every module reads/writes exactly this shape — no ad hoc fields.
+This contract defines the canonical data structures used across parsing, matching, ranking, explanation, and demo layers.
 
-## 1. Parsed JD (Person A → Person B)
+## 1) JD requirement schema
 
 ```json
 {
-  "title": "Junior Full Stack Developer Intern",
-  "company": "TechNova Solutions",
-  "required_skills": ["javascript", "react", "nodejs", "sql"],
-  "nice_to_have_skills": ["docker", "aws"],
-  "requirement_lines": [
-    "Build and maintain REST APIs using Node.js",
-    "Develop responsive UI components in React",
-    "Collaborate with the team using Git"
+  "requirement_id": "req_03",
+  "canonical_name": "Node.js",
+  "category": "technical_skill",
+  "importance": "required",
+  "weight": 0.15,
+  "aliases": ["nodejs", "node js"],
+  "related_skills": ["Express.js", "REST API"],
+  "source_text": "Develop backend services using Node.js",
+  "evidence_expectations": [
+    "direct backend framework experience",
+    "REST API implementation",
+    "production deployment experience"
   ]
 }
 ```
 
-## 2. Parsed resumes (Person A → Person B)
+### JD-level object
 
 ```json
 {
-  "resumes": [
+  "job_title": "Junior Full Stack Developer Intern",
+  "company": "TechNova Solutions",
+  "requirements": [
     {
-      "id": "r01",
-      "name": "Candidate Name",
-      "raw_text": "...",
-      "skills_section": "javascript, express, mongodb, git",
-      "experience_bullets": [
-        "Built REST APIs with Express and MongoDB",
-        "Deployed app on Heroku"
-      ],
-      "education": "B.Tech Computer Science, 2026"
+      "requirement_id": "req_01",
+      "canonical_name": "Node.js",
+      "category": "technical_skill",
+      "importance": "required",
+      "weight": 0.15,
+      "aliases": ["nodejs", "node js"],
+      "related_skills": ["Express.js", "REST API"],
+      "source_text": "Develop backend services using Node.js",
+      "evidence_expectations": ["backend services", "REST APIs"]
     }
   ]
 }
 ```
 
-## 3. Ranking output (Person B → Person C)
+## 2) Resume evidence schema
+
+```json
+{
+  "candidate_id": "candidate_07",
+  "evidence_id": "cand07_exp03",
+  "section": "experience",
+  "text": "Built REST APIs using Express.js and MongoDB",
+  "page": 1,
+  "position": 12,
+  "extracted_skill": "Express.js",
+  "canonical_skill": "Express.js",
+  "evidence_type": "project_or_experience",
+  "source": "experience",
+  "evidence_source_type": "project",
+  "evidence_strength": "substantial"
+}
+```
+
+### Candidate evidence bundle
+
+```json
+{
+  "candidate_id": "candidate_07",
+  "candidate_name": "Candidate 07",
+  "evidence": [
+    {
+      "candidate_id": "candidate_07",
+      "evidence_id": "cand07_skill01",
+      "section": "skills",
+      "text": "JavaScript, Node.js, Express.js, MongoDB",
+      "page": 1,
+      "position": 2,
+      "extracted_skill": "Node.js",
+      "canonical_skill": "Node.js",
+      "evidence_type": "skill_list",
+      "source": "skills",
+      "evidence_source_type": "skills_section",
+      "evidence_strength": "applied"
+    }
+  ]
+}
+```
+
+## 3) Requirement-level match result schema
+
+```json
+{
+  "candidate_id": "candidate_07",
+  "requirement_id": "req_01",
+  "canonical_name": "Node.js",
+  "importance": "required",
+  "match_type": "related",
+  "keyword_score": 0.0,
+  "semantic_score": 0.76,
+  "evidence_strength_score": 0.65,
+  "confidence": 0.72,
+  "status": "moderate_match",
+  "exact_match": false,
+  "alias_match": false,
+  "fuzzy_match": false,
+  "semantic_match": true,
+  "reason_codes": ["RELATED_SKILL", "PROJECT_EVIDENCE"],
+  "evidence_text": [
+    "Built REST APIs using Express.js and MongoDB"
+  ],
+  "missing": false,
+  "notes": "Relevant backend API work indicates strong contextual fit, but the explicit Node.js keyword is absent."
+}
+```
+
+This ensures a resume can strongly match a requirement semantically without incorrectly claiming an exact literal match.
+
+## 4) Candidate ranking output schema
 
 ```json
 {
   "rankings": [
     {
-      "resume_id": "r01",
-      "name": "Candidate Name",
-      "final_score": 87.2,
-      "keyword_score": 0.80,
-      "semantic_score": 0.93,
-      "matched_skills": ["javascript", "react", "git"],
-      "missing_required": ["sql"],
+      "candidate_id": "candidate_07",
+      "candidate_name": "Candidate 07",
+      "rank": 1,
+      "final_score": 87.4,
+      "keyword_score": 0.82,
+      "semantic_score": 0.76,
+      "mandatory_coverage": 0.92,
+      "preferred_coverage": 0.75,
+      "missing_requirements": ["SQL"],
+      "matched_requirements": ["Node.js", "REST API", "React"],
+      "weak_requirements": ["Database design"],
       "top_evidence": [
         {
-          "jd_line": "Build and maintain REST APIs using Node.js",
-          "resume_line": "Built REST APIs with Express and MongoDB",
-          "similarity": 0.81
+          "requirement_id": "req_01",
+          "canonical_name": "Node.js",
+          "resume_text": "Built REST APIs using Express.js and MongoDB",
+          "semantic_similarity": 0.81,
+          "match_type": "related"
         }
       ]
     }
   ]
 }
 ```
-Rankings array is sorted descending by `final_score`. All 15–18 resumes appear here, not just
-the top 3.
 
-## 4. Explanation output (Person C → demo)
+The rankings array is sorted descending by `final_score`, and all 18 candidates should appear in the full output.
+
+## 5) Explanation output schema
 
 ```json
 {
   "explanations": [
     {
-      "resume_id": "r01",
+      "candidate_id": "candidate_07",
       "rank": 1,
-      "explanation": "Ranked #1 for strong overlap on React and Node.js, with direct experience matching the core JD requirements. Missing: SQL, which the JD lists as required."
+      "summary": "Strong backend API experience and frontend development overlap with the JD, with only a partial gap on SQL depth.",
+      "strongest_matches": [
+        "Node.js context via backend API work",
+        "React development",
+        "MongoDB usage"
+      ],
+      "missing_or_weak": [
+        "SQL depth",
+        "AWS familiarity"
+      ],
+      "evidence_refs": [
+        "cand07_exp03",
+        "cand07_proj02"
+      ],
+      "reason_codes": [
+        "RELATED_SKILL",
+        "PROJECT_EVIDENCE",
+        "SEMANTIC_MATCH"
+      ]
     }
   ]
 }
 ```
-Only generated for the top 3 `resume_id`s from the ranking output.
 
-## Config file (shared, not per-person)
+Only the top 3 candidates should receive explanation output in the final demo.
+
+## 6) Shared config schema
 
 ```json
 {
-  "fusion_weights": { "alpha_semantic": 0.5, "beta_keyword": 0.5 },
+  "fusion": {
+    "keyword_weight": 0.5,
+    "semantic_weight": 0.5
+  },
+  "reranker": {
+    "enabled": false,
+    "influence": "evidence_refinement"
+  },
+  "mandatory_penalty": 0.12,
   "fuzzy_match_threshold": 85,
   "required_skill_weight": 2,
-  "nice_to_have_weight": 1
+  "preferred_skill_weight": 1,
+  "nice_to_have_weight": 0.5,
+  "embedding_model": "Qwen3-Embedding-0.6B",
+  "reranker_model": "Qwen3-Reranker-0.6B"
 }
 ```
-Read by Person B's scoring module. Change values here, not inline in code, so the team can point
-to and justify specific numbers during judging.
+
+The reranker is not added as a separate additive candidate-score component. It refines evidence relevance instead.
+
+## 7) Dataset-level contract
+
+```json
+{
+  "job_description": {
+    "title": "Junior Full Stack Developer Intern",
+    "source": "jd.pdf"
+  },
+  "candidates": [
+    {
+      "candidate_id": "candidate_01",
+      "candidate_name": "Candidate 01",
+      "resume_source": "resume_01.pdf"
+    }
+  ]
+}
+```
+
+This is the canonical structure used to run the end-to-end evaluation harness and produce final demo output.
+
+## 8) Candidate eligibility and fit contract
+
+```json
+{
+  "candidate_id": "candidate_07",
+  "eligibility": {
+    "mandatory_requirements_met": true,
+    "mandatory_requirements_missing": ["SQL"],
+    "failed_critical_requirements": 1
+  },
+  "fit": {
+    "weighted_requirement_score": 0.85,
+    "preferred_requirement_coverage": 0.75
+  }
+}
+```
+
+Eligibility is tracked separately from fit so a candidate who is broadly strong but misses a mandatory requirement cannot outrank a candidate who satisfies the critical requirements.
