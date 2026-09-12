@@ -223,9 +223,9 @@
 # Phase 8 — Final Validation
 
 ## Shared
-- [ ] Test malformed PDFs
-- [ ] Test missing resume sections
-- [ ] Test duplicate skills
+- [x] Test malformed PDFs
+- [x] Test missing resume sections
+- [x] Test duplicate skills
 - [x] Test aliases
 - [x] Test Java vs JavaScript
 - [x] Test React vs React Native
