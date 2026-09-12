@@ -36,7 +36,7 @@
 - [ ] Add OCR fallback for poor-quality PDFs
 - [ ] Preserve page numbers and section boundaries
 - [x] Normalize extracted text
-- [~] Detect resume sections (structured XML path implemented)
+- [x] Detect resume sections for XML and flattened text inputs
 - [~] Create candidate evidence store
 - [x] Build mixed-format resume manifest
 

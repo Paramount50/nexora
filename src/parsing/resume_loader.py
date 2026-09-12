@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ElementTree
 from pathlib import Path
 from typing import Any
 
+from src.parsing.section_detector import detect_sections
 from src.parsing.text_normalizer import normalize_text, normalize_value
 
 
@@ -66,7 +67,7 @@ def load_pdf_resume(path: Path) -> dict[str, Any]:
     document = fitz.open(path)
     page_text = [page.get_text("text") for page in document]
     raw_text = normalize_text("\n".join(page_text))
-    return build_candidate(path, first_line(raw_text, path.stem), {"raw": raw_text}, raw_text)
+    return build_candidate(path, first_line(raw_text, path.stem), detect_sections(raw_text), raw_text)
 
 
 def load_docx_resume(path: Path) -> dict[str, Any]:
@@ -80,7 +81,7 @@ def load_docx_resume(path: Path) -> dict[str, Any]:
     table_values = [cell.text.strip() for table in document.tables for row in table.rows for cell in row.cells if cell.text.strip()]
     values = paragraphs + table_values
     raw_text = normalize_text("\n".join(values))
-    return build_candidate(path, values[0] if values else path.stem, {"raw": raw_text}, raw_text)
+    return build_candidate(path, values[0] if values else path.stem, detect_sections(raw_text), raw_text)
 
 
 def load_xml_resume(path: Path) -> dict[str, Any]:
@@ -102,7 +103,7 @@ def load_xml_resume(path: Path) -> dict[str, Any]:
 def load_text_resume(path: Path) -> dict[str, Any]:
     raw_text = normalize_text(path.read_text(encoding="utf-8"))
     candidate_name = first_line(raw_text, path.stem)
-    sections = {"raw": raw_text}
+    sections = detect_sections(raw_text)
     return build_candidate(path, candidate_name, sections, raw_text)
 
 
