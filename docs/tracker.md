@@ -84,6 +84,7 @@
 ## Person 3 — Evaluation / Demo
 - [ ] Inspect structured candidate data
 - [ ] Create human reference ranking
+- [x] Prepare human reference ranking template
 - [ ] Identify expected top candidates
 - [ ] Document difficult matching cases
 - [x] Define explanation output schema
