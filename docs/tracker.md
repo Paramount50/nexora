@@ -43,7 +43,7 @@
 ## Person 2 — Matching / Ranking
 - [ ] Review JD requirements relevant to scoring
 - [x] Define keyword matching strategy
-- [ ] Define semantic matching strategy
+- [x] Define semantic matching strategy
 - [x] Define requirement-level scoring approach
 - [x] Define eligibility vs fit logic
 - [x] Prepare mock requirement/evidence data for development
@@ -104,7 +104,7 @@
 - [ ] Embed resume evidence chunks
 - [ ] Compute cosine similarity
 - [ ] Keep strongest semantic evidence per requirement
-- [ ] Produce `semantic_engine.py`
+- [~] Produce `semantic_engine.py` (adapter and cosine retrieval implemented; model validation pending)
 - [ ] Implement requirement-level score fusion
 - [ ] Implement mandatory requirement eligibility checks and penalties
 - [ ] Produce `ranker.py`
