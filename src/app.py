@@ -8,7 +8,9 @@ import pandas as pd
 import streamlit as st
 
 from src.explanations.explanation import explain_top_candidates
-from src.pipeline import run_pipeline
+from src.parsing.jd_loader import extract_requirements
+from src.parsing.resume_loader import load_resume
+from src.pipeline import rank_documents, run_pipeline
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,12 +22,36 @@ def load_keyword_ranking() -> list[dict]:
     return run_pipeline(DATA_DIR)
 
 
+def rank_uploaded_inputs(jd_upload, resume_uploads):
+    import tempfile
+
+    with tempfile.TemporaryDirectory() as directory:
+        root = Path(directory)
+        jd_path = root / jd_upload.name
+        jd_path.write_bytes(jd_upload.getvalue())
+        requirements = extract_requirements(jd_path)["requirements"]
+        candidates = []
+        for upload in resume_uploads:
+            path = root / upload.name
+            path.write_bytes(upload.getvalue())
+            candidates.append(load_resume(path))
+        return rank_documents(candidates, requirements)
+
+
 def main() -> None:
     st.set_page_config(page_title="Nexora Resume Ranking", layout="wide")
     st.title("Nexora Resume Ranking")
     st.caption("Evidence-first candidate ranking over the synthetic development dataset")
 
-    rankings = load_keyword_ranking()
+    jd_upload = st.file_uploader("Job description", type=["pdf", "docx", "txt"])
+    resume_uploads = st.file_uploader(
+        "Resume files", type=["pdf", "docx", "txt", "xml"], accept_multiple_files=True
+    )
+    if jd_upload and resume_uploads:
+        rankings = rank_uploaded_inputs(jd_upload, resume_uploads)
+    else:
+        rankings = load_keyword_ranking()
+        st.info("Showing the synthetic development dataset. Upload a JD and resumes to rank runtime inputs.")
     explanations = explain_top_candidates(rankings)
     st.metric("Candidates", len(rankings))
     st.metric("Eligible candidates", sum(item["eligible"] for item in rankings))

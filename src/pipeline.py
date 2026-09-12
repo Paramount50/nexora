@@ -17,8 +17,20 @@ def run_pipeline(
     fusion_config: dict[str, float] | None = None,
 ) -> list[dict[str, Any]]:
     dataset, requirement_data = load_dataset(data_dir)
-    candidates = dataset["candidates"]
-    requirements = requirement_data["requirements"]
+    return rank_documents(
+        dataset["candidates"],
+        requirement_data["requirements"],
+        semantic_engine=semantic_engine,
+        fusion_config=fusion_config,
+    )
+
+
+def rank_documents(
+    candidates: list[dict[str, Any]],
+    requirements: list[dict[str, Any]],
+    semantic_engine: SemanticEngine | None = None,
+    fusion_config: dict[str, float] | None = None,
+) -> list[dict[str, Any]]:
     evidence = [item for candidate in candidates for item in candidate["evidence"]]
 
     for requirement in requirements:

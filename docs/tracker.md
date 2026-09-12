@@ -69,7 +69,7 @@
 - [ ] Build aliases
 - [ ] Attach related skills
 - [ ] Define evidence expectations
-- [~] Produce `requirements.json` (synthetic fixture created as `mock_requirements.json`; runtime JD extraction remains)
+- [~] Produce `requirements.json` (synthetic fixture plus deterministic runtime JD extraction)
 - [x] Structure dummy resumes across PDF, DOCX, XML, and TXT inputs
 - [~] Produce `candidates.json` (synthetic candidate fixtures created; runtime candidate artifact remains)
 
@@ -211,7 +211,7 @@
 - [ ] Build candidate comparison view
 
 ## Person 1
-- [~] Connect extraction/data layer to UI (synthetic pipeline connected; runtime upload remains)
+- [x] Connect extraction/data layer to UI (runtime JD/resume uploads supported)
 - [ ] Fix data formatting issues
 
 ## Person 2
