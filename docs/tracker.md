@@ -156,23 +156,23 @@
 # Phase 5 — Explanation Engine
 
 ## Person 1
-- [ ] Ensure evidence contains source text and provenance
-- [ ] Validate evidence references
-- [ ] Ensure missing requirements are correctly identified
+- [x] Ensure evidence contains source text and provenance
+- [x] Validate evidence references
+- [x] Ensure missing requirements are correctly identified
 
 ## Person 2
-- [ ] Produce requirement-level match breakdown
-- [ ] Produce strongest evidence per requirement
-- [ ] Produce matched / weak / missing requirement lists
-- [ ] Attach reason codes and confidence values
+- [x] Produce requirement-level match breakdown
+- [x] Produce strongest evidence per requirement
+- [x] Produce matched / weak / missing requirement lists
+- [x] Attach reason codes and confidence values
 
 ## Person 3
-- [ ] Build top-3 explanation generator
-- [ ] Generate strongest matches
-- [ ] Generate missing / weak requirements
-- [ ] Generate concise candidate summaries
-- [ ] Ensure explanations use only verified evidence
-- [ ] Produce `explanation.py`
+- [x] Build top-3 explanation generator
+- [x] Generate strongest matches
+- [x] Generate missing / weak requirements
+- [x] Generate concise candidate summaries
+- [x] Ensure explanations use only verified evidence
+- [x] Produce `explanation.py`
 
 ---
 

@@ -108,6 +108,7 @@ def build_result(
     matched = evidence is not None
     return {
         "candidate_id": evidence.get("candidate_id") if evidence else None,
+        "evidence_id": evidence.get("evidence_id") if evidence else None,
         "requirement_id": requirement["requirement_id"],
         "canonical_name": requirement["canonical_name"],
         "importance": requirement["importance"],
