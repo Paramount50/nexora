@@ -105,7 +105,7 @@
 - [x] Compute cosine similarity
 - [x] Keep strongest semantic evidence per requirement
 - [x] Produce `semantic_engine.py` (real fallback model validated; preferred Qwen model remains configurable)
-- [ ] Implement requirement-level score fusion
+- [x] Implement requirement-level score fusion
 - [ ] Implement mandatory requirement eligibility checks and penalties
 - [ ] Produce `ranker.py`
 - [ ] Cache embeddings and processed artifacts
