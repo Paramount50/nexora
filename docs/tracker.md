@@ -21,7 +21,7 @@
 - [ ] Create initial human reference ranking
 - [x] Lock shared data schema
 - [~] Define scoring configuration and thresholds (initial baseline only)
-- [ ] Validate PDF extraction quality
+- [~] Validate PDF extraction quality
 - [~] Define golden test cases for matching edge cases
 - [x] Add keyword-stuffing adversarial case definition
 - [x] Add semantic-without-exact-terminology case definition
@@ -36,7 +36,7 @@
 - [ ] Add OCR fallback for poor-quality PDFs
 - [ ] Preserve page numbers and section boundaries
 - [ ] Normalize extracted text
-- [ ] Detect resume sections
+- [~] Detect resume sections (structured XML path implemented)
 - [~] Create candidate evidence store
 - [x] Build mixed-format resume manifest
 
@@ -67,13 +67,13 @@
 - [ ] Build aliases
 - [ ] Attach related skills
 - [ ] Define evidence expectations
-- [ ] Produce `requirements.json`
-- [ ] Structure all 18 resumes
-- [ ] Produce `candidates.json`
+- [~] Produce `requirements.json` (synthetic fixture created as `mock_requirements.json`)
+- [~] Structure all 18 resumes (22 XML/TXT records structured; DOCX/PDF coverage remains)
+- [~] Produce `candidates.json` (synthetic candidate fixtures created)
 
 ## Person 2 — Matching / Ranking
 - [x] Review requirement schema against scoring needs
-- [ ] Implement canonical skill normalization
+- [~] Implement canonical skill normalization (initial parser alias map only)
 - [~] Prepare matching configuration
 - [x] Define mandatory requirement handling
 - [x] Define evidence-source and evidence-strength categories
