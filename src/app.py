@@ -112,6 +112,28 @@ def main() -> None:
                 "evidence": result["evidence_text"],
             })
 
+    st.subheader("Candidate comparison")
+    comparison_names = st.multiselect(
+        "Choose two candidates",
+        list(candidate_names),
+        default=list(candidate_names)[:2],
+        max_selections=2,
+    )
+    if len(comparison_names) == 2:
+        left, right = (candidate_names[name] for name in comparison_names)
+        comparison_rows = []
+        for left_result, right_result in zip(left["requirement_results"], right["requirement_results"]):
+            comparison_rows.append(
+                {
+                    "Requirement": left_result["canonical_name"],
+                    f"{left['candidate_name']} score": left_result["fused_score"],
+                    f"{right['candidate_name']} score": right_result["fused_score"],
+                    f"{left['candidate_name']} match": left_result["match_type"],
+                    f"{right['candidate_name']} match": right_result["match_type"],
+                }
+            )
+        st.dataframe(pd.DataFrame(comparison_rows), use_container_width=True, hide_index=True)
+
     st.subheader("Top 3 explanations")
     for explanation in explanations:
         st.markdown(f"**#{explanation['rank']} {explanation['candidate_id']}**")

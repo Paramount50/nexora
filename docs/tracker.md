@@ -208,7 +208,7 @@
 - [x] Build candidate detail view
 - [x] Show evidence behind matches
 - [x] Show top-3 explanations
-- [ ] Build candidate comparison view
+- [x] Build candidate comparison view
 
 ## Person 1
 - [x] Connect extraction/data layer to UI (runtime JD/resume uploads supported)
