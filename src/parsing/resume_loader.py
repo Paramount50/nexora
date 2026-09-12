@@ -9,6 +9,8 @@ import xml.etree.ElementTree as ElementTree
 from pathlib import Path
 from typing import Any
 
+from src.parsing.text_normalizer import normalize_text, normalize_value
+
 
 SKILL_ALIASES = {
     "javascript": "JavaScript",
@@ -63,7 +65,7 @@ def load_pdf_resume(path: Path) -> dict[str, Any]:
 
     document = fitz.open(path)
     page_text = [page.get_text("text") for page in document]
-    raw_text = "\n".join(page_text).strip()
+    raw_text = normalize_text("\n".join(page_text))
     return build_candidate(path, first_line(raw_text, path.stem), {"raw": raw_text}, raw_text)
 
 
@@ -77,7 +79,7 @@ def load_docx_resume(path: Path) -> dict[str, Any]:
     paragraphs = [paragraph.text.strip() for paragraph in document.paragraphs if paragraph.text.strip()]
     table_values = [cell.text.strip() for table in document.tables for row in table.rows for cell in row.cells if cell.text.strip()]
     values = paragraphs + table_values
-    raw_text = "\n".join(values)
+    raw_text = normalize_text("\n".join(values))
     return build_candidate(path, values[0] if values else path.stem, {"raw": raw_text}, raw_text)
 
 
@@ -93,12 +95,12 @@ def load_xml_resume(path: Path) -> dict[str, Any]:
         "education": section_items(root, "education"),
         "certifications": section_items(root, "certifications"),
     }
-    raw_text = "\n\n".join(value for value in flatten_sections(sections) if value)
+    raw_text = normalize_text("\n\n".join(value for value in flatten_sections(sections) if value))
     return build_candidate(path, candidate_name, sections, raw_text)
 
 
 def load_text_resume(path: Path) -> dict[str, Any]:
-    raw_text = path.read_text(encoding="utf-8")
+    raw_text = normalize_text(path.read_text(encoding="utf-8"))
     candidate_name = first_line(raw_text, path.stem)
     sections = {"raw": raw_text}
     return build_candidate(path, candidate_name, sections, raw_text)
@@ -114,6 +116,7 @@ def build_candidate(path: Path, candidate_name: str, sections: dict[str, Any], r
     position = 1
     for section, values in sections.items():
         for value in flatten_value(values):
+            value = normalize_value(value)
             if not value:
                 continue
             skills = find_skills(value)

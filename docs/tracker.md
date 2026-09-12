@@ -35,7 +35,7 @@
 - [~] Implement DOCX extraction
 - [ ] Add OCR fallback for poor-quality PDFs
 - [ ] Preserve page numbers and section boundaries
-- [ ] Normalize extracted text
+- [x] Normalize extracted text
 - [~] Detect resume sections (structured XML path implemented)
 - [~] Create candidate evidence store
 - [x] Build mixed-format resume manifest
