@@ -208,6 +208,11 @@ Only the top 3 candidates should receive explanation output in the final demo.
 
 The reranker is not added as a separate additive candidate-score component. It refines evidence relevance instead.
 
+These values are the initial development baseline only. They are configurable
+and must be evaluated and tuned after the runtime JD and resume set are
+inspected. The synthetic mock dataset is for development and regression
+testing; it does not define the final scoring weights or candidate order.
+
 ## 7) Dataset-level contract
 
 ```json
@@ -226,7 +231,10 @@ The reranker is not added as a separate additive candidate-score component. It r
 }
 ```
 
-This is the canonical structure used to run the end-to-end evaluation harness and produce final demo output.
+This is the canonical structure used to run the end-to-end evaluation harness
+and produce final demo output. The JD and candidate count are runtime inputs;
+the hackathon's expected case is one JD with 18 resumes, while development
+fixtures may contain a different number of candidates.
 
 ## 8) Candidate eligibility and fit contract
 

@@ -1,7 +1,7 @@
 # Implementation Plan — Hybrid Resume Shortlisting Engine
 
 ## Objective
-Build a defensible, evidence-based hybrid ranking engine for 1 job description and 18 resumes.
+Build a defensible, evidence-based hybrid ranking engine for one runtime-supplied job description and a runtime-supplied set of resumes. The hackathon's expected evaluation case is one JD and 18 resumes, but the pipeline must not hard-code that count.
 The system must rank every candidate, combine keyword and semantic evidence, and explain the top 3 using traceable resume evidence rather than opaque LLM judgments.
 
 ## Final recommended architecture
@@ -24,7 +24,7 @@ Requirement Schema             Skill/Alias Map
       +---------------+---------------+
                       |
                       v
-18 RESUMES
+RUNTIME-SUPPLIED RESUMES
       |
       v
 PDF Extraction
@@ -144,7 +144,7 @@ For each JD requirement:
 ### 6) Evidence fusion and reranking
 - Run keyword and semantic matching independently.
 - Fuse at requirement level, not at whole-candidate level.
-- Baseline: 0.5 keyword + 0.5 semantic.
+- Initial baseline: 0.5 keyword + 0.5 semantic. This is scaffolding for development, not a final tuned value.
 - Optional Qwen3-Reranker-0.6B refines the strongest retrieved evidence only.
 - The reranker is not a separate additive term in the candidate score.
 - Evidence strength is tracked separately using the source and strength of the underlying evidence.
@@ -160,6 +160,8 @@ CandidateScore = sum(weight_i * RequirementScore_i)
 
 Mandatory penalties and eligibility checks are handled separately so that a candidate missing a critical requirement cannot outrank a candidate who meets it.
 
+The component formula and all initial weights or thresholds are provisional implementation baselines. They must be evaluated against human reference judgments and adversarial cases after the runtime JD and resumes are supplied; they must not be treated as ground-truth labels from the synthetic dataset.
+
 Separate:
 1. eligibility / mandatory requirements
 2. fit / ranking among viable candidates
@@ -171,7 +173,7 @@ Separate:
 - Build a Streamlit UI with ranking table, candidate detail, and comparison screen.
 
 ## Build order (locked)
-1. Inspect actual dataset
+1. Inspect the runtime-supplied JD and resumes
 2. Extract PDFs
 3. Structure JD requirements
 4. Structure resume evidence

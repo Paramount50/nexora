@@ -1,6 +1,5 @@
-import json
+﻿import json
 from pathlib import Path
-
 
 OUTPUT = Path(__file__).with_name("mock_resumes.json")
 LABEL_OUTPUT = Path(__file__).with_name("mock_labels.json")
@@ -119,38 +118,170 @@ LAST_NAMES = [
 ]
 
 
+def infer_canonical_skill(text: str) -> str:
+    normalized = text.lower().strip()
+    aliases = {
+        "node.js": "Node.js",
+        "nodejs": "Node.js",
+        "node": "Node.js",
+        "react": "React",
+        "react.js": "React",
+        "reactjs": "React",
+        "express": "Express.js",
+        "express.js": "Express.js",
+        "sql": "SQL",
+        "postgresql": "PostgreSQL",
+        "mysql": "MySQL",
+        "docker": "Docker",
+        "aws": "AWS",
+        "mongodb": "MongoDB",
+        "git": "Git",
+        "typescript": "TypeScript",
+        "javascript": "JavaScript",
+        "python": "Python",
+        "fastapi": "FastAPI",
+        "django": "Django",
+        "java": "Java",
+        "spring boot": "Spring Boot",
+        "rest api": "REST API",
+        "rest apis": "REST API",
+        "vue.js": "Vue.js",
+        "sqlite": "SQLite",
+        "power bi": "Power BI",
+        "figma": "Figma",
+        "html": "HTML",
+        "css": "CSS",
+        "ux research": "UX Research",
+        "canva": "Canva",
+        "c++": "C++",
+        "data structures": "Data Structures",
+        "algorithms": "Algorithms",
+        "excel": "Excel",
+        "rest": "REST API",
+    }
+    return aliases.get(normalized, text.strip())
+
+
+def build_evidence(candidate_id: str, profile: dict, cohort_index: int):
+    evidence = [
+        {
+            "candidate_id": candidate_id,
+            "evidence_id": f"{candidate_id}_skill_01",
+            "section": "skills",
+            "text": profile["skills"],
+            "page": 1,
+            "position": 1,
+            "extracted_skill": "JavaScript",
+            "canonical_skill": "JavaScript",
+            "evidence_type": "skill_list",
+            "source": "skills",
+            "evidence_source_type": "skills_section",
+            "evidence_strength": "applied",
+        }
+    ]
+
+    for idx, bullet in enumerate(profile["bullets"], start=1):
+        lower = bullet.lower()
+        extracted = "JavaScript"
+        for candidate_skill in [
+            "node.js",
+            "react",
+            "express",
+            "sql",
+            "postgresql",
+            "mysql",
+            "docker",
+            "aws",
+            "mongodb",
+            "python",
+            "fastapi",
+            "django",
+            "java",
+            "spring boot",
+            "vue.js",
+            "power bi",
+            "figma",
+            "html",
+            "css",
+            "ux research",
+            "rest api",
+            "rest apis",
+        ]:
+            if candidate_skill in lower:
+                extracted = infer_canonical_skill(candidate_skill)
+                break
+
+        evidence.append(
+            {
+                "candidate_id": candidate_id,
+                "evidence_id": f"{candidate_id}_exp_{idx:02d}",
+                "section": "experience",
+                "text": f"{bullet} (cohort project {cohort_index})",
+                "page": 1,
+                "position": idx + 1,
+                "extracted_skill": extracted,
+                "canonical_skill": extracted,
+                "evidence_type": "project_or_experience",
+                "source": "experience",
+                "evidence_source_type": "project",
+                "evidence_strength": "substantial",
+            }
+        )
+
+    return evidence
+
+
 def build_dataset():
-    resumes = []
+    candidates = []
     labels = []
+
     for index in range(120):
         profile = PROFILES[index % len(PROFILES)]
         first = FIRST_NAMES[index % len(FIRST_NAMES)]
         last = LAST_NAMES[(index * 3) % len(LAST_NAMES)]
-        candidate_id = f"r{index + 1:03d}"
+        candidate_id = f"candidate_{index + 1:03d}"
         name = f"{first} {last}"
-        bullets = [f"{bullet} (cohort project {index // len(PROFILES) + 1})" for bullet in profile["bullets"]]
+        cohort_index = index // len(PROFILES) + 1
+        bullets = [f"{bullet} (cohort project {cohort_index})" for bullet in profile["bullets"]]
         raw_text = (
             f"{name}\n\nSummary\nComputer science student seeking a software internship.\n\n"
             f"Skills\n{profile['skills']}\n\nExperience\n- "
             + "\n- ".join(bullets)
             + f"\n\nEducation\n{profile['education']}"
         )
-        resumes.append(
-            {
-                "id": candidate_id,
-                "name": name,
-                "raw_text": raw_text,
-                "skills_section": profile["skills"].lower(),
-                "experience_bullets": bullets,
+
+        candidate = {
+            "candidate_id": candidate_id,
+            "candidate_name": name,
+            "resume_source": f"synthetic_resume_{index + 1:03d}.txt",
+            "raw_text": raw_text,
+            "sections": {
+                "summary": "Computer science student seeking a software internship.",
+                "skills": profile["skills"],
+                "experience": bullets,
                 "education": profile["education"],
-            }
-        )
-        labels.append({"resume_id": candidate_id, "expected_fit": profile["band"]})
-    return resumes, labels
+            },
+            "evidence": build_evidence(candidate_id, profile, cohort_index),
+            "metadata": {
+                "band": profile["band"],
+                "synthetic": True,
+            },
+        }
+        candidates.append(candidate)
+        labels.append({"candidate_id": candidate_id, "expected_fit": profile["band"]})
+
+    return {
+        "job_description": {
+            "title": "Junior Full Stack Developer Intern",
+            "company": "TechNova Solutions",
+            "source": "synthetic_job_description.pdf",
+        },
+        "candidates": candidates,
+    }, {"labels": labels}
 
 
 if __name__ == "__main__":
-    resumes, labels = build_dataset()
-    OUTPUT.write_text(json.dumps({"resumes": resumes}, indent=2) + "\n", encoding="utf-8")
-    LABEL_OUTPUT.write_text(json.dumps({"labels": labels}, indent=2) + "\n", encoding="utf-8")
-    print(f"Generated {len(resumes)} resumes and {len(labels)} evaluation labels")
+    dataset, labels = build_dataset()
+    OUTPUT.write_text(json.dumps(dataset, indent=2) + "\n", encoding="utf-8")
+    LABEL_OUTPUT.write_text(json.dumps(labels, indent=2) + "\n", encoding="utf-8")
+    print(f"Generated {len(dataset['candidates'])} candidates and {len(labels['labels'])} evaluation labels")

@@ -9,8 +9,12 @@
 
 # Phase 1 — Dataset & Foundation
 
+> The real JD and resume PDFs are runtime inputs supplied later. Until they are
+> available, use the synthetic dataset for pipeline development and regression
+> checks, without tuning final weights to its categorical labels.
+
 ## Shared
-- [ ] Inspect the actual JD and all 18 resumes
+- [ ] Inspect the runtime-supplied JD and all provided resumes
 - [ ] Identify strong, medium, and weak candidates
 - [ ] Identify explicit vs implicit requirements
 - [ ] Identify semantic traps and keyword traps
@@ -19,6 +23,11 @@
 - [ ] Define scoring configuration and thresholds
 - [ ] Validate PDF extraction quality
 - [ ] Define golden test cases for matching edge cases
+- [ ] Add keyword-stuffing adversarial case
+- [ ] Add semantic-without-exact-terminology case
+- [ ] Add ambiguous Node wording case
+- [ ] Add exact-mention-with-weak-evidence case
+- [ ] Add React vs React Native related-skill case
 - [ ] Define ranking metrics for evaluation
 
 ## Person 1 — Data / Parsing
