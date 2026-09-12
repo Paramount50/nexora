@@ -28,7 +28,7 @@
 - [x] Add ambiguous Node wording case definition
 - [x] Add exact-mention-with-weak-evidence case definition
 - [x] Add React vs React Native related-skill case definition
-- [ ] Define ranking metrics for evaluation
+- [x] Define ranking metrics for evaluation (band-aware pairwise agreement and top-k composition)
 
 ## Person 1 — Data / Parsing
 - [x] Implement PyMuPDF extraction
@@ -50,8 +50,8 @@
 
 ## Person 3 — Evaluation / Demo
 - [ ] Design evaluation methodology
-- [ ] Define ranking-quality checks
-- [ ] Define pairwise comparison checks
+- [x] Define ranking-quality checks
+- [x] Define pairwise comparison checks
 - [ ] Design top-3 explanation format
 - [ ] Plan Streamlit ranking view
 - [ ] Prepare basic demo flow
