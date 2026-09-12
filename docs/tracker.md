@@ -42,7 +42,7 @@
 
 ## Person 2 — Matching / Ranking
 - [ ] Review JD requirements relevant to scoring
-- [ ] Define keyword matching strategy
+- [x] Define keyword matching strategy
 - [ ] Define semantic matching strategy
 - [x] Define requirement-level scoring approach
 - [x] Define eligibility vs fit logic
@@ -91,10 +91,10 @@
 # Phase 3 — Core Matching Engine
 
 ## Person 1 — Keyword Engine
-- [ ] Implement exact matching
-- [ ] Implement alias matching
+- [x] Implement exact matching
+- [x] Implement alias matching
 - [ ] Implement controlled fuzzy matching
-- [ ] Preserve evidence behind every match
+- [x] Preserve evidence behind every match
 - [ ] Implement BM25 retrieval
 - [ ] Produce `keyword_engine.py`
 
