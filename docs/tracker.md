@@ -223,6 +223,7 @@
 # Phase 8 — Final Validation
 
 ## Shared
+- [x] Run full automated test suite (6 tests passing)
 - [x] Test malformed PDFs
 - [x] Test missing resume sections
 - [x] Test duplicate skills
