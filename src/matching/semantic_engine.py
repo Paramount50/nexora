@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 from typing import Any, Protocol
 
 import numpy as np
@@ -33,6 +34,9 @@ class SentenceTransformerEmbedder:
 class SemanticEngine:
     def __init__(self, embedder: Embedder) -> None:
         self.embedder = embedder
+        self._evidence_cache_key: str | None = None
+        self._evidence_vectors: np.ndarray | None = None
+        self._query_cache: dict[str, np.ndarray] = {}
 
     def match_requirement(
         self,
@@ -45,8 +49,9 @@ class SemanticEngine:
         if not evidence_texts:
             return []
 
-        vectors = self.embedder.encode([query, *evidence_texts])
-        similarities = cosine_similarity(vectors[0:1], vectors[1:])[0]
+        evidence_vectors = self._get_evidence_vectors(evidence_items, evidence_texts)
+        query_vector = self._get_query_vector(query)
+        similarities = cosine_similarity(query_vector.reshape(1, -1), evidence_vectors)[0]
         indexes = sorted(range(len(similarities)), key=lambda index: similarities[index], reverse=True)[:top_k]
         return [
             {
@@ -58,6 +63,22 @@ class SemanticEngine:
             for index in indexes
         ]
 
+    def _get_evidence_vectors(
+        self, evidence_items: list[dict[str, Any]], evidence_texts: list[str]
+    ) -> np.ndarray:
+        cache_key = hash_texts(evidence_texts)
+        if cache_key != self._evidence_cache_key or self._evidence_vectors is None:
+            self._evidence_vectors = self.embedder.encode(evidence_texts)
+            self._evidence_cache_key = cache_key
+            self._query_cache.clear()
+        return self._evidence_vectors
+
+    def _get_query_vector(self, query: str) -> np.ndarray:
+        cache_key = hashlib.sha256(query.encode("utf-8")).hexdigest()
+        if cache_key not in self._query_cache:
+            self._query_cache[cache_key] = self.embedder.encode([query])[0]
+        return self._query_cache[cache_key]
+
 
 def requirement_text(requirement: dict[str, Any]) -> str:
     values = [
@@ -67,3 +88,11 @@ def requirement_text(requirement: dict[str, Any]) -> str:
         " ".join(requirement.get("related_skills", [])),
     ]
     return " ".join(value for value in values if value)
+
+
+def hash_texts(texts: list[str]) -> str:
+    digest = hashlib.sha256()
+    for text in texts:
+        digest.update(text.encode("utf-8"))
+        digest.update(b"\0")
+    return digest.hexdigest()

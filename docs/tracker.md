@@ -108,7 +108,7 @@
 - [x] Implement requirement-level score fusion
 - [x] Implement mandatory requirement eligibility checks and penalties
 - [x] Produce `ranker.py`
-- [ ] Cache embeddings and processed artifacts
+- [x] Cache embeddings and processed artifacts (in-memory baseline)
 
 ## Person 3 — Integration / Evaluation
 - [ ] Connect parsing output to matching pipeline
