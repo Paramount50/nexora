@@ -226,6 +226,7 @@
 - [x] Test malformed PDFs
 - [x] Test missing resume sections
 - [x] Test duplicate skills
+- [x] Test multi-file runtime upload path
 - [x] Test aliases
 - [x] Test Java vs JavaScript
 - [x] Test React vs React Native

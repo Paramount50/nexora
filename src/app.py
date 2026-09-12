@@ -8,7 +8,7 @@ import pandas as pd
 import streamlit as st
 
 from src.explanations.explanation import explain_top_candidates
-from src.parsing.jd_loader import extract_requirements
+from src.parsing.jd_loader import extract_jd_text, extract_requirements
 from src.parsing.resume_loader import load_resume
 from src.matching.semantic_engine import SentenceTransformerEmbedder, SemanticEngine
 from src.pipeline import rank_documents, run_pipeline
@@ -44,7 +44,7 @@ def rank_uploaded_inputs(jd_upload, resume_uploads, semantic_engine=None, fusion
         root = Path(directory)
         jd_path = root / jd_upload.name
         jd_path.write_bytes(jd_upload.getvalue())
-        requirements = extract_requirements(jd_path)["requirements"]
+        requirements = extract_requirements(extract_jd_text(jd_path))["requirements"]
         candidates = []
         for upload in resume_uploads:
             path = root / upload.name
