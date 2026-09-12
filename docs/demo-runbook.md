@@ -18,22 +18,20 @@ python -m pytest -q tests
 
 ## Launch
 
+Build the React interface and run the single FastAPI server:
+
 ```powershell
+npm --prefix frontend install
+npm --prefix frontend run build
 $env:PYTHONPATH = (Get-Location).Path
-python -m streamlit run src/app.py
+python -m uvicorn backend.main:app --reload
 ```
 
-Open `http://localhost:8501`.
-
-## Development fallback
-
-With no uploads, the app uses the synthetic dataset in `data/mock_resumes.json` and
-`data/mock_requirements.json`. Use this mode to demonstrate ranking, evidence,
-comparison, and explanations before the official files arrive.
+Open `http://localhost:8000`. FastAPI serves the built frontend and the `/api` endpoints from the same origin.
 
 ## Runtime demonstration
 
-1. Select `Keyword only`, `Semantic only`, or `Hybrid`.
+1. Select a scoring mode.
 2. Upload one JD as PDF, DOCX, or TXT.
 3. Upload the resume set as PDF, DOCX, TXT, or XML files.
 4. Confirm the candidate count matches the uploaded set.

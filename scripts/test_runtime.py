@@ -36,7 +36,8 @@ def main():
 
     print("\n=== TOP RANKINGS ===")
     for r in rankings:
-        print(f"Rank {r['rank']:2d}: {r['candidate_name']:<20} | Score: {r['final_score']:5.2f} | Eligible: {str(r['eligible']):<5} | Mandatory Cov: {r['mandatory_coverage']:.2%} | Missing: {r['missing_requirements']}")
+        status = r["eligibility"]["status"]
+        print(f"Rank {r['rank']:2d}: {r['candidate_name']:<20} | Score: {r['final_score']:5.2f} | Ranked: yes | Mandatory fit: {status:<28} | Coverage: {r['mandatory_coverage']:.2%} | Missing: {r['missing_requirements']}")
 
     print("\n=== TOP 3 EXPLANATIONS ===")
     explanations = explain_top_candidates(rankings)

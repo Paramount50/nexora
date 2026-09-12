@@ -55,7 +55,7 @@
 - [x] Identify obvious ranking failures
 - [x] Record failure cases
 - [x] Design top-3 explanation format
-- [x] Plan Streamlit ranking view
+- [x] Plan React + FastAPI ranking view
 - [~] Prepare basic demo flow
 
 ---
@@ -197,7 +197,7 @@
 
 ---
 
-# Phase 7 — Streamlit Demo
+# Phase 7 — Unified React + FastAPI Demo
 
 ## Person 3 — Owner
 - [x] Build ranking table
@@ -265,7 +265,7 @@
 - [~] Scoring configuration is ready to explain to judges (baseline; final tuning pending real data)
 
 ## Person 3
-- [x] Streamlit demo works (HTTP smoke test passed)
+- [x] Unified React + FastAPI demo is the production UI
 - [x] Top-3 explanations work
 - [x] Candidate comparison works
 - [~] Demo flow rehearsed

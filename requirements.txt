@@ -7,4 +7,6 @@ rank-bm25
 numpy
 scikit-learn
 sentence-transformers
-streamlit
+fastapi
+uvicorn
+python-multipart

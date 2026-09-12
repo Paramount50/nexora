@@ -42,10 +42,12 @@ def test_empty_resume_produces_no_evidence(tmp_path: Path) -> None:
     assert candidate["evidence"] == []
 
 
-def test_no_evidence_candidate_fails_mandatory_requirement() -> None:
+def test_no_evidence_candidate_is_ranked_with_mandatory_risk() -> None:
     result = rank_candidate(
         {"candidate_id": "empty", "candidate_name": "Empty", "evidence": []},
         REQUIREMENTS,
     )
-    assert not result["eligible"]
+    assert result["eligible"]
+    assert not result["eligibility"]["meets_mandatory_requirements"]
+    assert result["eligibility"]["status"] == "review_required"
     assert result["eligibility"]["mandatory_requirements_missing"] == ["Node.js"]

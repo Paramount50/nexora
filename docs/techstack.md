@@ -19,7 +19,7 @@ Python 3.11+
 | Similarity / ranking math | NumPy + scikit-learn | Cosine similarity, normalization, and score computations |
 | Optional reranker | Qwen3-Reranker-0.6B | Used only on top retrieved evidence, not as the final system |
 | API boundary | FastAPI | Optional if a clean backend boundary is useful |
-| UI | Streamlit | Best for a reliable hackathon demo |
+| UI | React + Vite served by FastAPI | Best for a reliable hackathon demo |
 | Storage | JSON first, SQLite only if persistence becomes useful | No Elasticsearch or vector DB needed |
 | LLM usage | Optional explanation polish only | Never authoritative for scoring |
 
@@ -42,7 +42,7 @@ python -m venv .venv
 # macOS/Linux
 source .venv/bin/activate
 
-pip install pymupdf python-docx rapidfuzz pydantic numpy scikit-learn rank-bm25 streamlit
+pip install pymupdf python-docx rapidfuzz pydantic numpy scikit-learn rank-bm25 fastapi uvicorn python-multipart
 pip install sentence-transformers
 ```
 

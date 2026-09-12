@@ -68,7 +68,7 @@ Optional cross-encoder reranker        Evidence strength
                   Top 3 explanations + full table
                            |
                            v
-                       Streamlit demo
+                       React UI served by FastAPI
 ```
 
 ## Core design principle
@@ -170,7 +170,7 @@ Separate:
 - Generate structured explanations from matched requirements, evidence, and missing/weak areas.
 - Attach reason codes for each requirement result.
 - Show ranking, requirement gaps, and evidence for the top 3.
-- Build a Streamlit UI with ranking table, candidate detail, and comparison screen.
+- Build a React UI served by the FastAPI backend with ranking table, candidate detail, and comparison screen.
 
 ## Build order (locked)
 1. Inspect the runtime-supplied JD and resumes
@@ -212,8 +212,8 @@ Separate:
 - comparison logic
 
 ### Person 4 — UI / integration lead
-- Streamlit demo
-- API integration if useful
+- React UI served by FastAPI
+- API integration
 - visualizations and demo flow
 
 ## Timeline
@@ -247,7 +247,7 @@ Separate:
 - keep it only if it improves quality
 
 ### Phase 6 — final 45–60 minutes
-- Streamlit UI
+- React UI served by FastAPI
 - explanations
 - comparison mode
 - end-to-end demo rehearsal

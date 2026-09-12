@@ -87,9 +87,10 @@ def extract_requirements(text: str) -> dict[str, Any]:
                 importance = "nice_to_have"
             else:
                 lowered_line = trimmed.lower()
-                if any(m in lowered_line for m in ("must", "required", "mandatory", "essential", "minimum", "need to have")):
+                marker_line = lowered_line.replace("-", " ")
+                if any(m in marker_line for m in ("must", "required", "mandatory", "essential", "minimum", "need to have")):
                     importance = "required"
-                elif any(m in lowered_line for m in ("preferred", "plus", "bonus", "nice to have", "good to have", "optional")):
+                elif any(m in marker_line for m in ("preferred", "plus", "bonus", "nice to have", "good to have", "optional")):
                     importance = "nice_to_have"
                 else:
                     importance = "preferred"
@@ -139,9 +140,10 @@ def infer_importance(text: str, skill: str) -> str:
 
         if re.search(rf"(?<!\w){re.escape(skill)}(?!\w)", line, re.IGNORECASE):
             lowered = line.lower()
-            if any(marker in lowered for marker in ("must", "required", "mandatory", "essential", "minimum", "need to have")):
+            marker_line = lowered.replace("-", " ")
+            if any(marker in marker_line for marker in ("must", "required", "mandatory", "essential", "minimum", "need to have")):
                 return "required"
-            if any(marker in lowered for marker in ("preferred", "plus", "bonus", "nice to have", "good to have", "optional")):
+            if any(marker in marker_line for marker in ("preferred", "plus", "bonus", "nice to have", "good to have", "optional")):
                 return "nice_to_have"
             if current_section == "required":
                 return "required"

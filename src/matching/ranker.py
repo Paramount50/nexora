@@ -9,6 +9,8 @@ from src.matching.score_fusion import fuse_requirement_result
 
 
 MANDATORY_MATCH_TYPES = {"exact", "alias", "fuzzy"}
+MUST_HAVE_IMPORTANCE = {"required"}
+GOOD_TO_HAVE_IMPORTANCE = {"preferred", "nice_to_have"}
 
 
 def rank_candidates(
@@ -30,7 +32,9 @@ def rank_candidates(
         )
         for candidate in candidates
     ]
-    rankings.sort(key=lambda item: (item["eligible"], item["final_score"]), reverse=True)
+    # Recruiter mode ranks the complete pool by fit. Missing required evidence
+    # remains visible as a risk but does not hide a candidate from comparison.
+    rankings.sort(key=lambda item: item["final_score"], reverse=True)
     for rank, item in enumerate(rankings, start=1):
         item["rank"] = rank
     return rankings
@@ -62,30 +66,47 @@ def rank_candidate(
             fuse_requirement_result(keyword_result, semantic_result, bm25_result=bm25_result, config=fusion_config)
         )
 
-    required = [item for item in requirement_results if item["importance"] == "required"]
+    required = [item for item in requirement_results if item["importance"] in MUST_HAVE_IMPORTANCE]
     preferred = [item for item in requirement_results if item["importance"] == "preferred"]
+    nice_to_have = [item for item in requirement_results if item["importance"] == "nice_to_have"]
+    good_to_have = [item for item in requirement_results if item["importance"] in GOOD_TO_HAVE_IMPORTANCE]
     mandatory_missing = [item["canonical_name"] for item in required if not mandatory_met(item)]
     mandatory_coverage = coverage(required, mandatory_met)
-    preferred_coverage = coverage(preferred, lambda item: not item["missing"])
-    total_weight = sum(float(requirement.get("weight", 0.0)) for requirement in requirements)
-    weighted_score = sum(
-        float(requirement.get("weight", 0.0)) * result["fused_score"]
-        for requirement, result in zip(requirements, requirement_results)
-    )
-    fit_score = weighted_score / total_weight if total_weight else 0.0
+    preferred_coverage = coverage(good_to_have, lambda item: not item["missing"])
+    nice_to_have_coverage = coverage(nice_to_have, lambda item: not item["missing"])
+
+    # Score in tiers so optional skills cannot drown out the requirements that
+    # define the role. Mandatory gaps remain a recruiter-facing risk signal,
+    # rather than a hard exclusion from the ranked pool.
+    required_score = weighted_requirement_score(required, requirements, requirement_results)
+    preferred_score = weighted_requirement_score(preferred, requirements, requirement_results)
+    nice_to_have_score = weighted_requirement_score(nice_to_have, requirements, requirement_results)
+    if required:
+        fit_score = (
+            0.80 * required_score
+            + 0.15 * preferred_score
+            + 0.05 * nice_to_have_score
+        )
+    elif good_to_have:
+        fit_score = 0.75 * preferred_score + 0.25 * nice_to_have_score
+    else:
+        fit_score = 0.0
 
     return {
         "candidate_id": candidate["candidate_id"],
         "candidate_name": candidate.get("candidate_name", candidate["candidate_id"]),
-        "eligible": not mandatory_missing,
+        "eligible": True,
         "eligibility": {
             "mandatory_requirements_met": not mandatory_missing,
+            "meets_mandatory_requirements": not mandatory_missing,
+            "status": "meets_mandatory_requirements" if not mandatory_missing else "review_required",
             "mandatory_requirements_missing": mandatory_missing,
             "failed_critical_requirements": len(mandatory_missing),
         },
         "fit": {
             "weighted_requirement_score": fit_score,
             "preferred_requirement_coverage": preferred_coverage,
+            "good_to_have_coverage": preferred_coverage,
         },
         "final_score": round(fit_score * 100, 4),
         "keyword_score": average(result["keyword_score"] for result in requirement_results),
@@ -93,6 +114,8 @@ def rank_candidate(
         "bm25_score": average(result.get("bm25_score", 0.0) for result in requirement_results),
         "mandatory_coverage": mandatory_coverage,
         "preferred_coverage": preferred_coverage,
+        "good_to_have_coverage": preferred_coverage,
+        "nice_to_have_coverage": nice_to_have_coverage,
         "missing_requirements": [result["canonical_name"] for result in requirement_results if result["missing"]],
         "matched_requirements": [result["canonical_name"] for result in requirement_results if not result["missing"]],
         "requirement_results": requirement_results,
@@ -107,6 +130,29 @@ def coverage(results: list[dict[str, Any]], predicate: Any) -> float:
     if not results:
         return 1.0
     return sum(predicate(result) for result in results) / len(results)
+
+
+def weighted_requirement_score(
+    tier_results: list[dict[str, Any]],
+    requirements: list[dict[str, Any]],
+    requirement_results: list[dict[str, Any]],
+) -> float:
+    """Return the evidence score for one importance tier."""
+    if not tier_results:
+        return 0.0
+    weights = {
+        result["requirement_id"]: max(
+            float(requirement.get("weight", 1.0)), 0.0
+        )
+        for requirement, result in zip(requirements, requirement_results)
+    }
+    total_weight = sum(weights.get(result["requirement_id"], 1.0) for result in tier_results)
+    if not total_weight:
+        return 0.0
+    return sum(
+        weights.get(result["requirement_id"], 1.0) * result["fused_score"]
+        for result in tier_results
+    ) / total_weight
 
 
 def average(values: Any) -> float:
