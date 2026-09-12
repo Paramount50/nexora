@@ -247,21 +247,21 @@
 # Final Demo Readiness
 
 ## Person 1
-- [ ] Extraction works end-to-end
-- [ ] Resume evidence is correctly displayed
-- [ ] No major parsing failures
+- [~] Extraction works end-to-end (dummy PDF/DOCX and runtime upload path validated)
+- [x] Resume evidence is correctly displayed
+- [x] No major parsing failures in current fixtures
 
 ## Person 2
-- [ ] Ranking works end-to-end
-- [ ] Keyword + semantic matching demonstrably contribute
-- [ ] Mandatory requirements behave correctly
-- [ ] Scores are sensible and explainable
-- [ ] Scoring configuration is ready to explain to judges
+- [x] Ranking works end-to-end on synthetic data
+- [x] Keyword + semantic matching demonstrably contribute
+- [x] Mandatory requirements behave correctly
+- [x] Scores are sensible and explainable on synthetic data
+- [~] Scoring configuration is ready to explain to judges (baseline; final tuning pending real data)
 
 ## Person 3
 - [x] Streamlit demo works (HTTP smoke test passed)
 - [x] Top-3 explanations work
-- [ ] Candidate comparison works
+- [x] Candidate comparison works
 - [~] Demo flow rehearsed
 - [ ] Judge questions prepared
 
@@ -271,4 +271,4 @@
 - [ ] Freeze explanation format
 - [ ] End-to-end test from raw PDFs → final ranking
 - [ ] Rehearse judge walkthrough
-- [ ] Remove unstable bonus features
+- [x] Remove unstable bonus features (reranker remains optional and disabled)
