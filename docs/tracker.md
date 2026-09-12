@@ -52,6 +52,8 @@
 - [ ] Design evaluation methodology
 - [x] Define ranking-quality checks
 - [x] Define pairwise comparison checks
+- [x] Identify obvious ranking failures
+- [x] Record failure cases
 - [ ] Design top-3 explanation format
 - [ ] Plan Streamlit ranking view
 - [ ] Prepare basic demo flow
