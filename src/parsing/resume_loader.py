@@ -9,36 +9,9 @@ import xml.etree.ElementTree as ElementTree
 from pathlib import Path
 from typing import Any
 
+from src.matching.normalization import extract_skill_mentions
 from src.parsing.section_detector import detect_sections
 from src.parsing.text_normalizer import normalize_text, normalize_value
-
-
-SKILL_ALIASES = {
-    "javascript": "JavaScript",
-    "react": "React",
-    "react native": "React Native",
-    "node": "Node.js",
-    "node.js": "Node.js",
-    "nodejs": "Node.js",
-    "rest apis": "REST API",
-    "rest api": "REST API",
-    "rest": "REST API",
-    "python": "Python",
-    "java": "Java",
-    "sql": "SQL",
-    "sqlite": "SQLite",
-    "postgresql": "PostgreSQL",
-    "mysql": "MySQL",
-    "git": "Git",
-    "github": "GitHub",
-    "docker": "Docker",
-    "aws": "AWS",
-    "flutter": "Flutter",
-    "firebase": "Firebase",
-    "android sdk": "Android SDK",
-    "kotlin": "Kotlin",
-    "dart": "Dart",
-}
 
 
 def load_resume_directory(directory: Path, extensions: tuple[str, ...] = ("xml",)) -> list[dict[str, Any]]:
@@ -238,12 +211,7 @@ def flatten_value(value: Any) -> list[str]:
 
 
 def find_skills(text: str) -> list[str]:
-    normalized = text.lower()
-    matches = []
-    for alias, canonical in sorted(SKILL_ALIASES.items(), key=lambda item: len(item[0]), reverse=True):
-        if re.search(rf"(?<!\w){re.escape(alias)}(?!\w)", normalized) and canonical not in matches:
-            matches.append(canonical)
-    return matches
+    return extract_skill_mentions(text)
 
 
 def slugify(value: str) -> str:

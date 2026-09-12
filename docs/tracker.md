@@ -73,7 +73,7 @@
 
 ## Person 2 — Matching / Ranking
 - [x] Review requirement schema against scoring needs
-- [~] Implement canonical skill normalization (initial parser alias map only)
+- [x] Implement canonical skill normalization
 - [~] Prepare matching configuration
 - [x] Define mandatory requirement handling
 - [x] Define evidence-source and evidence-strength categories
