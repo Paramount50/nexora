@@ -263,7 +263,7 @@
 - [x] Top-3 explanations work
 - [x] Candidate comparison works
 - [~] Demo flow rehearsed
-- [ ] Judge questions prepared
+- [x] Judge questions prepared
 
 ## Shared
 - [ ] Freeze scoring configuration
