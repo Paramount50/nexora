@@ -142,7 +142,8 @@ def main() -> None:
                 }
             )
         st.dataframe(pd.DataFrame(comparison_rows), use_container_width=True, hide_index=True)
-        st.write(answer_why_ranked_above(left, right))
+        higher, lower = sorted((left, right), key=lambda item: item["rank"])
+        st.write(answer_why_ranked_above(higher, lower))
 
     st.subheader("Top 3 explanations")
     for explanation in explanations:
